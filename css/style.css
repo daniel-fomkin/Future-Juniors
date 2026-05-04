@@ -120,7 +120,7 @@ header .other-nav button div{
 
 /* Footer stiliai */
 footer{
-    position:fixed;
+    position:absolute;
     bottom: 0;
     padding: 30px;
     width: 100%;
