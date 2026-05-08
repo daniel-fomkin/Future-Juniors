@@ -92,10 +92,11 @@ main{
 
 .hero{
     width: 100%;
-    min-height: 50vh;
+    min-height: 80vh;
     background:
         linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
-        url("../img/main/header_background.jpg") center/cover no-repeat;
+        url("../img/main/header_background.jpg") no-repeat;
+    background-size: cover;
     position: relative;
 }
 
@@ -117,6 +118,7 @@ header::after{
     left: 80px;
     top: 320px;
     display: flex;
+    width: fit-content;
     flex-direction: column;
     gap: 70px;
 }
