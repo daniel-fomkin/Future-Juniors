@@ -5,7 +5,7 @@ main section .container__section * {
 }
 
 section .container__section{
-    padding-left: 150px;
+    padding: 0 150px;
 }
 
 section .container__section h1{
@@ -92,7 +92,7 @@ main{
 
 .hero{
     width: 100%;
-    min-height: 100vh;
+    min-height: 50vh;
     background:
         linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
         url("../img/main/header_background.jpg") center/cover no-repeat;
@@ -182,7 +182,7 @@ header,
 
 .goals{
     width: 100%;
-    background: #F8F8F8;
+    background: #FFF;
     display: flex;
     justify-content: center;
     padding: 120px 0;
