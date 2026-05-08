@@ -89,3 +89,118 @@ header,
     position: relative;
     z-index: 2;
 }
+
+/* ivatciai */
+
+.goals{
+    width: 100%;
+    background: #F8F8F8;
+    display: flex;
+    justify-content: center;
+    padding: 120px 0;
+}
+
+.goals-container{
+    width: 1400px;
+}
+
+.goals h2{
+    margin: 0 0 70px 0;
+
+    color: #2F353F;
+
+    font-family: "Neue Machina Regular";
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 130%;
+}
+
+/* eilutes */
+
+.goals-row{
+    display: grid;
+    gap: 0;
+    margin-bottom: 0;
+}
+
+/* 33 / 33 / 33 */
+
+.goals-row-1{
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* 50 / 50 */
+
+.goals-row-2{
+    grid-template-columns: 1fr 1fr;
+}
+
+/* 75 / 25 */
+
+.goals-row-3{
+    grid-template-columns: 3fr 1fr;
+}
+
+/* textas */
+
+.goal-card{
+    height: 420px;
+    border: 1px solid #D9D9D9;
+    border-radius: 40px;
+    padding: 50px;
+    box-sizing: border-box;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.goal-card span{
+    color: var(--main-blue, #2E2BD0);
+    font-family: "Neue Machina";
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.goal-text{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.goal-text h3{
+    color: var(--main-light, #2F353F);
+
+    font-family: "Neue Machina";
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.goal-text p{
+    color: rgba(47, 53, 63, 0.70);
+
+    font-family: Gilroy;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+/* nuotraukos */
+
+.goal-image-1,
+.goal-image-2,
+.goal-image-3{
+    height: 420px;
+    overflow: hidden;
+    border-radius: 40px;
+}
+
+.goal-image-1 img,
+.goal-image-2 img,
+.goal-image-3 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
