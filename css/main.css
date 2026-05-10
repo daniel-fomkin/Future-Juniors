@@ -28,8 +28,8 @@ section .container__section > p{
     padding-bottom: 150px;
 }
 section .container__section article{
-    width: 1116px;
-    height: 390px;
+    max-width: 1116px;
+    width: 100%;
     border-radius: 70px;
     border: 1px solid rgba(47, 53, 63, 0.50);   
     padding: 50px;
@@ -44,7 +44,8 @@ section .container__section article h4{
     margin-bottom: 50px;
 }
 section .container__section article p{
-    width: 1016px;
+    max-width: 1016px;
+    width: 100%;
     color: rgba(47, 53, 63, 0.70);
     font-family: "Gilroy";
     font-size: 30px;
