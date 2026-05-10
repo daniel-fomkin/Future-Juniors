@@ -382,7 +382,7 @@ main .technologies{
     padding: 10px;
 }
 
-
+/* Agenda Section*/
 .container__agenda *{
     padding: 0;
     margin: 0;
@@ -492,7 +492,7 @@ main .technologies{
     width: 160px;
     color: var(--main-light, #2F353F);
     text-align: center;
-    font-family: "Neue Machina";
+    font-family: "Neue Machina Regular";
     font-size: 30px;
     font-style: normal;
     font-weight: 400;
@@ -501,4 +501,57 @@ main .technologies{
 }
 article.diff-article{
     padding: 45px 55px;
+}
+
+/* Industries Section */
+.industries *{
+    padding: 0;
+    margin: 0;
+}
+.industries{
+    display: flex;
+    flex-direction: column;
+    row-gap: 100px;
+    padding-left: 150px;
+}
+.industries h1{
+    color: var(--main-light, #2F353F);
+    font-family: "Neue Machina Regular";
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.industries-container{
+    display: flex;
+    column-gap: 51px;
+    margin-bottom: 250px;
+}
+.industries-container article{
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    flex-basis: 506px;
+}
+.industries-container article h1{
+    color: var(--main-light, #2F353F);
+    font-family: "Neue Machina Regular";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 60px */
+}
+.industries-container article p{
+    color: rgba(47, 53, 63, 0.70);
+    font-family: Gilroy;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 36px */
+}
+.industries-container article hr{
+    height: 1px;
+    width: 100%;
+    background-color: #2F353F;
+    border-radius: 10px;
 }
