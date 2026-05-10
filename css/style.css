@@ -130,14 +130,13 @@ footer{
 /* Formos stiliai */
 footer form{
     width: 97%;
-    height: 1004px;
     background: var(--gradient-blue);
     border-radius: 70px;
     display: grid;
     grid-template-columns: auto auto;
     padding: 90px 120px;
     box-sizing: border-box;
-    column-gap: 220px;
+    column-gap: 12%;
     row-gap: 40px;
 }
 
@@ -208,7 +207,7 @@ footer form button[type = "button"]{
 
 footer form input, footer form label, footer form input::placeholder{
     display: block;
-    width: 700px;
+    width: 100%;
     height: 62px;
     color: rgba(255, 255, 255, 0.40);
     font-family: "Neue Machina Regular";
