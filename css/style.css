@@ -9,8 +9,9 @@
 body {
     margin: 0;
     display: flex;
-    width: 100vw;
+    width: 100%;
     flex-direction: column;
+
 }
 
 /* Header Stiliai */
@@ -30,6 +31,7 @@ header nav{
     align-items: center;
     padding: 0 30px;
     box-sizing: border-box;
+    justify-content: space-between;
 }
 
 header .logo-container{
@@ -57,8 +59,8 @@ header ul{
     list-style: none;
     margin: 0;
     column-gap: 120px;
-    margin-left: 372px;
     height: fit-content;
+    padding: 0;
 }
 
 header ul li {
@@ -73,7 +75,7 @@ header ul li {
 
 header .other-nav{
     display: flex;
-    column-gap: 95px;
+    column-gap: 10%;
     align-items: center;
 }
 
@@ -375,6 +377,7 @@ footer .information-container .services > p{
     margin: 0;
     margin-bottom: 20px;
 }
+
 
 footer .information-container .services ul{
     padding: 0;
