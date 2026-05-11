@@ -250,6 +250,10 @@ header,
     grid-column: span 4;
 }
 
+.double-third{
+    grid-column: span 8;
+}
+
 .goal-half{
     grid-column: span 6;
 }
@@ -408,13 +412,13 @@ main .technologies{
     padding: 10px;
 }
 
-
+/*  AGENDA  */
 .container__agenda *{
     padding: 0;
     margin: 0;
 }
 .container__agenda{
-    padding: 0 150px;
+    padding: 0 8%
     
 }
 .container__agenda h1{
@@ -426,20 +430,22 @@ main .technologies{
     line-height: normal;
 }
 .container__agenda .agenda{
-    margin-top: 93px;
+    margin-top: 5.8rem;
+    max-width: 101rem;
+    width: 100%;
     display: grid;
-    grid-template-columns: repeat(3,540px);
-    grid-template-rows: 220px 220px 100px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,minmax(6.5rem,auto ) )
 }
 
 .agenda article{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    row-gap: 25px;
+    row-gap: 1.5rem;
     border-radius: 40px;
     border: 1px solid rgba(47, 53, 63, 0.50);
-    padding: 50px;
+    padding: 3rem;
 }
 .agenda article:first-child{
     border: 0px;
@@ -458,7 +464,7 @@ main .technologies{
 .agenda article:last-child{
     border-radius: 40px;
     background-color: #5E5BE3;
-    margin: 20px 1px 0px 17px;
+    margin: 1.25rem 1px 0 1rem;
     grid-area: 2 / 3 / 4 / 4;
 }
 .agenda article:last-child h1{
@@ -502,8 +508,9 @@ main .technologies{
     justify-content: center;
     border-radius: 280px;
     border: 2px solid var(--main-light, #2F353F);
-    width: 280px;
-    height: 280px;
+    max-width: 17.5rem;
+    width: 100%;
+    height: 17.5rem;
     color: var(--main-light, #2F353F);
     text-align: center;
     font-family: "Neue Machina Regular";
@@ -515,10 +522,11 @@ main .technologies{
     background-color: white;
 }
 .container__agenda button h1{
-    width: 160px;
+    max-width: 10rem;
+    width: 100%;
     color: var(--main-light, #2F353F);
     text-align: center;
-    font-family: "Neue Machina";
+    font-family: "Neue Machina Regular";
     font-size: 30px;
     font-style: normal;
     font-weight: 400;
@@ -526,5 +534,58 @@ main .technologies{
     text-transform: uppercase;
 }
 article.diff-article{
-    padding: 45px 55px;
+    padding: 2.8rem 3.4rem;
+}
+
+/* Industries Section */
+.industries *{
+    padding: 0;
+    margin: 0;
+}
+.industries{
+    display: flex;
+    flex-direction: column;
+    row-gap: 100px;
+    padding-left: 150px;
+}
+.industries h1{
+    color: var(--main-light, #2F353F);
+    font-family: "Neue Machina Regular";
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.industries-container{
+    display: flex;
+    column-gap: 51px;
+    margin-bottom: 250px;
+}
+.industries-container article{
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    flex-basis: 506px;
+}
+.industries-container article h1{
+    color: var(--main-light, #2F353F);
+    font-family: "Neue Machina Regular";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 60px */
+}
+.industries-container article p{
+    color: rgba(47, 53, 63, 0.70);
+    font-family: Gilroy;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 36px */
+}
+.industries-container article hr{
+    height: 1px;
+    width: 100%;
+    background-color: #2F353F;
+    border-radius: 10px;
 }
