@@ -214,18 +214,16 @@ header,
 
 .goals{
     width: 100%;
-
-    display: flex;
+    display: flex;    
     justify-content: center;
-
-    padding: 120px 0;
-
+    padding: 120px 0;   
     background: #FFF;
 }
 
 .goals-container{
     width: 1400px;
 }
+
 
 .goals h2{
     margin-bottom: 70px;
@@ -328,6 +326,26 @@ header,
 
     display: block;
 }
+
+
+/* EDIT */
+
+.goal-card{
+    height: auto;
+    min-height: 420px;
+}
+
+@media (max-width: 1400px){
+  .goals-grid > *{ grid-column: span 6; }
+}
+
+@media (max-width: 768px){
+  .goals-grid > *{ grid-column: span 12; }
+}
+
+
+/* END OF EDIT */
+
 
 main .technologies{
     padding: 0 150px;
