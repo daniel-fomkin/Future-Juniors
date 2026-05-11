@@ -96,73 +96,98 @@ main{
 
 .hero{
     width: 100%;
-    min-height: 80vh;
+    min-height: 100vh;
+
     background:
         linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
-        url("../img/main/header_background.jpg") no-repeat;
-    background-size: cover;
+        url("../img/main/header_background.jpg") center/cover no-repeat;
+
     position: relative;
 }
 
-/* Linija */
+/* linija */
+
 header::after{
     content: "";
+
     position: absolute;
+
     left: 30px;
     right: 30px;
     top: 118px;
+
     height: 1px;
+
     background: var(--main-white, #FFF);
 }
 
-/* Main contetntas */
+/* hero content */
 
 .hero-content{
     position: absolute;
+
     left: 80px;
     top: 320px;
+
     display: flex;
     width: fit-content;
     flex-direction: column;
+
     gap: 70px;
 }
 
 .hero-content h1{
-   color: var(--main-white, #FFF);
+    width: 700px;
+
+    color: var(--main-white, #FFF);
+
     font-family: "Neue Machina Regular";
     font-size: 50px;
     font-style: normal;
     font-weight: 800;
-    line-height: 130%; /* 65px */
-    width: 700px;
+    line-height: 130%;
+
+    position: relative;
 }
 
-/* Fioletine linija */
+/* fioletine linija */
+
 .hero-content h1::after{
     content: "";
+
     position: absolute;
+
     left: 0;
-    bottom: 360px;
+    bottom: 12px;
+
     width: 670px;
     height: 50px;
+
     background: var(--color-blue);
+
     z-index: -1;
 }
 
-/* Buttonas */
+/* button */
 
 .estimate-btn{
     width: 220px;
     height: 220px;
+
     border-radius: 50%;
     border: 1px solid white;
+
     background: transparent;
+
     color: white;
+
     font-family: "Neue Machina Regular";
     font-size: 24px;
     font-weight: 400;
     line-height: 130%;
+
     cursor: pointer;
+
     transition: 0.3s;
 }
 
@@ -170,14 +195,15 @@ header::after{
     background: rgba(255,255,255,0.08);
 }
 
-/* Buttonas disainas */
+/* contact button */
 
 .other-nav > button{
     width: 254px;
     height: 59px;
 }
 
-/* Kad elementai butu paveikslelio virsuje */
+/* elementai virsuje */
+
 header,
 .hero-content{
     position: relative;
@@ -188,10 +214,13 @@ header,
 
 .goals{
     width: 100%;
-    background: #FFF;
+
     display: flex;
     justify-content: center;
+
     padding: 120px 0;
+
+    background: #FFF;
 }
 
 .goals-container{
@@ -199,43 +228,41 @@ header,
 }
 
 .goals h2{
-    margin: 0 0 70px 0;
-
+    margin-bottom: 70px;
     color: #2F353F;
-
     font-family: "Neue Machina Regular";
-    font-size: 64px;
+    font-size: 60px;
     font-weight: 400;
     line-height: 130%;
 }
 
-/* eilutes */
+/* GRID */
 
-.goals-row{
+.goals-grid{
     display: grid;
+    grid-template-columns: repeat(12, 1fr);
     gap: 0;
-    margin-bottom: 0;
 }
 
-/* 33 / 33 / 33 */
+/* sizes */
 
-.goals-row-1{
-    grid-template-columns: 1fr 1fr 1fr;
+.goal-third{
+    grid-column: span 4;
 }
 
-/* 50 / 50 */
-
-.goals-row-2{
-    grid-template-columns: 1fr 1fr;
+.goal-half{
+    grid-column: span 6;
 }
 
-/* 75 / 25 */
-
-.goals-row-3{
-    grid-template-columns: 3fr 1fr;
+.goal-wide{
+    grid-column: span 9;
 }
 
-/* textas */
+.goal-small{
+    grid-column: span 3;
+}
+
+/* card */
 
 .goal-card{
     height: 420px;
@@ -251,7 +278,8 @@ header,
 
 .goal-card span{
     color: var(--main-blue, #2E2BD0);
-    font-family: "Neue Machina";
+
+    font-family: "Neue Machina Regular";
     font-size: 40px;
     font-weight: 400;
 }
@@ -264,38 +292,36 @@ header,
 
 .goal-text h3{
     color: var(--main-light, #2F353F);
-
-    font-family: "Neue Machina";
-    font-size: 32px;
+    font-family: "Neue Machina Regular";
+    font-size: 30px;
     font-weight: 400;
     line-height: 150%;
 }
 
 .goal-text p{
     color: rgba(47, 53, 63, 0.70);
-
     font-family: Gilroy;
-    font-size: 30px;
+    font-size: 27px;
     font-weight: 400;
     line-height: 150%;
 }
 
-/* nuotraukos */
+/* images */
 
-.goal-image-1,
-.goal-image-2,
-.goal-image-3{
+.goal-image{
     height: 420px;
+
     overflow: hidden;
+
     border-radius: 40px;
 }
 
-.goal-image-1 img,
-.goal-image-2 img,
-.goal-image-3 img{
+.goal-image img{
     width: 100%;
     height: 100%;
+
     object-fit: cover;
+
     display: block;
 }
 
