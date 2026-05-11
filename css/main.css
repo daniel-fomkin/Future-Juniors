@@ -28,8 +28,8 @@ section .container__section > p{
     padding-bottom: 150px;
 }
 section .container__section article{
-    width: 1116px;
-    height: 390px;
+    max-width: 1116px;
+    width: 100%;
     border-radius: 70px;
     border: 1px solid rgba(47, 53, 63, 0.50);   
     padding: 50px;
@@ -44,7 +44,8 @@ section .container__section article h4{
     margin-bottom: 50px;
 }
 section .container__section article p{
-    width: 1016px;
+    max-width: 1016px;
+    width: 100%;
     color: rgba(47, 53, 63, 0.70);
     font-family: "Gilroy";
     font-size: 30px;
@@ -88,6 +89,9 @@ section .container__section .wrraper .nav{
 }
 main{
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 250px;
 }
 
 .hero{
@@ -126,6 +130,7 @@ header::after{
     top: 320px;
 
     display: flex;
+    width: fit-content;
     flex-direction: column;
 
     gap: 70px;
@@ -318,4 +323,208 @@ header,
     object-fit: cover;
 
     display: block;
+}
+
+main .technologies{
+    padding: 0 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.technologies h2{
+    color: var(--main-light, #2F353F);
+    font-family: "Neue Machina Regular";
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.technologies > p{
+    align-self: flex-end;
+    width: 634px;
+    color: rgba(47, 53, 63, 0.70);
+    font-family: Gilroy;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 36px */
+    margin-right: 236px;
+}
+
+.technologies .pin-container{
+    display: flex;
+    position: relative;
+    bottom: 13px;
+}
+
+.technologies .pin-container p{
+    color: rgba(47, 53, 63, 0.70);
+    font-family: Gilroy;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 23.4px */
+}
+
+.technologies > *{
+    margin: 0;
+}
+
+.technologies .pin{
+    width: 15px;
+    height: 15px;
+    background-color: #93969B; 
+    border-radius: 100%;
+}
+
+.technologies .active-pin div{
+    width: 20px;
+    height: 20px;
+    background-color: var(--main-blue, #2E2BD0);
+    /* box-shadow: 0px 0px 0px 10px #CBCAF3; */
+    border: 10px solid #CBCAF3;
+}
+
+.pin-container .active-pin p{
+    color: var(--main-light, #2F353F);
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: "Neue Machina Regular";
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 33.8px */
+}
+.pin-container .active-pin{
+    position: relative;
+    bottom: 10px;
+    right: 10px; 
+}
+
+.pin-container svg{
+    border-radius: 20px;
+    border: 1.5px solid var(--main-blue, #2E2BD0);
+    padding: 10px;
+}
+
+
+.container__agenda *{
+    padding: 0;
+    margin: 0;
+}
+.container__agenda{
+    padding: 0 150px;
+    
+}
+.container__agenda h1{
+    color: var(--main-light, #2F353F);
+    font-family: "Neue Machina Regular";
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.container__agenda .agenda{
+    margin-top: 93px;
+    display: grid;
+    grid-template-columns: repeat(3,540px);
+    grid-template-rows: 220px 220px 100px;
+}
+
+.agenda article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 25px;
+    border-radius: 40px;
+    border: 1px solid rgba(47, 53, 63, 0.50);
+    padding: 50px;
+}
+.agenda article:first-child{
+    border: 0px;
+    
+}
+.agenda article:first-child p{
+    color: var(--main-light, #2F353F);
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: "Neue Machina Regular";
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 39px */
+
+}
+.agenda article:last-child{
+    border-radius: 40px;
+    background-color: #5E5BE3;
+    margin: 20px 1px 0px 17px;
+    grid-area: 2 / 3 / 4 / 4;
+}
+.agenda article:last-child h1{
+    color: var(--main-white, #FFF);
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: "Neue Machina Regular";
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 39px */
+}
+.agenda article:last-child p{
+    color: rgba(255, 255, 255, 0.70);
+    font-family: Gilroy;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 36px */
+}
+.agenda article h1{
+    color: var(--main-light, #2F353F);
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: "Neue Machina Regular";
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 39px */
+}
+.agenda article p{
+    color: rgba(47, 53, 63, 0.70);
+    font-family: Gilroy;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 36px */
+}
+.container__agenda button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 280px;
+    border: 2px solid var(--main-light, #2F353F);
+    width: 280px;
+    height: 280px;
+    color: var(--main-light, #2F353F);
+    text-align: center;
+    font-family: "Neue Machina Regular";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 39px */
+    text-transform: uppercase;
+    background-color: white;
+}
+.container__agenda button h1{
+    width: 160px;
+    color: var(--main-light, #2F353F);
+    text-align: center;
+    font-family: "Neue Machina";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 39px */
+    text-transform: uppercase;
+}
+article.diff-article{
+    padding: 45px 55px;
 }
