@@ -250,6 +250,10 @@ header,
     grid-column: span 4;
 }
 
+.double-third{
+    grid-column: span 8;
+}
+
 .goal-half{
     grid-column: span 6;
 }
