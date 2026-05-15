@@ -562,10 +562,16 @@ footer .copyright{
 
     footer .information-container div:nth-child(1) a{
         font-size: 40px;
+        margin-left: 55%;
+        margin-top: -10rem;
     }
 
     footer .information-container .services li{
         font-size: 40px;
+    }
+
+    footer .information-container .services > div{
+        justify-content: space-between;
     }
 
     footer form {
@@ -597,6 +603,32 @@ footer .copyright{
 
     footer .information-container div:nth-child(1) svg:nth-child(1) {
         margin-bottom: 0;
+    }
+
+    footer .information-container div:nth-child(1) .logo-container > svg{
+        transform: scale(2);
+    }
+
+    footer .information-container div:nth-child(1) .social-media{
+        transform: scale(2);
+        justify-content: center;
+        margin-top: 5rem;
+        margin-bottom: 3rem;
+        margin-left: -60%;
+    }
+
+    footer .information-container div:nth-child(1) p {
+        font-family: "TT Norms";
+        font-size: 46px;
+    }
+
+    footer .information-container div:nth-child(1) .logo-container p {
+        gap: 1rem;
+        display: flex;
+        justify-content: space-between;
+        margin-left: 5rem;
+        margin-top: -5rem;
+        width: 30px;
     }
 
     footer .information-container .offices > div,
