@@ -381,6 +381,7 @@ main .technologies{
 .technologies .pin-container p{
     color: rgba(47, 53, 63, 0.70);
     font-family: Gilroy;
+    padding-right: 10px;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -437,7 +438,7 @@ main .technologies{
     margin: 0;
 }
 .container__agenda{
-    padding: 0 8%
+    padding: 0 150px
     
 }
 .container__agenda h1{
@@ -563,6 +564,7 @@ article.diff-article{
 }
 .industries{
     display: flex;
+    justify-content: space-between;
     flex-direction: column;
     row-gap: 100px;
     padding: 0 150px;
