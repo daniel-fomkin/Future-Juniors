@@ -716,4 +716,25 @@ article.diff-article{
     section .container__section article{
         max-width: 100%;
     }
+    .container__agenda {
+        padding: 0 40px;
+    }
+    .container__agenda .agenda{
+        display: flex;
+        flex-direction: column;
+    }
+    .agenda article:last-child{
+        margin: 50px 0 0 0  ;
+    }
+    .container__agenda .agenda__btn{
+        padding-top: 80px;
+        display: flex;
+        justify-content: center;
+    }
+    .agenda article:first-child{
+        padding-left: 0px;
+    }
+    .container__agenda .agenda {
+        margin-top: 0px;
+    }
 }
