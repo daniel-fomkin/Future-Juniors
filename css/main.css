@@ -308,7 +308,7 @@ header, .hero-content{
 /* sizes */
 
 .goal-third{
-    grid-column: span 4;
+    grid-column: span 4;    
 }
 
 .double-third{
@@ -338,7 +338,7 @@ header, .hero-content{
     background: white;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-between; 
 }
 
 .goal-card span{
@@ -653,6 +653,8 @@ article.diff-article{
 }
 
 @media (max-width: 1350px) {
+    .goals-grid{
+        display: block;
     .industries{
         display: none;
     }
