@@ -565,7 +565,7 @@ article.diff-article{
     display: flex;
     flex-direction: column;
     row-gap: 100px;
-    padding-left: 150px;
+    padding: 0 150px;
 }
 .industries h1{
     color: var(--main-light, #2F353F);
