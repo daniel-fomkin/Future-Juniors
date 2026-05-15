@@ -9,8 +9,9 @@
 body {
     margin: 0;
     display: flex;
-    width: 100vw;
+    width: 100%;
     flex-direction: column;
+
 }
 
 /* Header Stiliai */
@@ -19,23 +20,26 @@ header {
     background-color: rgba(255, 255, 255, 0);
     display: flex;
     align-items: center;
-    height: 119px;
+    min-height: 119px;
+    padding: 0 30px;
 }
 
 header nav{
-    display: grid;
-    grid-template-columns: 10% max-content 1px auto;
-    column-gap: 77px;
-    width: 100vw;
+    display: flex;
     align-items: center;
-    padding: 0 30px;
+    justify-content: space-between;
+    gap: 77px;
+    width: 100%;
+    max-width: 1720px;
+    padding: 0;
     box-sizing: border-box;
 }
 
 header .logo-container{
     display: flex;
     align-items: last baseline;
-    column-gap: 10px;
+    gap: 10px;
+    flex: 0 0 auto;
 }
 
 header .logo-container b{
@@ -52,13 +56,22 @@ header .logo-icon{
     flex-direction: column;
 }
 
+header nav > svg{
+    width: 1px;
+    height: 120px;
+    align-self: center;
+    flex: 0 0 auto;
+}
+
 header ul{
     display: flex;
     list-style: none;
     margin: 0;
-    column-gap: 120px;
-    margin-left: 372px;
-    height: fit-content;
+    padding: 0;
+    gap: 120px;
+    flex: 1;
+    justify-content: right;
+    min-width: 0;
 }
 
 header ul li {
@@ -69,12 +82,14 @@ header ul li {
     font-weight: 400;
     line-height: normal;
     text-transform: lowercase;
+    white-space: nowrap;
 }
 
 header .other-nav{
     display: flex;
-    column-gap: 95px;
+    gap: 10%;
     align-items: center;
+    flex: 0 0 auto;
 }
 
 header .select{
@@ -112,7 +127,7 @@ header .other-nav button{
 header .other-nav button div{
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 0.75rem;
 }
 
 /* Footer stiliai */
@@ -124,19 +139,19 @@ footer{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    row-gap: 15.625rem;
+    row-gap: clamp(6rem, 10vw, 14rem);
 }
 
 /* Formos stiliai */
 footer form{
-    width: 97%;
+    width: min(97%, 120rem);
     background: var(--gradient-blue);
-    border-radius: 4.375rem;
+    border-radius: 4rem;
     display: grid;
-    grid-template-columns: auto auto;
-    padding: 5.625rem 7.5rem;
+    grid-template-columns: 1fr 1fr;
+    padding: clamp(3rem, 6vw, 5.5rem) clamp(2rem, 5vw, 7.5rem);
     box-sizing: border-box;
-    column-gap: 12%;
+    column-gap: clamp(2rem, 5vw, 12%);
     row-gap: 2.5rem;
 }
 
@@ -144,7 +159,7 @@ footer form > div:nth-child(2) {
     padding-top: 2.5rem;
     display: flex;
     flex-direction: column;
-    gap: 3.25rem;
+    gap: 3rem;
 }
 
 footer form > *{
@@ -155,20 +170,20 @@ footer form > *{
 footer form > b{
     color: white;
     font-family: "Neue Machina Regular";
-    font-size: 6.25rem;
+    font-size: clamp(3rem, 6vw, 6.25rem);
     font-style: normal;
     font-weight: 400;
-    line-height: 130%;
+    line-height: 1.3;
 }
 
 footer form div p{
     color: rgba(255, 255, 255, 0.70);
     word-spacing: 1px;
     font-family: "Gilroy";
-    font-size: 1.5rem;
+    font-size: clamp(1rem, 1.2vw, 1.5rem);
     font-style: normal;
     font-weight: 400;
-    line-height: 150%; 
+    line-height: 1.5;
     margin: 0;
 }
 
@@ -184,39 +199,37 @@ footer form div p b{
 }
 
 footer form button[type = "button"]{
-    width: 21.875rem;
-    height: 3.625rem;
+    width: clamp(14rem, 22vw, 21.875rem);
+    height: clamp(3rem, 5vh, 3.625rem);
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 0.625rem;
+    gap: 0.75rem;
     border-radius: 0.625rem;
     border: 1px solid white;
     color: var(--main-white, #FFF);
     font-family: "Neue Machina Regular";
     background-color: transparent;
-    font-size: 1.25rem;
+    font-size: 1.1rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     text-transform: uppercase;
-    gap: 1.25rem;
     box-sizing: border-box;
-    
 }
 
 footer form input, footer form label, footer form input::placeholder{
     display: block;
     width: 100%;
-    height: 3.875rem;
+    height: clamp(3rem, 5vh, 3.875rem);
     color: rgba(255, 255, 255, 0.40);
     font-family: "Neue Machina Regular";
-    font-size: 2rem;
+    font-size: clamp(1rem, 1.5vw, 2rem);
     font-style: normal;
     font-weight: 400;
-    line-height: 150%;
+    line-height: 1.5;
     box-sizing: border-box;
-    padding-bottom: 1.25rem;
+    padding-bottom: 1rem;
     background-color: transparent;
     border: 0;
     border-bottom: 1px solid white;
@@ -235,8 +248,8 @@ footer .file-input input{
 }
 
 footer form > button{
-    width: 12.813rem;
-    height: 3.813rem;
+    width: clamp(10rem, 14vw, 12.813rem);
+    height: clamp(3.2rem, 5vh, 3.813rem);
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -246,7 +259,7 @@ footer form > button{
     border-radius: 0.625rem;
     color: var(--color-blue);
     font-family: "Neue Machina Regular";
-    font-size: 1.25rem;
+    font-size: 1.1rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -254,33 +267,34 @@ footer form > button{
 }
 
 footer .information-container{
-    padding: 3.125rem 7.5rem;
+    padding: clamp(2rem, 4vw, 3.125rem) clamp(2.5rem, 5vw, 7.5rem);
     border-top: 1px solid rgba(47, 53, 63, 0.50);
     border-bottom: 1px solid rgba(47, 53, 63, 0.50);
     width: 100%;
     display: grid;
-    grid-template-columns: 50% 36% auto;
+    grid-template-columns: 1fr 1fr auto;
+    gap: clamp(1.5rem, 3vw, 3rem);
     box-sizing: border-box;
 }
 
 footer .information-container div:nth-child(1){
     display: flex;
     flex-direction: column;
-    width: 18.625rem;
-    row-gap: 3.125rem;
+    width: min(18.625rem, 100%);
+    row-gap: 3rem;
 }
 
 footer .information-container div:nth-child(1) svg:nth-child(1){
-    margin-bottom: 3.125rem;
+    margin-bottom: 3rem;
 }
 
 footer .information-container div:nth-child(1) button{
-    width: 15.875rem;
-    height: 3.688rem;
+    width: clamp(12rem, 18vw, 15.875rem);
+    height: clamp(3rem, 4vh, 3.688rem);
     color: white;
     font-family: "Neue Machina Regular";
     background-color: var(--color-blue);
-    font-size: 1.25rem;
+    font-size: 1.1rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -291,7 +305,7 @@ footer .information-container div:nth-child(1) button{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1.25rem;
+    gap: 1rem;
 }
 
 footer .information-container div:nth-child(1) .social-media{
@@ -308,10 +322,10 @@ footer .information-container div:nth-child(1) .social-media > *{
 footer .information-container div:nth-child(1) a{
     color: var(--main-blue, #2E2BD0);
     font-family: "Gilroy";
-    font-size: 1.5rem;
+    font-size: clamp(1rem, 1.2vw, 1.5rem);
     font-style: normal;
     font-weight: 500;
-    line-height: 150%; /* 36px */
+    line-height: 1.5;
     text-decoration-line: underline;
     text-decoration-style: solid;
     text-decoration-skip-ink: none;
@@ -323,7 +337,7 @@ footer .information-container div:nth-child(1) a{
 footer .information-container .offices > p{
     color: var(--color-light);
     font-family: "Neue Machina Regular";
-    font-size: 1.25rem;
+    font-size: clamp(1rem, 1.1vw, 1.25rem);
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -335,7 +349,7 @@ footer .information-container .offices > p{
 footer .information-container .offices{
     display: flex;
     flex-direction: column;
-    gap: 1.875rem;
+    gap: clamp(1rem, 2vw, 1.875rem);
 }
 
 footer .information-container .office-box{
@@ -348,7 +362,7 @@ footer .information-container .office-box p{
     margin: 0;
     color: rgba(47, 53, 63, 0.50);
     font-family: "Gilroy";
-    font-size: 1.25rem;
+    font-size: clamp(1rem, 1.1vw, 1.25rem);
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -361,13 +375,13 @@ footer .information-container .office-box p:nth-child(1){
 footer .information-container .services{
     display: flex;
     flex-direction: column;
-    gap: 1.875rem;
+    gap: clamp(1rem, 2vw, 1.875rem);
 }
 
 footer .information-container .services > p{
     color: var(--color-light);
     font-family: "Neue Machina Regular";
-    font-size: 1.25rem;
+    font-size: clamp(1rem, 1.1vw, 1.25rem);
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -376,18 +390,19 @@ footer .information-container .services > p{
     margin-bottom: 1.25rem;
 }
 
+
 footer .information-container .services ul{
     padding: 0;
     list-style: none;
     display: flex;
     flex-direction: column;
-    gap: 1.875rem;
+    gap: clamp(1rem, 2vw, 1.875rem);
 }
 
 footer .information-container .services li{
     color: var(--color-blue);
     font-family: "Gilroy";
-    font-size: 1.25rem;
+    font-size: clamp(1rem, 1.1vw, 1.25rem);
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -396,7 +411,7 @@ footer .information-container .services li{
 footer .copyright p{
     color: rgba(47, 53, 63, 0.50);
     font-family: "Gilroy";
-    font-size: 1rem;
+    font-size: clamp(0.9rem, 1vw, 1rem);
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -406,5 +421,5 @@ footer .copyright{
     display: flex;
     justify-content: space-between;
     width: 100%;
-    margin-top: -12.5rem;
+    margin-top: clamp(-8rem, -10vw, -12.5rem);
 }

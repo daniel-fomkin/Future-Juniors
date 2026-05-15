@@ -375,7 +375,7 @@ main .technologies{
 .technologies .pin-container{
     display: flex;
     position: relative;
-    bottom: 13px;
+    bottom: 8px;
 }
 
 .technologies .pin-container p{
@@ -425,6 +425,10 @@ main .technologies{
     border-radius: 20px;
     border: 1.5px solid var(--main-blue, #2E2BD0);
     padding: 10px;
+}
+
+.map-line{
+    border-top: 1px solid rgba(147, 150, 155, 0.50);;
 }
 
 /*  AGENDA  */
