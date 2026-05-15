@@ -544,6 +544,30 @@ footer .copyright{
         row-gap: clamp(3rem, 16vw, 2rem);
     }
 
+    footer .information-container .offices > p{
+        font-size: 1.25rem;
+    }
+
+    footer .information-container .offices > p{
+        font-size: 40px;
+    }
+    
+    footer .information-container .office-box p{
+        font-size: 40px;
+    }
+    
+    footer .information-container .services > p{
+        font-size: 40px;
+    }
+
+    footer .information-container div:nth-child(1) a{
+        font-size: 40px;
+    }
+
+    footer .information-container .services li{
+        font-size: 40px;
+    }
+
     footer form {
         grid-template-columns: 1fr;
         border-radius: 2rem;
@@ -602,7 +626,8 @@ footer .copyright{
         gap: 1rem;
         margin-top: 0;
     }
+    
     footer .copyright p{
-        font-size: 10px;
+        font-size: 40px;
     }
 }
