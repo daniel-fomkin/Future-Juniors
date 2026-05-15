@@ -130,6 +130,120 @@ header .other-nav button div{
     gap: 0.75rem;
 }
 
+@media (max-width: 1350px){
+
+    header{
+        min-height: auto;
+        padding: 1.5rem;
+    }
+
+    header::after{
+        display: none;
+    }
+
+    header nav{
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    /* logo */
+
+    header .logo-container{
+        position: absolute;
+        left: 50%;
+        top: 1.5rem;
+        transform: translateX(-50%);
+        gap: 0.5rem;
+        align-items: center;
+    }
+
+    header .logo-container b{
+        font-size: 1.25rem;
+        line-height: 1rem;
+    }
+
+    header .logo-icon svg:first-child{
+        width: 0.75rem;
+        height: 0.75rem;
+    }
+
+    header .logo-icon svg:last-child{
+        width: 2.75rem;
+        height: auto;
+    }
+
+    /* hide */
+
+    header ul,
+    header nav > svg,
+    header .select{
+        display: none;
+    }
+
+    /* top buttons */
+
+    .other-nav{
+        width: 7%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    /* right button */
+
+    header .other-nav > button{
+        width: 59px;
+        height: 59px;
+        padding: 0;
+        margin: 0;
+        border: none;
+        border-radius: 1rem;
+        background: #FFF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+    }
+
+    .other-nav > button div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .other-nav > button span{
+        display: none;
+    }
+
+    .other-nav > button svg{
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    .other-nav > button svg path{
+        stroke: var(--color-blue);
+    }
+
+    /* left burger */
+
+    header nav::before{
+        content: "☰";
+        width: 3.5rem;
+        height: 3.5rem;
+        border-radius: 1rem;
+        background: #FFF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--color-blue);
+        font-size: 1.8rem;
+        font-weight: bold;
+        flex-shrink: 0;
+    }
+}
+
 /* Footer stiliai */
 footer{
     padding: 1.875rem 0;
@@ -423,7 +537,7 @@ footer .copyright{
     display: flex;
     justify-content: space-between;
     width: 100%;
-    margin-top: clamp(-8rem, -10vw, -12.5rem);
+    margin-top: clamp(-7rem, -10vw, -12.5rem);
 }
 
 @media (max-width: 1350px) {
@@ -476,4 +590,127 @@ footer .copyright{
         transform: scale(1.35);
     }
     
+    footer {
+        row-gap: clamp(3rem, 16vw, 2rem);
+    }
+
+    footer .information-container .offices > p{
+        font-size: 1.25rem;
+    }
+
+    footer .information-container .offices > p{
+        font-size: 40px;
+    }
+    
+    footer .information-container .office-box p{
+        font-size: 40px;
+    }
+    
+    footer .information-container .services > p{
+        font-size: 40px;
+    }
+
+    footer .information-container div:nth-child(1) a{
+        font-size: 40px;
+        margin-left: 50%;
+        margin-top: -10rem;
+    }
+
+    footer .information-container .services li{
+        font-size: 40px;
+    }
+
+    footer .information-container .services > div{
+        justify-content: space-between;
+    }
+
+    footer form {
+        grid-template-columns: 1fr;
+        border-radius: 2rem;
+        row-gap: 2rem;
+    }
+
+    footer form > div:nth-child(2) {
+        padding-top: 0;
+        gap: 1.5rem;
+    }
+
+    footer .input-container {
+        padding-top: 0;
+        gap: 2rem;
+    }
+
+    footer .information-container {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+
+    footer .information-container div:nth-child(1) {
+        width: 100%;
+        row-gap: 1.5rem;
+        flex-direction: column;
+    }
+
+    footer .information-container div:nth-child(1) svg:nth-child(1) {
+        margin-bottom: 0;
+    }
+
+    footer .information-container div:nth-child(1) .logo-container > svg{
+        transform: scale(2);
+    }
+
+    footer .information-container div:nth-child(1) .social-media{
+        transform: scale(2);
+        justify-content: center;
+        margin-top: 5rem;
+        margin-bottom: 3rem;
+        margin-left: -55%;
+    }
+
+    footer .information-container div:nth-child(1) p {
+        font-family: "TT Norms";
+        font-size: 46px;
+    }
+
+    footer .information-container div:nth-child(1) .logo-container p {
+        content: "SUPPORT GROUP";
+        gap: 1rem;
+        display: flex;
+        justify-content: space-between;
+        margin-left: 5rem;
+        margin-top: -5rem;
+        width: 30px;
+    }
+
+    footer .information-container .offices > div,
+    footer .information-container .services > div{
+        gap: 1rem;
+        display: flex;
+    }
+
+    footer form button[type="button"] {
+        width: 100%;
+        max-width: 21.875rem;
+    }
+
+    footer form > button {
+        width: 100%;
+        max-width: 12.813rem;
+    }
+
+    footer .information-container div:nth-child(1) button {
+        width: 100%;
+        max-width: 15.875rem;
+    }
+
+    footer .copyright {
+        flex-wrap: wrap;
+        display: flex;
+        gap: 1rem;
+        margin-top: 0;
+    }
+    
+    footer .copyright p{
+        font-size: 40px;
+    }
 }

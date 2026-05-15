@@ -233,6 +233,47 @@ header, .hero-content{
     z-index: 2;
 }
 
+/* mobile */
+
+@media (max-width: 1350px){
+
+    .hero{
+        min-height: 100vh;
+        background-position: center;
+    }
+
+    .hero-content{
+        left: 1.5rem;
+        top: 18rem;
+        gap: 4rem;
+    }
+
+    .hero-content h1{
+        width: 19rem;
+        font-size: 3rem;
+        line-height: 120%;
+    }
+
+    .hero-content h1::after{
+        width: 16rem;
+        height: 5.5rem;
+        bottom: 0.5rem;
+    }
+
+    .estimate-btn{
+        border-color: #2E2BD0;
+        background: #2E2BD0;
+        width: 8rem;
+        height: 8rem;
+        font-size: 1rem;
+        margin-left: 6rem;
+    }
+
+    .estimate-btn:hover{
+        background: rgba(46, 43, 208, 0.08);
+    }
+}
+
 /* ivatciai */
 
 .goals{
@@ -381,6 +422,7 @@ main .technologies{
 .technologies .pin-container p{
     color: rgba(47, 53, 63, 0.70);
     font-family: Gilroy;
+    padding-right: 10px;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -398,7 +440,7 @@ main .technologies{
     border-radius: 100%;
 }
 
-.technologies .active-pin div{
+.technologies .active-pin .pin{
     width: 20px;
     height: 20px;
     background-color: var(--main-blue, #2E2BD0);
@@ -437,7 +479,7 @@ main .technologies{
     margin: 0;
 }
 .container__agenda{
-    padding: 0 8%
+    padding: 0 150px
     
 }
 .container__agenda h1{
@@ -563,6 +605,7 @@ article.diff-article{
 }
 .industries{
     display: flex;
+    justify-content: space-between;
     flex-direction: column;
     row-gap: 100px;
     padding: 0 150px;
@@ -609,9 +652,67 @@ article.diff-article{
     border-radius: 10px;
 }
 
-
 @media (max-width: 1350px) {
     .goals-grid{
         display: block;
+    .industries{
+        display: none;
+    }
+    .map-line{
+        height: 942px;
+        width: 1px;
+        border: 0;
+    }
+    .technologies .pin-container{
+        display: flex;
+        flex-direction: column;
+        border-left: 1px solid rgba(147, 150, 155, 0.50);
+        padding: 0px 70px;
+        box-sizing: border-box;
+    }
+    .technologies .pin-container .pin-and-text:last-child{
+        height: 16px;
+    }
+    .technologies .pin-container .active-pin{
+        position: relative;
+        top: 0;
+        right: 0;
+    }
+    .technologies .pin-container .pin-and-text .pin{
+        position: relative;
+        right: 77px;
+    }
+    .technologies .pin-container .active-pin .pin{
+        right: 90px;
+    }
+    .technologies .map-line{
+        height: 0;
+    }
+    .technologies .pin-and-text .text-and-icon{
+        position: relative;
+        bottom: 20px;
+    } 
+    .technologies .active-pin .text-and-icon{
+        position: relative;
+        bottom: 40px;
+    }
+    
+    .technologies .text-and-icon p{
+        margin-top: 0;
+    }
+    .technologies > p{
+        margin: 0;
+        display: inline;
+        align-self: flex-start;
+        width: 100%;
+    }
+    main .technologies{
+        padding: 0 40px;
+    }
+    .technologies h2{
+        font-size: 80px;
+    }
+    .technologies p{
+        font-size: 40px;
     }
 }
