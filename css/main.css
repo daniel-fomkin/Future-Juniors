@@ -750,9 +750,11 @@ article.diff-article{
 @media (max-width: 1350px) {
     .feedback{
         display: block;
+        margin-bottom: 250px;
     }
     .goals-grid{
         display: block;
+    }
     .industries{
         display: none;
     }
