@@ -18,17 +18,19 @@ section .container__section h1{
     padding-bottom: 100px;
 }
 section .container__section > p{
-    width: 726px;
+    max-width: 45.375rem;
+    width: 100%;
     color: rgba(47, 53, 63, 0.70);
     font-family: Gilroy;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
-    padding-bottom: 150px;
+    padding-bottom: 9.375rem;
 }
 section .container__section article{
-    max-width: 1116px;
+    max-width: 1160px;
+    box-sizing: border-box;
     width: 100%;
     border-radius: 70px;
     border: 1px solid rgba(47, 53, 63, 0.50);   
@@ -37,32 +39,35 @@ section .container__section article{
 section .container__section article h4{
     color: var(--main-blue, #2E2BD0);
     font-family: "Neue Machina Regular";
-    font-size: 40px;
-    font-style: normal;
+    font-size: 2.5rem;
+    padding-bottom: 3.125rem;
     font-weight: 400;
     line-height: normal;
-    margin-bottom: 50px;
+    margin-bottom: 3.125rem;
 }
 section .container__section article p{
     max-width: 1016px;
     width: 100%;
     color: rgba(47, 53, 63, 0.70);
     font-family: "Gilroy";
-    font-size: 30px;
+    font-size: 1.875rem;
     font-style: normal;
     font-weight: 400;
     line-height: 150%; 
 }
 section .container__section .wrraper {
     display: flex;
+    justify-content: space-between;
     column-gap: 200px;
 }
 section .container__section .wrraper .nav{
     display: flex;
     flex-direction: column;
     row-gap: 100px;
-    width: 305px;
-    height: 502.5px;
+    max-width: 305px;
+    width: 100%;
+    max-height: 502.5px;
+    height: 100%;
     border-color:  rgba(47, 53, 63, 0.14); 
     border-bottom: 2px;
     border-left: solid;
@@ -70,14 +75,14 @@ section .container__section .wrraper .nav{
     border-left-width:3px ;
 }
 .wrraper ul li{
+    padding-left: 50px;
     list-style-type: none;
     color: rgba(47, 53, 63, 0.30);
     font-family: "Neue Machina Regular";
-    font-size: 32px;
+    font-size: 2rem;
     font-style: normal;
     font-weight: 400;
     line-height: 150%; 
-    padding-left: 47.5px; 
 }
 .wrraper ul li:first-child{
     color: var(--main-blue, #2E2BD0);
@@ -671,5 +676,44 @@ article.diff-article{
     }
     .technologies p{
         font-size: 40px;
+    }
+    section .container__section{
+        padding: 0px 40px;
+    }
+    section .container__section .wrraper .nav{
+        justify-content: space-between;
+        max-width: 1350px;
+        width: 100%;
+        flex-direction: row;
+        border-left: 0px;
+        border-top: 2px;
+        border-top: solid;
+        border-top-color:  rgba(47, 53, 63, 0.14);
+        border-top-width:3px ;
+        max-height: max-content;
+    }
+    section .container__section .wrraper .nav li{
+        padding-left: 0px;
+        padding-top: 50px;
+        display: flex;
+        font-size: 1.9rem;
+        justify-content: center;
+        /* font-size: 38px; */
+        box-sizing: border-box;
+    }
+    section .container__section .wrraper{
+        flex-direction: column;
+        row-gap: 150px;
+        column-gap: 0px;
+    }
+    .wrraper ul li:first-child{
+        border-left:0px;
+        left: 0px;
+        top: -3px;
+        border-top: solid;
+        border-top-width:5px ;
+    } 
+    section .container__section article{
+        max-width: 100%;
     }
 }
