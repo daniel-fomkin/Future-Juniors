@@ -399,7 +399,7 @@ main .technologies{
     border-radius: 100%;
 }
 
-.technologies .active-pin div{
+.technologies .active-pin .pin{
     width: 20px;
     height: 20px;
     background-color: var(--main-blue, #2E2BD0);
@@ -609,4 +609,67 @@ article.diff-article{
     width: 100%;
     background-color: #2F353F;
     border-radius: 10px;
+}
+
+@media (max-width: 1350px) {
+    .industries{
+        display: none;
+    }
+    .map-line{
+        height: 942px;
+        width: 1px;
+        border: 0;
+    }
+    .technologies .pin-container{
+        display: flex;
+        flex-direction: column;
+        border-left: 1px solid rgba(147, 150, 155, 0.50);
+        padding: 0px 70px;
+        box-sizing: border-box;
+    }
+    .technologies .pin-container .pin-and-text:last-child{
+        height: 16px;
+    }
+    .technologies .pin-container .active-pin{
+        position: relative;
+        top: 0;
+        right: 0;
+    }
+    .technologies .pin-container .pin-and-text .pin{
+        position: relative;
+        right: 77px;
+    }
+    .technologies .pin-container .active-pin .pin{
+        right: 90px;
+    }
+    .technologies .map-line{
+        height: 0;
+    }
+    .technologies .pin-and-text .text-and-icon{
+        position: relative;
+        bottom: 20px;
+    } 
+    .technologies .active-pin .text-and-icon{
+        position: relative;
+        bottom: 40px;
+    }
+    
+    .technologies .text-and-icon p{
+        margin-top: 0;
+    }
+    .technologies > p{
+        margin: 0;
+        display: inline;
+        align-self: flex-start;
+        width: 100%;
+    }
+    main .technologies{
+        padding: 0 40px;
+    }
+    .technologies h2{
+        font-size: 80px;
+    }
+    .technologies p{
+        font-size: 40px;
+    }
 }
