@@ -238,13 +238,13 @@ header, .hero-content{
 .goals{
     width: 100%;
     display: flex;
-    justify-content: center;
-    padding: var(--section-padding-y) 0;
+    padding: 0 150px;
     background: #FFF;
+    box-sizing: border-box;
 }
 
 .goals-container{
-    width: var(--container-width);
+    width: 100%;
 }
 
 .goals h2{
