@@ -393,6 +393,10 @@ footer .information-container{
     box-sizing: border-box;
 }
 
+footer .information-container .logo-container p{
+    display: none;
+}
+
 footer .information-container div:nth-child(1){
     display: flex;
     flex-direction: column;
@@ -591,38 +595,129 @@ footer .copyright{
     }
     
     footer {
-        row-gap: clamp(3rem, 16vw, 2rem);
+        row-gap: 3rem;
     }
 
-    footer .information-container .offices > p{
-        font-size: 1.25rem;
+    /* information container */
+
+    footer .information-container {
+        grid-template-columns: 1fr;
+        gap: 3rem;
     }
+
+    footer .information-container div:nth-child(1) {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+    }
+
+    /* logo */
+
+    footer .information-container div:nth-child(1) .logo-container{
+        display: flex;
+        gap: 1.5rem;
+    }
+
+    footer .information-container div:nth-child(1) .logo-container svg{
+        width: 3rem;
+        height: 3rem;
+        flex-shrink: 0;
+        scale: 2;
+        margin-left: 1.5rem;
+        margin-top: 1.5rem;
+    }
+
+    footer .information-container div:nth-child(1) .logo-container p{
+        font-family: "TT Norms";
+        font-size: 40px;
+        font-weight: 400;
+        line-height: 1.2;
+        display: block;
+        margin-left: 6.5rem;
+        margin-top: -8rem;
+        max-width: 8rem;
+        white-space: normal;
+    }
+
+    /* email */
+
+    footer .information-container div:nth-child(1) a{
+        font-size: 40px;
+        margin-left: auto;
+        margin-top: -8rem;
+        text-align: right;
+        align-self: flex-start;
+    }
+
+    /* social media */
+
+    footer .information-container div:nth-child(1) .social-media{
+        scale: 1.5;
+        display: flex;
+        gap: 1.5rem;
+        margin-left: 13.2rem;
+        margin-top: 7rem;
+        margin-bottom: -2.5rem;
+    }
+
+    footer .information-container div:nth-child(1) .social-media svg{
+        width: 4rem;
+        height: 4rem;
+    }
+
+    /* contact button */
+
+    footer .information-container div:nth-child(1) button {
+        margin-left: 4.1rem;
+        margin-top: 2rem;
+        scale: 1.5;
+        width: 100%;
+        max-width: 15.875rem;
+    }
+
+    /* offices */
 
     footer .information-container .offices > p{
         font-size: 40px;
     }
-    
+
+    footer .information-container .offices > div{
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+
+    footer .information-container .office-box{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
     footer .information-container .office-box p{
         font-size: 40px;
+        font-weight: 400;
+        margin: 0;
     }
-    
+
+    /* services */
+
     footer .information-container .services > p{
         font-size: 40px;
     }
 
-    footer .information-container div:nth-child(1) a{
-        font-size: 40px;
-        margin-left: 50%;
-        margin-top: -10rem;
+    footer .information-container .services > div{
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
     }
 
     footer .information-container .services li{
         font-size: 40px;
+        margin-bottom: 1rem;
     }
 
-    footer .information-container .services > div{
-        justify-content: space-between;
-    }
+    /* form */
 
     footer form {
         grid-template-columns: 1fr;
@@ -640,54 +735,6 @@ footer .copyright{
         gap: 2rem;
     }
 
-    footer .information-container {
-        grid-template-columns: 1fr;
-        gap: 2.5rem;
-    }
-
-    footer .information-container div:nth-child(1) {
-        width: 100%;
-        row-gap: 1.5rem;
-        flex-direction: column;
-    }
-
-    footer .information-container div:nth-child(1) svg:nth-child(1) {
-        margin-bottom: 0;
-    }
-
-    footer .information-container div:nth-child(1) .logo-container > svg{
-        transform: scale(2);
-    }
-
-    footer .information-container div:nth-child(1) .social-media{
-        transform: scale(2);
-        justify-content: center;
-        margin-top: 5rem;
-        margin-bottom: 3rem;
-        margin-left: -55%;
-    }
-
-    footer .information-container div:nth-child(1) p {
-        font-family: "TT Norms";
-        font-size: 46px;
-    }
-
-    footer .information-container div:nth-child(1) .logo-container p {
-        content: "SUPPORT GROUP";
-        gap: 1rem;
-        display: flex;
-        justify-content: space-between;
-        margin-left: 5rem;
-        margin-top: -5rem;
-        width: 30px;
-    }
-
-    footer .information-container .offices > div,
-    footer .information-container .services > div{
-        gap: 1rem;
-        display: flex;
-    }
-
     footer form button[type="button"] {
         width: 100%;
         max-width: 21.875rem;
@@ -698,18 +745,15 @@ footer .copyright{
         max-width: 12.813rem;
     }
 
-    footer .information-container div:nth-child(1) button {
-        width: 100%;
-        max-width: 15.875rem;
-    }
+    /* copyright */
 
     footer .copyright {
-        flex-wrap: wrap;
         display: flex;
+        flex-wrap: wrap;
         gap: 1rem;
         margin-top: 0;
     }
-    
+
     footer .copyright p{
         font-size: 40px;
     }

@@ -156,9 +156,7 @@ main{
 
 header::after{
     content: "";
-
     position: absolute;
-
     left: var(--header-line-offset);
     right: var(--header-line-offset);
     top: 7.375rem; /* 118px */
@@ -218,6 +216,9 @@ header::after{
     line-height: 130%;
     cursor: pointer;
     transition: 0.3s;
+    position: absolute;
+    left: 5rem;
+    bottom: 5rem;
 }
 
 .estimate-btn:hover{
@@ -248,9 +249,12 @@ header, .hero-content{
     }
 
     .hero-content{
-        left: 1.5rem;
-        top: 18rem;
-        gap: 4rem;
+    left: 1.5rem;
+    top: 18rem;
+    gap: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     }
 
     .hero-content h1{
@@ -260,9 +264,9 @@ header, .hero-content{
     }
 
     .hero-content h1::after{
-        width: 16rem;
-        height: 5.5rem;
-        bottom: 0.5rem;
+        width: 18.5rem;
+        height: 14.5rem;
+        bottom: 1.5rem;
     }
 
     .estimate-btn{
@@ -271,7 +275,10 @@ header, .hero-content{
         width: 8rem;
         height: 8rem;
         font-size: 1rem;
-        margin-left: 6rem;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 3rem;
     }
 
     .estimate-btn:hover{
