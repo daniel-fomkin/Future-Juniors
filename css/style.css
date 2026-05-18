@@ -30,7 +30,6 @@ header nav{
     justify-content: space-between;
     gap: 77px;
     width: 100%;
-    max-width: 1720px;
     padding: 0;
     box-sizing: border-box;
 }
@@ -145,32 +144,31 @@ header .other-nav button div{
         position: relative;
         display: flex;
         justify-content: space-between;
-        align-items: flex-start;
     }
 
     /* logo */
 
     header .logo-container{
-        position: absolute;
-        left: 50%;
-        top: 1.5rem;
-        transform: translateX(-50%);
         gap: 0.5rem;
-        align-items: center;
+        align-items: last baseline;
     }
 
     header .logo-container b{
-        font-size: 1.25rem;
-        line-height: 1rem;
+        font-size: 46px;
+        color: var(--main-white, #FFF);
+        font-size: 46px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 50px; /* 108.696% */
     }
 
     header .logo-icon svg:first-child{
-        width: 0.75rem;
-        height: 0.75rem;
+        width: 28px;
+        height: 29px;
     }
 
     header .logo-icon svg:last-child{
-        width: 2.75rem;
+        width: 109px;
         height: auto;
     }
 
@@ -194,8 +192,8 @@ header .other-nav button div{
     /* right button */
 
     header .other-nav > button{
-        width: 59px;
-        height: 59px;
+        width: 116px;
+        height: 116px;
         padding: 0;
         margin: 0;
         border: none;
@@ -218,8 +216,8 @@ header .other-nav button div{
     }
 
     .other-nav > button svg{
-        width: 1.5rem;
-        height: 1.5rem;
+        width: 60px;
+        height: 60px;
     }
 
     .other-nav > button svg path{
@@ -230,15 +228,15 @@ header .other-nav button div{
 
     header nav::before{
         content: "☰";
-        width: 3.5rem;
-        height: 3.5rem;
+        width: 116px;
+        height: 116px;
         border-radius: 1rem;
         background: #FFF;
         display: flex;
         justify-content: center;
         align-items: center;
         color: var(--color-blue);
-        font-size: 1.8rem;
+        font-size: 40px;
         font-weight: bold;
         flex-shrink: 0;
     }
