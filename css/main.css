@@ -202,6 +202,7 @@ header::after{
     bottom: var(--hero-line-bottom);
     width: var(--hero-line-width);
     height: 45%;
+    width: 83%;
     background: var(--color-blue);
     z-index: -1;
 }
