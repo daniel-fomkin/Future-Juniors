@@ -23,8 +23,7 @@
 
 .our-team-top h2{
     color: var(--color-light);
-    position: relative;
-    left: 10%;
+    padding-left: 150px;
     font-family: "Neue Machina Regular";
     font-size: 60px;
     font-weight: 400;
