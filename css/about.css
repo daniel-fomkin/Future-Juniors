@@ -45,7 +45,7 @@
 .our-team-image{
     border: 2px solid var(--main-blue, #2E2BD0);
     width: 100%;
-    height: 100%;
+    height: 57.063rem;
     border-radius: 40px;
     overflow: hidden;
 }
