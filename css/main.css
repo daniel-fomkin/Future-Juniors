@@ -762,6 +762,27 @@ article.diff-article{
     .goals-grid{
         display: block;
     }
+    .goals{
+        padding: 0 1.2rem;
+    }
+    .goal-card{
+        border: 1.926px solid #95989D;
+        padding: 4rem;
+    }
+    .goal-card span{
+        font-size: 3rem;
+        padding-bottom: 2rem;
+    }
+    .goal-text{
+        row-gap: 0px;
+    }
+    .goal-text p{
+        font-size: 1.4rem;
+    }
+    .goals-container h2{
+        padding-top: 7rem;
+        font-size:3rem ;
+    }
     .industries{
         display: none;
     }
