@@ -547,7 +547,7 @@ footer .copyright{
     footer form button[type = "button"]{
 
         width: clamp(30rem, 22vw, 21.875rem);
-        height: clamp(2rem, 4vh, 3.625rem);
+        height: clamp(4rem, 5vh, 3.625rem);
         margin-bottom: 2rem;
     }
 
@@ -734,13 +734,16 @@ footer .copyright{
     }
 
     footer form button[type="button"] {
-        width: 100%;
-        max-width: 21.875rem;
+       display: flex;
+width: 29.5rem;
+justify-content: center;
+align-items: center;
+
     }
 
     footer form > button {
-        width: 100%;
-        max-width: 12.813rem;
+        width: clamp(26.5rem, 4vw, 12.813rem);
+
     }
 
     /* copyright */
