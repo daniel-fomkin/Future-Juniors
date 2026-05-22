@@ -3,7 +3,6 @@
 .our-team{
     padding: 30px;
     width: 100%;
-    padding: 3 rem;
     box-sizing: border-box;
 }
 
@@ -106,6 +105,84 @@
     font-weight: 400;
     line-height: 150%;
 }
+
+@media (max-width: 1350px){
+
+    .our-team{
+        padding: 40px;
+    }
+
+    .our-team-container{
+        gap: 150px;
+    }
+
+    .our-team-top{
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+    }
+
+    .our-team-top h2{
+        padding-left: 0;
+        font-size: 80px;
+        line-height: 110%;
+    }
+
+    .our-team-top p{
+        position: static;
+        max-width: 100%;
+        font-size: 40px;
+        line-height: 150%;
+    }
+
+    .our-team-image{
+        height: 715px;
+        border-radius: 40px;
+    }
+
+    .our-team-image img{
+        object-fit: cover;
+    }
+
+    .our-team-values{
+        margin: 0;
+        margin-top: 80px;
+        margin-bottom: 80px;
+        display: flex;
+        flex-direction: column;
+        gap: 120px;
+    }
+
+    .our-team-values article{
+        padding: 0 0 100px 0;
+        gap: 100px;
+        border-right: none;
+        border-bottom: 4px solid var(--color-blue);
+    }
+
+    .our-team-values article:last-child{
+        padding-bottom: 0;
+        border-bottom: none;
+    }
+
+    .our-team-values span{
+        font-size: 80px;
+        line-height: 100%;
+    }
+
+    .our-team-values h3{
+        font-size: 60px;
+        line-height: 120%;
+    }
+
+    .our-team-values p{
+        font-size: 50px;
+        line-height: 150%;
+    }
+}
+
+/* YEARS */ /* Richard*/ /*ENDS HERE*/
+
 .vertical-line, .one-year{
     width: 1px;
     height: 5.7vw;
