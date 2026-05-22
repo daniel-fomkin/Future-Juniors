@@ -109,6 +109,7 @@ header .logo-container{
     flex: 0 0 auto;
     animation: logo-animation 3s infinite;
     transition: 100ms;
+    position: relative;
 }
 
 header .logo-container b{
@@ -176,7 +177,9 @@ header .select span{
     line-height: normal;
     text-transform: uppercase;
 }
-
+#burger-button{
+    display: none;
+}
 header .other-nav button{
     width: 254px;
     height: 59px;
@@ -191,6 +194,16 @@ header .other-nav button{
     border: 0;
     border-radius: 10px;
     padding: 0;
+}
+#close-button{
+    display: none;
+    border: 0;
+    background-color: transparent;
+    font-size: 40px;
+    color: white;
+    font-weight: 800;
+    text-align: start;
+    font-family: Gilroy;
 }
 
 header nav a{
@@ -310,11 +323,56 @@ body::before{
     .other-nav > button svg path{
         stroke: var(--color-blue);
     }
+    #close-button{
+        display: block;
+    }
+    header ul{
+        width: 0vw;
+        display: none;
+        position: fixed;
+        justify-content: center;
+        top: 0;
+        left: 0;
+        box-sizing: border-box;
+        z-index: 3;
+        height: 100%;
+        background-color: #2e2bd091;
+        backdrop-filter: blur(10px);
+        transition: 1000ms;
+        padding: 0;
+        flex-direction: column;
+        padding: 1vw 0;
+        box-sizing: border-box;
+        justify-content: center;
+    }
+    header ul li{
+        width: 100%;
+        box-sizing: border-box;
+        font-size: 80px;
+        padding: 0;
+        background-color: rgba(255, 255, 255, 0.842);
+        text-align: center;
+        padding-left: 10px;
+        box-sizing: border-box;
+        backdrop-filter: blur(10px);
+        border-radius: 0px;
+        transition: 500ms;
+    }
+    header ul li:active{
+        background-color: #2e2bd091;
+        color: white;
+    }
+    header ul li.active{
+        padding: 0;
+        border: 0;
+        border-radius: 0;
+        padding-left: 10px;
+    }
 
     /* left burger */
 
-    header nav::before{
-        content: "☰";
+    #burger-button{
+        border: 0;
         width: 116px;
         height: 116px;
         border-radius: 1rem;
@@ -326,6 +384,8 @@ body::before{
         font-size: 40px;
         font-weight: bold;
         flex-shrink: 0;
+        position: relative;
+        z-index: 4;
     }
 }
 

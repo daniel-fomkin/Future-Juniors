@@ -723,7 +723,7 @@ header .logo-container b{
         display: block;
         font-size: 46px;
     }
-    header nav::before{
+    #burger-button{
         color: white;
         background: var(--main-blue, #2E2BD0);
     }
@@ -738,7 +738,7 @@ header .logo-container b{
     .feedback .user-comments {
         display: flex;
         width: 100%;
- 
+        
  
     }
     .feedback h2{
