@@ -1,5 +1,4 @@
 
-
 .feedback h2{
     color: var(--main-light, #2F353F);
     font-family: "Neue Machina Regular";
@@ -9,15 +8,15 @@
     font-weight: 400;
     line-height: 90px; /* 112.5% */
 }
-
-
+ 
+ 
 .feedback .user-comments{
     width: 100%;
     display: flex;
     padding: 0 150px;
     box-sizing: border-box;
 }
-
+ 
 .feedback .user-info{
     /* display: flex; */
     /* align-items: flex-end; */
@@ -42,15 +41,16 @@
     line-height: 130%; /* 39px */
     margin: 0;
 }
-
+ 
 .feedback .user-info img{
     width: 90px;
     height: 90px;
 }
-
-
-
+ 
+ 
+ 
 .feedback .comment{
+    justify-content: space-between;
     flex-shrink: 0;
     width: 33%;
     display: flex;
@@ -62,8 +62,8 @@
     gap: 50px;     /*wtf */
     padding-top: 100px;
 }
-
-
+ 
+ 
 .feedback .user-text{
     color: rgba(47, 53, 63, 0.70);
     font-family: Gilroy;
@@ -72,13 +72,13 @@
     font-weight: 400;
     line-height: 150%; /* 60px */
 }
-
+ 
 .feedback button{
     display: inline-flex;
     padding: 17px 40px;
     color: var(--main-blue, #2E2BD0);
     font-family: "Neue Machina Regular";
-    font-size: 20px;
+    font-size: clamp(1px, 1vw, 23px);
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -90,10 +90,10 @@
     border: 2px solid var(--main-blue, #2E2BD0);
     box-sizing: border-box;
     gap: 10px;
-    width: 60%;
+    width: 90%;
     margin-top: 50px;
 }
-
+ 
 .feedback .number-one{
     color: var(--main-light, #2F353F);
 text-align: center;
@@ -103,8 +103,8 @@ font-style: normal;
 font-weight: 400;
 line-height: 150%; /* 48px */
 }
-
-
+ 
+ 
 .feedback .another-button {
 display: inline-flex;
 justify-content: center;
@@ -121,6 +121,8 @@ margin-top: 150px;
         display: flex;
         width: 100%;
         justify-content: center;
+
+
     }
     .feedback h2{
     color: var(--main-light, #2F353F);
@@ -131,9 +133,7 @@ margin-top: 150px;
     font-weight: 400;
     line-height: 90px; /* 112.5% */
     }
-}
-
-.feedback .user-comments{
+    .feedback .user-comments{
     width: 100%;
     display: flex;
     overflow-x: scroll;
@@ -219,6 +219,9 @@ margin-top: 150px;
 .feedback .another-button {
     display: none;
 }
+}
+
+
 
 :root{
     --circle-first:#2F353F;
