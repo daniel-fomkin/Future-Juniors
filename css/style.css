@@ -30,6 +30,7 @@ header nav{
     justify-content: space-between;
     gap: 77px;
     width: 100%;
+    max-width: 1720px;
     padding: 0;
     box-sizing: border-box;
 }
@@ -144,31 +145,32 @@ header .other-nav button div{
         position: relative;
         display: flex;
         justify-content: space-between;
+        align-items: flex-start;
     }
 
     /* logo */
 
     header .logo-container{
+        position: absolute;
+        left: 50%;
+        top: 1.5rem;
+        transform: translateX(-50%);
         gap: 0.5rem;
-        align-items: last baseline;
+        align-items: center;
     }
 
     header .logo-container b{
-        font-size: 46px;
-        color: var(--main-white, #FFF);
-        font-size: 46px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 50px; /* 108.696% */
+        font-size: 1.25rem;
+        line-height: 1rem;
     }
 
     header .logo-icon svg:first-child{
-        width: 28px;
-        height: 29px;
+        width: 0.75rem;
+        height: 0.75rem;
     }
 
     header .logo-icon svg:last-child{
-        width: 109px;
+        width: 2.75rem;
         height: auto;
     }
 
@@ -192,8 +194,8 @@ header .other-nav button div{
     /* right button */
 
     header .other-nav > button{
-        width: 116px;
-        height: 116px;
+        width: 59px;
+        height: 59px;
         padding: 0;
         margin: 0;
         border: none;
@@ -216,8 +218,8 @@ header .other-nav button div{
     }
 
     .other-nav > button svg{
-        width: 60px;
-        height: 60px;
+        width: 1.5rem;
+        height: 1.5rem;
     }
 
     .other-nav > button svg path{
@@ -228,15 +230,15 @@ header .other-nav button div{
 
     header nav::before{
         content: "☰";
-        width: 116px;
-        height: 116px;
+        width: 3.5rem;
+        height: 3.5rem;
         border-radius: 1rem;
         background: #FFF;
         display: flex;
         justify-content: center;
         align-items: center;
         color: var(--color-blue);
-        font-size: 40px;
+        font-size: 1.8rem;
         font-weight: bold;
         flex-shrink: 0;
     }
@@ -547,7 +549,7 @@ footer .copyright{
     footer form button[type = "button"]{
 
         width: clamp(30rem, 22vw, 21.875rem);
-        height: clamp(4rem, 5vh, 3.625rem);
+        height: clamp(2rem, 4vh, 3.625rem);
         margin-bottom: 2rem;
     }
 
@@ -734,16 +736,13 @@ footer .copyright{
     }
 
     footer form button[type="button"] {
-       display: flex;
-width: 29.5rem;
-justify-content: center;
-align-items: center;
-
+        width: 100%;
+        max-width: 21.875rem;
     }
 
     footer form > button {
-        width: clamp(26.5rem, 4vw, 12.813rem);
-
+        width: 100%;
+        max-width: 12.813rem;
     }
 
     /* copyright */
