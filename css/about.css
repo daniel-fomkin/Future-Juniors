@@ -1,3 +1,110 @@
+/* OUR TEAM */ /* Richard*/ 
+
+.our-team{
+    padding: 30px;
+    width: 100%;
+    padding: 3 rem;
+    box-sizing: border-box;
+}
+
+.our-team-container{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+
+.our-team-top{
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 80px;
+}
+
+.our-team-top h2{
+    color: var(--color-light);
+    padding-left: 150px;
+    font-family: "Neue Machina Regular";
+    font-size: 60px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.our-team-top p{
+    position: relative;
+    left: 50%;
+    max-width: 520px;
+    color: rgba(47, 53, 63, 0.70);
+    font-family: Gilroy;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 150%;
+    margin: 0;
+}
+
+.our-team-image{
+    border: 2px solid var(--main-blue, #2E2BD0);
+    width: 100%;
+    height: 57.063rem;
+    border-radius: 40px;
+    overflow: hidden;
+}
+
+.our-team-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.our-team-values{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.our-team-values article{
+    padding: 60px 60px 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    border-right: 1px solid var(--color-blue);
+}
+
+.our-team-values article:first-child{
+    padding-left: 0;
+}
+
+.our-team-values article:last-child{
+    border-right: none;
+    padding-right: 0;
+}
+
+.our-team-values span{
+    color: var(--color-blue);
+    font-family: "Neue Machina Regular";
+    font-size: 60px;
+    font-weight: normal;
+}
+
+.our-team-values h3{
+    margin: 0;
+    color: var(--color-light);
+    font-family: "Neue Machina Regular";
+    font-size: 60px;
+    font-weight: 400;
+}
+
+.our-team-values p{
+    margin: 0;
+    color: rgba(47, 53, 63, 0.70);
+    font-family: Gilroy;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 150%;
 .vertical-line, .one-year{
     width: 1px;
     height: 5.7vw;
