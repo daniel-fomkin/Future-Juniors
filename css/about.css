@@ -405,7 +405,50 @@
     width: 47%;
     align-self: flex-end;
 }
+header nav li, header, header .select span{
+    color: black;
+}
+header .logo-icon svg path, header .select svg path{
+    stroke: black;
+}
+header .logo-icon svg path{
+    fill: black;
+}
+header nav > svg path{
+    fill: black;
+}
+header{
+    border-bottom: 1px solid black;
+}
+ul li{
+    display: flex;
+    align-items: center;
+}
+ul .active{
+    color: var(--main-blue, #2E2BD0);
+    border-radius: 10px;
+    border: 1px solid var(--main-blue, #2E2BD0);
+    padding: 10px 20px;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 300px;
+    padding-bottom: 150px;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+}
 
+header nav ul li a{
+    color: black;
+}
+header .logo-container b{
+    display: none;
+    color: black;
+}
 
 @media (max-width: 1350px) {
     .years .text{
@@ -450,5 +493,19 @@
         overflow: scroll;
         box-sizing: border-box;
         padding-top: 150px;
+    }
+    header .logo-container b{
+        display: block;
+        font-size: 46px;
+    }
+    header nav::before{
+        color: white;
+        background: var(--main-blue, #2E2BD0);
+    }
+    header .other-nav button{
+        background: var(--main-blue, #2E2BD0);
+    }
+    header .other-nav button svg path{
+        stroke: white;
     }
 }
