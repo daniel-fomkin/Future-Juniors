@@ -123,6 +123,11 @@ header .other-nav button{
     padding: 0;
 }
 
+header nav a{
+    text-decoration: none;
+    color: white;
+}
+
 header .other-nav button div{
     display: flex;
     justify-content: center;
