@@ -1,0 +1,148 @@
+.vertical-line, .one-year{
+    width: 1px;
+    height: 5.7vw;
+    border-right: 1px solid rgba(255, 255, 255, 0.30);;
+}
+
+.one-year{
+    width: 4px;
+    height: 7.8vw;
+}
+
+.year-container{
+    border-radius: 70px;
+    background: linear-gradient(66deg, #2E2BD0 -67.89%, #7876F2 125.28%);
+    padding: 150px;
+    padding-bottom: 100px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.years{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 30px;
+    gap: 100px;
+    display: flex;
+    flex-direction: column;
+}
+.year-lines{
+    padding-top: 5.2vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.years h2{
+    color: var(--main-light, #2F353F);
+    font-family: "Neue Machina Regular";
+    font-size: clamp(2rem, 4vw, 3.75rem);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 90px */
+}
+
+.years .text{
+    padding: 0 120px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 33.5% 44.1%;;
+    grid-template-rows: auto auto;
+    column-gap: 210px;
+}
+
+.years p{
+    color: rgba(47, 53, 63, 0.70);
+    font-family: "Gilroy";
+    font-size: clamp(1rem, 1.5vw, 1.5rem);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 36px */
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+
+.years b{
+    color: rgba(255, 255, 255, 0.50);
+    text-align: center;
+    font-family: "Neue Machina Regular";
+    font-size: clamp(1rem, 6vw, 3.75rem);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: relative;
+    right: clamp(70px, 3.9vw, 80px);
+    bottom: clamp(80px, 3.9vw, 320px);
+}
+.year-container .active b{
+    color: var(--main-white, #FFF);
+    font-size: clamp(3rem, 8vw, 5rem);
+    right: clamp(100px, 5vw, 150px);
+    bottom: clamp(100px, 4.9vw, 300px);
+}
+
+.year-container .active{
+    border-width: 4px;
+    border-color: white;
+}
+
+.year-container ul{
+    color: var(--main-white, #FFF);
+    font-family: Gilroy;
+    font-size: clamp(1rem, 1.5vw, 1.5rem);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 36px */
+    width: 47%;
+    align-self: flex-end;
+}
+
+
+@media (max-width: 1350px) {
+    .years .text{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+    .years .text h2{
+        font-size: 80px;
+    }
+    .years .text p{
+        font-size: 40px;
+    }
+    .years{
+        padding: 40px;
+    }
+    .year-container{
+        padding: 80px 20px;
+    }
+    .year-container ul{
+        width: 100%;
+        font-size: 40px;
+        box-sizing: border-box;
+    }
+    .year-container .one-year{
+        height: 513px;
+    }
+    .year-container .vertical-line{
+        height: 376.2px;
+    }
+    .year-container .one-year b{
+        font-size: 80px;
+        bottom: 130px;
+    }
+    .year-container .active b{
+        font-size: 100px;
+        bottom: 150px;
+    }
+    .year-lines{
+        gap: 30px;
+        justify-content: flex-start;
+        overflow: scroll;
+        box-sizing: border-box;
+        padding-top: 150px;
+    }
+}
