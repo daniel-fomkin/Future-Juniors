@@ -3,8 +3,8 @@
 .feedback h2{
     color: var(--main-light, #2F353F);
     font-family: "Neue Machina Regular";
-    padding: 0px 40px;
-    font-size: 80px;
+    padding: 0px 150px;
+    font-size: 60px;
     font-style: normal;
     font-weight: 400;
     line-height: 90px; /* 112.5% */
@@ -14,20 +14,20 @@
 .feedback .user-comments{
     width: 100%;
     display: flex;
-    padding: 0 30px;
-
+    padding: 0 150px;
+    box-sizing: border-box;
 }
 
 .feedback .user-info{
-    display: flex;
-    align-items: flex-end;
+    /* display: flex; */
+    /* align-items: flex-end; */
     gap: 50px;
 }
 .feedback .user-info p:nth-child(1){
     color: var(--main-blue, #2E2BD0);
     font-feature-settings: 'liga' off, 'clig' off;
     font-family: "Neue Machina Regular";
-    font-size: 40px;
+    font-size: 26px;
     font-style: normal;
     font-weight: 400;
     line-height: 150%; /* 60px */
@@ -36,7 +36,7 @@
 .feedback .user-info p:nth-child(2){
     color: rgba(47, 53, 63, 0.70);
     font-family: Gilroy;
-    font-size: 30px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: 130%; /* 39px */
@@ -44,40 +44,41 @@
 }
 
 .feedback .user-info img{
-    width: 160px;
-    height: 160px;
+    width: 90px;
+    height: 90px;
 }
 
 
 
 .feedback .comment{
     flex-shrink: 0;
-    width: 55rem;
+    width: 33%;
     display: flex;
     flex-direction: column;
     border-radius: 40px;
     border: 2px solid #909398;
     padding: 50px;
     box-sizing: border-box;
-    gap: 100px;
+    gap: 50px;     /*wtf */
+    padding-top: 100px;
 }
 
 
 .feedback .user-text{
     color: rgba(47, 53, 63, 0.70);
     font-family: Gilroy;
-    font-size: 40px;
+    font-size: 30px;
     font-style: normal;
     font-weight: 400;
     line-height: 150%; /* 60px */
 }
 
 .feedback button{
-    display: flex;
-    padding: 24px 40px 17px 40px;
+    display: inline-flex;
+    padding: 17px 40px;
     color: var(--main-blue, #2E2BD0);
     font-family: "Neue Machina Regular";
-    font-size: 30px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -90,4 +91,28 @@
     box-sizing: border-box;
     gap: 10px;
     width: 60%;
+    margin-top: 50px;
+}
+
+.feedback .number-one{
+    color: var(--main-light, #2F353F);
+text-align: center;
+font-family: "Neue Machina Regular";
+font-size: 32px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%; /* 48px */
+}
+
+
+.feedback .another-button {
+display: inline-flex;
+justify-content: center;
+align-items: flex-start;
+width: 100%;
+gap: 50px;
+padding: 0 150px;
+box-sizing: border-box;
+margin-top: 150px;
+
 }
