@@ -114,14 +114,13 @@ gap: 50px;
 padding: 0 150px;
 box-sizing: border-box;
 margin-top: 150px;
-
 }
 
 @media (max-width: 1350px) {
     .feedback .user-comments {
         display: flex;
         width: 100%;
-justify-content: center;
+
 
     }
     .feedback h2{
@@ -139,6 +138,7 @@ justify-content: center;
     display: flex;
     overflow-x: scroll;
     padding: 0 30px;
+    gap: 20px;
 }
 
 .feedback .user-info{
@@ -207,7 +207,10 @@ justify-content: center;
     border: 2px solid var(--main-blue, #2E2BD0);
     box-sizing: border-box;
     gap: 10px;
-    width: 60%;
+}
+.feedback button svg{
+    width: 34px;
+    height: 34px;
 }
 .feedback .number-one{
     display: none;
