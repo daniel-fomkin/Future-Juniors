@@ -1,4 +1,3 @@
-
 main section .container__section * {
     padding: 0;
     margin: 0;
@@ -18,17 +17,19 @@ section .container__section h1{
     padding-bottom: 100px;
 }
 section .container__section > p{
-    width: 726px;
+    max-width: 45.375rem;
+    width: 100%;
     color: rgba(47, 53, 63, 0.70);
     font-family: Gilroy;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
-    padding-bottom: 150px;
+    padding-bottom: 9.375rem;
 }
 section .container__section article{
-    max-width: 1116px;
+    max-width: 1160px;
+    box-sizing: border-box;
     width: 100%;
     border-radius: 70px;
     border: 1px solid rgba(47, 53, 63, 0.50);   
@@ -37,32 +38,35 @@ section .container__section article{
 section .container__section article h4{
     color: var(--main-blue, #2E2BD0);
     font-family: "Neue Machina Regular";
-    font-size: 40px;
-    font-style: normal;
+    font-size: 2.5rem;
+    padding-bottom: 3.125rem;
     font-weight: 400;
     line-height: normal;
-    margin-bottom: 50px;
+    margin-bottom: 3.125rem;
 }
 section .container__section article p{
     max-width: 1016px;
     width: 100%;
     color: rgba(47, 53, 63, 0.70);
     font-family: "Gilroy";
-    font-size: 30px;
+    font-size: 1.875rem;
     font-style: normal;
     font-weight: 400;
     line-height: 150%; 
 }
 section .container__section .wrraper {
     display: flex;
+    justify-content: space-between;
     column-gap: 200px;
 }
 section .container__section .wrraper .nav{
     display: flex;
     flex-direction: column;
     row-gap: 100px;
-    width: 305px;
-    height: 502.5px;
+    max-width: 305px;
+    width: 100%;
+    max-height: 502.5px;
+    height: 100%;
     border-color:  rgba(47, 53, 63, 0.14); 
     border-bottom: 2px;
     border-left: solid;
@@ -70,14 +74,14 @@ section .container__section .wrraper .nav{
     border-left-width:3px ;
 }
 .wrraper ul li{
+    padding-left: 50px;
     list-style-type: none;
     color: rgba(47, 53, 63, 0.30);
     font-family: "Neue Machina Regular";
-    font-size: 32px;
+    font-size: 2rem;
     font-style: normal;
     font-weight: 400;
     line-height: 150%; 
-    padding-left: 47.5px; 
 }
 .wrraper ul li:first-child{
     color: var(--main-blue, #2E2BD0);
@@ -139,12 +143,22 @@ main{
 
 .hero{
     width: 100%;
-    min-height: 100vh;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 256px;
     background:
         linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
         url("../img/main/header_background.jpg") center/cover no-repeat;
 
     position: relative;
+}
+header{
+    margin-left: -150px;
+}
+.hero{
+    padding-left: 150px;
+    box-sizing: border-box;
 }
 
 /* linija */
@@ -162,9 +176,6 @@ header::after{
 /* hero content */
 
 .hero-content{
-    position: absolute;
-    left: var(--hero-content-left);
-    top: var(--hero-content-top);
     display: flex;
     flex-direction: column;
     width: fit-content;
@@ -179,7 +190,7 @@ header::after{
     font-style: normal;
     font-weight: 800;
     line-height: 130%;
-
+    
     position: relative;
 }
 
@@ -191,7 +202,8 @@ header::after{
     left: 0;
     bottom: var(--hero-line-bottom);
     width: var(--hero-line-width);
-    height: var(--hero-line-height);
+    height: 45%;
+    width: 83%;
     background: var(--color-blue);
     z-index: -1;
 }
@@ -211,9 +223,6 @@ header::after{
     line-height: 130%;
     cursor: pointer;
     transition: 0.3s;
-    position: absolute;
-    left: 5rem;
-    bottom: 5rem;
 }
 
 .estimate-btn:hover{
@@ -241,11 +250,16 @@ header, .hero-content{
     .hero{
         min-height: 100vh;
         background-position: center;
+        padding: 150px 40px;
+    }
+    header{
+        margin: 0;
     }
 
+
+
     .hero-content{
-    left: 1.5rem;
-    top: 18rem;
+    position: static;
     gap: 4rem;
     display: flex;
     flex-direction: column;
@@ -253,15 +267,14 @@ header, .hero-content{
     }
 
     .hero-content h1{
-        width: 19rem;
-        font-size: 3rem;
+        font-size: 120px;
         line-height: 120%;
+        width: fit-content;
     }
 
     .hero-content h1::after{
-        width: 18.5rem;
-        height: 14.5rem;
-        bottom: 1.5rem;
+        height: 80%;
+        bottom: 3rem;
     }
 
     .estimate-btn{
@@ -270,10 +283,15 @@ header, .hero-content{
         width: 8rem;
         height: 8rem;
         font-size: 1rem;
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        bottom: 3rem;
+        position: static;
+        font-size: 40px;
+        width: 320px;
+        height: 320px;
+        align-self: center;
+    }
+
+    .hero{
+        gap: 415px;
     }
 
     .estimate-btn:hover{
@@ -315,7 +333,7 @@ header, .hero-content{
 /* sizes */
 
 .goal-third{
-    grid-column: span 4;
+    grid-column: span 4;    
 }
 
 .double-third{
@@ -345,7 +363,7 @@ header, .hero-content{
     background: white;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-between; 
 }
 
 .goal-card span{
@@ -447,7 +465,7 @@ main .technologies{
     border-radius: 100%;
 }
 
-.technologies .active-pin div{
+.technologies .active-pin .pin{
     width: 20px;
     height: 20px;
     background-color: var(--main-blue, #2E2BD0);
@@ -657,4 +675,246 @@ article.diff-article{
     width: 100%;
     background-color: #2F353F;
     border-radius: 10px;
+}
+
+.feedback{
+    display: none;
+}
+
+.feedback h2{
+    color: var(--main-light, #2F353F);
+    font-family: "Neue Machina Regular";
+    padding: 0px 40px;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 90px; /* 112.5% */
+}
+
+.feedback .user-comments{
+    width: 100%;
+    display: flex;
+    overflow-x: scroll;
+    box-sizing: border-box;
+    padding: 0 30px;
+}
+
+.feedback .user-info{
+    display: flex;
+    align-items: flex-end;
+    gap: 50px;
+}
+.feedback .user-info p:nth-child(1){
+    color: var(--main-blue, #2E2BD0);
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: "Neue Machina Regular";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 60px */
+    margin: 0;
+}
+.feedback .user-info p:nth-child(2){
+    color: rgba(47, 53, 63, 0.70);
+    font-family: Gilroy;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 39px */
+    margin: 0;
+}
+
+.feedback .user-info img{
+    width: 160px;
+    height: 160px;
+}
+.feedback .comment{
+    flex-shrink: 0;
+    width: 880px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 40px;
+    border: 2px solid #909398;
+    padding: 50px;
+    box-sizing: border-box;
+    gap: 100px;
+}
+.feedback .user-text{
+    color: rgba(47, 53, 63, 0.70);
+    font-family: Gilroy;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 60px */
+}
+
+.feedback button{
+    display: flex;
+    padding: 24px 40px 17px 40px;
+    color: var(--main-blue, #2E2BD0);
+    font-family: "Neue Machina Regular";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: transparent;
+    border-radius: 20px;
+    border: 2px solid var(--main-blue, #2E2BD0);
+    box-sizing: border-box;
+    gap: 10px;
+    width: 60%;
+}
+
+@media (max-width: 1350px) {
+    .feedback{
+        display: block;
+        margin-bottom: 250px;
+    }
+    .goals-grid{
+        display: block;
+    }
+    .goals{
+        padding: 0 1.2rem;
+    }
+    .goal-card{
+        border: 1.926px solid #95989D;
+        padding: 4rem;
+    }
+    .goal-card span{
+        font-size: 3rem;
+        padding-bottom: 2rem;
+    }
+    .goal-text{
+        row-gap: 0px;
+    }
+    .goal-text p{
+        font-size: 1.4rem;
+    }
+    .goals-container h2{
+        padding-top: 7rem;
+        font-size:3rem ;
+    }
+    .industries{
+        display: none;
+    }
+    .map-line{
+        height: 942px;
+        width: 1px;
+        border: 0;
+    }
+    .technologies .pin-container{
+        display: flex;
+        flex-direction: column;
+        border-left: 1px solid rgba(147, 150, 155, 0.50);
+        padding: 0px 70px;
+        box-sizing: border-box;
+    }
+    .technologies .pin-container .pin-and-text:last-child{
+        height: 16px;
+    }
+    .technologies .pin-container .active-pin{
+        position: relative;
+        top: 0;
+        right: 0;
+    }
+    .technologies .pin-container .pin-and-text .pin{
+        position: relative;
+        right: 77px;
+    }
+    .technologies .pin-container .active-pin .pin{
+        right: 90px;
+    }
+    .technologies .map-line{
+        height: 0;
+    }
+    .technologies .pin-and-text .text-and-icon{
+        position: relative;
+        bottom: 20px;
+    } 
+    .technologies .active-pin .text-and-icon{
+        position: relative;
+        bottom: 40px;
+    }
+    
+    .technologies .text-and-icon p{
+        margin-top: 0;
+    }
+    .technologies > p{
+        margin: 0;
+        display: inline;
+        align-self: flex-start;
+        width: 100%;
+    }
+    main .technologies{
+        padding: 0 40px;
+    }
+    .technologies h2{
+        font-size: 80px;
+    }
+    .technologies p{
+        font-size: 40px;
+    }
+    section .container__section{
+        padding: 0px 40px;
+    }
+    section .container__section .wrraper .nav{
+        justify-content: space-between;
+        max-width: 1350px;
+        width: 100%;
+        flex-direction: row;
+        border-left: 0px;
+        border-top: 2px;
+        border-top: solid;
+        border-top-color:  rgba(47, 53, 63, 0.14);
+        border-top-width:3px ;
+        max-height: max-content;
+    }
+    section .container__section .wrraper .nav li{
+        padding-left: 0px;
+        padding-top: 50px;
+        display: flex;
+        font-size: 1.9rem;
+        justify-content: center;
+        /* font-size: 38px; */
+        box-sizing: border-box;
+    }
+    section .container__section .wrraper{
+        flex-direction: column;
+        row-gap: 150px;
+        column-gap: 0px;
+    }
+    .wrraper ul li:first-child{
+        border-left:0px;
+        left: 0px;
+        top: -3px;
+        border-top: solid;
+        border-top-width:5px ;
+    } 
+    section .container__section article{
+        max-width: 100%;
+    }
+    .container__agenda {
+        padding: 0 40px;
+    }
+    .container__agenda .agenda{
+        display: flex;
+        flex-direction: column;
+    }
+    .agenda article:last-child{
+        margin: 50px 0 0 0  ;
+    }
+    .container__agenda .agenda__btn{
+        padding-top: 80px;
+        display: flex;
+        justify-content: center;
+    }
+    .agenda article:first-child{
+        padding-left: 0px;
+    }
+    .container__agenda .agenda {
+        margin-top: 0px;
+    }
 }
