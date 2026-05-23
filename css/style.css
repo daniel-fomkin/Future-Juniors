@@ -59,22 +59,19 @@ header .language-dropdown{
     padding: 10px;
     border-radius: 10px;
     z-index: 1;
+    width: 60px;
 }
 
 header .language-dropdown.active{
     display: flex;
 }
 
-header .lang-btn{
+header .other-nav .lang-btn{
     background: transparent;
-    border: 1px solid white;
-    color: white;
-    padding: 8px 14px;
-    border-radius: 8px;
-    font-family: "Neue Machina Regular";
-    font-size: 18px;
+    background-color: var(--color-blue);
     cursor: pointer;
     transition: 0.2s;
+    width: 60px;
 }
 
 header .lang-btn:hover{
