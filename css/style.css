@@ -51,6 +51,7 @@ header .language-dropdown.active{
 }
 
 header .other-nav .lang-btn{
+    font-family: "Neue Machina Regular";
     background: transparent;
     color: var(--color-blue);
     cursor: pointer;
