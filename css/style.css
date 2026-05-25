@@ -35,12 +35,13 @@ header .selected-language{
 header .language-dropdown{
     position: absolute;
     top: 45px;
-    left: -50px;
+    left: -110px;
     display: none;
     flex-direction: column;
     gap: 8px;
     background: rgb(255, 255, 255);
     padding: 10px;
+    border: 1px solid rgba(47, 53, 63, 0.50);
     border-radius: 10px;
     z-index: 1;
     width: 150px;
