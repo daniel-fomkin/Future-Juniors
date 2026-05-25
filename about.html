@@ -110,16 +110,20 @@
                     <div class="select" id="language-select">
                         <div class="selected-language">
                             <span id="current-language">EN</span>
-                        
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                                <path d="M7.50033 18.3333H12.5003C16.667 18.3333 18.3337 16.6667 18.3337 12.5V7.5C18.3337 3.33333 16.667 1.66667 12.5003 1.66667H7.50033C3.33366 1.66667 1.66699 3.33333 1.66699 7.5V12.5C1.66699 16.6667 3.33366 18.3333 7.50033 18.3333Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M7.05859 8.86667L10.0003 11.8L12.9419 8.86667" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M7.50033 18.3333H12.5003C16.667 18.3333 18.3337 16.6667 18.3337 12.5V7.5C18.3337 3.33333 16.667 1.66667 12.5003 1.66667H7.50033C3.33366 1.66667 1.66699 3.33333 1.66699 7.5V12.5C1.66699 16.6667 3.33366 18.3333 7.50033 18.3333Z" stroke="white" stroke-width="1.5"/>
+                                <path d="M7.05859 8.86667L10.0003 11.8L12.9419 8.86667" stroke="white" stroke-width="1.5"/>
                             </svg>
                         </div>
-                    
                         <div class="language-dropdown">
-                            <button type="button" class="lang-btn">LT</button>
-                            <button type="button" class="lang-btn">EN</button>
+                            <button type="button" class="lang-btn">
+                                Lietuviu (LT)
+                                <div class="lang-short">LT</div>
+                            </button>
+                            <button type="button" class="lang-btn">
+                                English (EN)
+                                <div class="lang-short">EN</div>
+                            </button>
                         </div>
                     </div>
                     <button type="button">
@@ -308,7 +312,7 @@
                 </ul>
             </div>
         </section>
-          <section class="feedback">
+        <section class="feedback">
             <h2>What our clients say about us</h2>
             <div class="user-comments">
                 <div class="comment">
@@ -373,17 +377,17 @@
 
             <div class="another-button">
 
-            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
-<path d="M18.7494 45.8337H31.2494C41.666 45.8337 45.8327 41.667 45.8327 31.2503V18.7503C45.8327 8.33366 41.666 4.16699 31.2494 4.16699H18.7494C8.33268 4.16699 4.16602 8.33366 4.16602 18.7503V31.2503C4.16602 41.667 8.33268 45.8337 18.7494 45.8337Z" stroke="#9695E7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M28.666 18.4785L21.3327 25.8327L28.666 33.1868" stroke="#9695E7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-
-<span class="number-one"> 1/5</span>
-
-<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
-<path d="M18.7494 45.8337H31.2494C41.666 45.8337 45.8327 41.667 45.8327 31.2503V18.7503C45.8327 8.33366 41.666 4.16699 31.2494 4.16699H18.7494C8.33268 4.16699 4.16602 8.33366 4.16602 18.7503V31.2503C4.16602 41.667 8.33268 45.8337 18.7494 45.8337Z" stroke="#2E2BD0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M21.334 33.1875L28.6673 25.8333L21.334 18.4792" stroke="#2E2BD0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
+            <svg id="prevBtn" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+                <path d="M18.7494 45.8337H31.2494C41.666 45.8337 45.8327 41.667 45.8327 31.2503V18.7503C45.8327 8.33366 41.666 4.16699 31.2494 4.16699H18.7494C8.33268 4.16699 4.16602 8.33366 4.16602 18.7503V31.2503C4.16602 41.667 8.33268 45.8337 18.7494 45.8337Z" stroke="#9695E7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M28.666 18.4785L21.3327 25.8327L28.666 33.1868" stroke="#9695E7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            
+            <span class="number-one"> 1/3</span>
+            
+            <svg id="nextBtn" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+                <path d="M18.7494 45.8337H31.2494C41.666 45.8337 45.8327 41.667 45.8327 31.2503V18.7503C45.8327 8.33366 41.666 4.16699 31.2494 4.16699H18.7494C8.33268 4.16699 4.16602 8.33366 4.16602 18.7503V31.2503C4.16602 41.667 8.33268 45.8337 18.7494 45.8337Z" stroke="#2E2BD0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M21.334 33.1875L28.6673 25.8333L21.334 18.4792" stroke="#2E2BD0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
 
 </div>
 
