@@ -44,6 +44,7 @@ function updateCards() {
     counter.textContent = `${currentCenter + 1}/${comments.length}`
 }
 
+if(counter){
 updateCards()
 
 nextBtn.addEventListener('click', () => {
@@ -62,7 +63,7 @@ prevBtn.addEventListener('click', () => {
         currentCenter = comments.length - 1
     }
     updateCards()
-})
+})}
 
 // Feadback
 
