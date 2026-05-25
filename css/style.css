@@ -5,6 +5,21 @@
     --gradient-blue: linear-gradient(66deg, #2E2BD0 -67.89%, #7876F2 125.28%);
 }
 
+@keyframes logo-animation {
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(2deg)
+    }
+    50%{
+        transform: rotate(-2deg);
+    }
+    75%{
+        transform: rotate(0deg);
+    }
+}
+
 /* Body Stiliai */
 body {
     margin: 0;
@@ -89,6 +104,8 @@ header .logo-container{
     align-items: last baseline;
     gap: 10px;
     flex: 0 0 auto;
+    animation: logo-animation 3s infinite;
+    transition: 100ms;
 }
 
 header .logo-container b{
@@ -182,6 +199,19 @@ header .other-nav button div{
     display: flex;
     justify-content: center;
     gap: 0.75rem;
+}
+
+body::before{
+    background-image: url(../img/bg-noise.png);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    content: " ";
+    opacity: 0.02;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: -10;
 }
 
 @media (max-width: 1350px){
@@ -491,6 +521,26 @@ footer .information-container div:nth-child(1) .social-media > *{
     border: 0.07rem solid var(--color-blue);
 }
 
+form button{
+    transition: 200ms;
+}
+footer form > button:hover{
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+}
+form button[type="button"]:hover{
+    background-color: white;
+    color: #2E2BD0;
+}
+form button[type="button"]:hover svg path{
+    stroke: #2E2BD0;
+}
+footer form > button:hover svg path{
+    stroke: white;
+}
+
+ 
 footer .information-container div:nth-child(1) a{
     color: var(--main-blue, #2E2BD0);
     font-family: "Gilroy";
