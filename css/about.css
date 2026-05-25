@@ -293,6 +293,7 @@ margin-top: 150px;
     display: flex;
     flex-direction: column;
     row-gap: 2rem;
+    box-sizing: border-box;
     padding: 2rem;
     border-radius: var(--radius-info-grid-article);
     border: 1px solid #909398;
@@ -806,6 +807,10 @@ header .logo-container b{
     .info{
         padding: 0 2.5rem;
     }
+    .circles-wrraper .circle{
+        width: 20vw;
+        height: 20vw;
+    }
     .info h1:nth-child(1){
         display: none;
     }
@@ -819,13 +824,11 @@ header .logo-container b{
     .feedback .user-comments {
         display: flex;
         width: 100%;
-        
- 
     }
     .feedback h2{
     color: var(--main-light, #2F353F);
     font-family: "Neue Machina Regular";
- 
+
     font-size: 80px;
     font-style: normal;
     font-weight: 400;
@@ -848,7 +851,7 @@ header .logo-container b{
     color: var(--main-blue, #2E2BD0);
     font-feature-settings: 'liga' off, 'clig' off;
     font-family: "Neue Machina Regular";
-    font-size: 40px;
+    font-size: 3.7vw;
     font-style: normal;
     font-weight: 400;
     line-height: 150%; /* 60px */
@@ -857,7 +860,7 @@ header .logo-container b{
 .feedback .user-info p:nth-child(2){
     color: rgba(47, 53, 63, 0.70);
     font-family: Gilroy;
-    font-size: 30px;
+    font-size: 2.7vw;
     font-style: normal;
     font-weight: 400;
     line-height: 130%; /* 39px */
@@ -865,12 +868,12 @@ header .logo-container b{
 }
  
 .feedback .user-info img{
-    width: 160px;
-    height: 160px;
+    width: 14vw;
+    height: 14vw;
 }
 .feedback .comment{
     flex-shrink: 0;
-    width: 880px;
+    width: 45vw;
     display: flex;
     flex-direction: column;
     border-radius: 40px;
@@ -882,7 +885,7 @@ header .logo-container b{
 .feedback .user-text{
     color: rgba(47, 53, 63, 0.70);
     font-family: Gilroy;
-    font-size: 40px;
+    font-size: 3.7vw;
     font-style: normal;
     font-weight: 400;
     line-height: 150%; /* 60px */
@@ -893,7 +896,7 @@ header .logo-container b{
     padding: 24px 40px 17px 40px;
     color: var(--main-blue, #2E2BD0);
     font-family: "Neue Machina Regular";
-    font-size: 30px;
+    font-size: 2.7vw;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -907,8 +910,8 @@ header .logo-container b{
     gap: 10px;
 }
 .feedback button svg{
-    width: 34px;
-    height: 34px;
+    width: 7vw;
+    height: 7vw;
 }
 .feedback .number-one{
     display: none;

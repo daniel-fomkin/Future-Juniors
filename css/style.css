@@ -109,6 +109,10 @@ header .selected-language{
     border: 0;
     border-left: 10px solid #2E2BD0;
     border-radius: 10px;
+    transition: 1s;
+}
+.burger-menu li:hover{
+    background-color: #2E2BD0;
 }
 .burger-menu .header button{
     background-color: transparent;
@@ -1079,6 +1083,9 @@ align-items: center;
     footer .information-container div:nth-child(1) a{
         margin-left: 0;
         margin-top: -1rem;
-
+        font-size: 30px;
+    }
+    footer p, footer li{
+        font-size: 30px !important;
     }
 }
