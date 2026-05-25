@@ -1071,4 +1071,14 @@ align-items: center;
     footer .copyright p{
         font-size: 40px;
     }
+   
+}
+
+@media (max-width: 870px) {
+
+    footer .information-container div:nth-child(1) a{
+        margin-left: 0;
+        margin-top: -1rem;
+
+    }
 }
