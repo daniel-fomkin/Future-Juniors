@@ -403,7 +403,9 @@ body::before{
 }
 
 @media (max-width: 1350px){
-
+    .hero{
+        padding: 150px 10px;
+    }
     header{
         min-height: auto;
         padding: 1.5rem;
@@ -417,32 +419,40 @@ body::before{
         position: relative;
         display: flex;
         justify-content: space-between;
+        gap: 10px;
     }
 
-    /* logo */
 
+    /* logo */
+    /* header .logo-icon{
+        width: clamp(20px,3vw,40px);
+        height: clamp(20px,3vw,40px);;
+    } */
     header .logo-container{
-        gap: 0.5rem;
+    
+        gap: 1rem;
         align-items: last baseline;
     }
 
     header .logo-container b{
-        font-size: 46px;
+       
+        font-size: clamp(20px,5vw,60px);
         color: var(--main-white, #FFF);
-        font-size: 46px;
         font-style: normal;
         font-weight: 700;
-        line-height: 50px; /* 108.696% */
+        line-height: 100%; /* 108.696% */
     }
 
     header .logo-icon svg:first-child{
-        width: 28px;
-        height: 29px;
+       
+       height: (70px,15vw,109px);
+        
     }
 
     header .logo-icon svg:last-child{
-        width: 109px;
+        width: clamp(50px,11vw,109px);
         height: auto;
+       
     }
 
     /* hide */
@@ -464,8 +474,8 @@ body::before{
     /* right button */
 
     header .other-nav > button{
-        width: 116px;
-        height: 116px;
+        width: clamp(70px,10vw,116px);
+        height: clamp(70px,10vw,116px);
         padding: 0;
         margin: 0;
         border: none;
@@ -488,8 +498,8 @@ body::before{
     }
 
     .other-nav > button svg{
-        width: 60px;
-        height: 60px;
+        width: clamp(35px,5vw,60px);
+        height: clamp(35px,5vw,60px);
     }
 
     .other-nav > button svg path{
@@ -545,8 +555,8 @@ body::before{
 
     #burger-button{
         border: 0;
-        width: 116px;
-        height: 116px;
+        width: clamp(70px,10vw,116px);
+        height: clamp(70px,10vw,116px);
         border-radius: 1rem;
         background: #FFF;
         display: flex;
@@ -901,7 +911,7 @@ footer .copyright{
     }
     footer form input, footer form label, footer form input::placeholder{
         padding: 0;
-        font-size: 42px;
+        font-size: clamp(20px,4vw,42px);
         margin-bottom: 10px;
     }
 
@@ -909,7 +919,7 @@ footer .copyright{
         font-size: 100px;
     }
     footer form button, footer form button span{
-        font-size: 30px;
+        font-size: clamp(14px,2vw,30px);
     }
     footer form > button{
         width: clamp(22rem, 14vw, 12.813rem);
@@ -928,7 +938,7 @@ footer .copyright{
         gap: 2rem;
     }
     footer form svg{
-        transform: scale(1.35);
+        width: clamp(20px,2vw,40px);
     }
     
     footer {
@@ -1071,15 +1081,15 @@ footer .copyright{
     }
 
     footer form button[type="button"] {
-       display: flex;
-width: 29.5rem;
-justify-content: center;
-align-items: center;
+    display: flex;
+    width: 40vw;
+    justify-content: center;
+    align-items: center;
 
     }
 
     footer form > button {
-        width: clamp(26.5rem, 4vw, 12.813rem);
+       width: 40vw;
 
     }
 
