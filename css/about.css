@@ -649,7 +649,7 @@ ul li{
     display: flex;
     align-items: center;
 }
-ul .active{
+header nav ul .active{
     color: var(--main-blue, #2E2BD0);
     border-radius: 10px;
     border: 1px solid var(--main-blue, #2E2BD0);
