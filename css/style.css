@@ -85,9 +85,13 @@ header .selected-language{
     padding: 0;
     width: 100%;
     height: 7vh;
+    transition: 0.7s;
 }
-.burger-menu .content button svg path{
-    stroke: white;
+.burger-menu .content button:hover{
+    border: 1px solid #2E2BD0;
+    background-color: white;
+    color: #2E2BD0;
+    border-radius: 50px;
 }
 .burger-menu .header{
     display: flex;
@@ -98,6 +102,9 @@ header .selected-language{
 .burger-menu ul{
     list-style: none;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 .burger-menu li{
     color: #454652;
@@ -108,15 +115,28 @@ header .selected-language{
     font-weight: 400;
     line-height: 160%;
     padding-left: 30px;
+    transition: 0.5s;
+    border-radius: 10px;
 }
 .burger-menu li.active{
     border: 0;
     border-left: 10px solid #2E2BD0;
-    border-radius: 10px;
+}
+.burger-menu li:hover{
+    background-color: #2E2BD0;
+    color: white;
 }
 .burger-menu .header button{
     background-color: transparent;
     border: 0;
+}
+.burger-menu .header button:last-child svg path{
+    transition: 0.5s;
+}
+.burger-menu .header button:last-child:hover svg path{
+    stroke: red;
+    transform: rotate(360deg);
+    fill: red;
 }
 .burger-menu .logo-container{
     display: flex;
@@ -1083,6 +1103,9 @@ align-items: center;
     footer .information-container div:nth-child(1) a{
         margin-left: 0;
         margin-top: -1rem;
-
+        font-size: 30px;
+    }
+    footer p, footer li{
+        font-size: 30px !important;
     }
 }
