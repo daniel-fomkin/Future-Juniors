@@ -274,7 +274,7 @@ header, .hero-content{
     }
 
     .hero-content h1{
-        font-size: 120px;
+        font-size: clamp(60px,9vw,112px);
         line-height: 120%;
         width: fit-content;
     }
@@ -806,6 +806,7 @@ button, li, .select{
         padding: 0 1.2rem;
     }
     .goal-card{
+        overflow: hidden;
         border: 1.926px solid #95989D;
         padding: 4rem;
     }
@@ -878,7 +879,7 @@ button, li, .select{
         padding: 0 40px;
     }
     .technologies h2{
-        font-size: 80px;
+        font-size: 12vw;
     }
     .technologies p{
         font-size: 40px;
@@ -902,7 +903,7 @@ button, li, .select{
         padding-left: 0px;
         padding-top: 50px;
         display: flex;
-        font-size: 1.9rem;
+        font-size: 4vw;
         justify-content: center;
         /* font-size: 38px; */
         box-sizing: border-box;
