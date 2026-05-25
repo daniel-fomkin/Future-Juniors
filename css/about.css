@@ -676,7 +676,7 @@ ul li{
     display: flex;
     align-items: center;
 }
-ul .active{
+header nav ul .active{
     color: var(--main-blue, #2E2BD0);
     border-radius: 10px;
     border: 1px solid var(--main-blue, #2E2BD0);
@@ -750,7 +750,7 @@ header .logo-container b{
         display: block;
         font-size: 46px;
     }
-    header nav::before{
+    #burger-button{
         color: white;
         background: var(--main-blue, #2E2BD0);
     }
@@ -819,7 +819,7 @@ header .logo-container b{
     .feedback .user-comments {
         display: flex;
         width: 100%;
- 
+        
  
     }
     .feedback h2{
