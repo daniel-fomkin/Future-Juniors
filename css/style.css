@@ -863,7 +863,7 @@ align-items: center;
    
 }
 
-@media (max-width: 500px) {
+@media (max-width: 870px) {
 
     footer .information-container div:nth-child(1) a{
         margin-left: 0;
