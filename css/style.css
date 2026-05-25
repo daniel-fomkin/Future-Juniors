@@ -33,6 +33,10 @@ body {
 
 /* Ricard */
 
+header .other-nav button div.lang-short{
+    display: none;
+}
+
 header .select{
     position: relative;
     display: flex;

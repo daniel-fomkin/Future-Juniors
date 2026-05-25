@@ -11,10 +11,10 @@ languageSelect.addEventListener("click", () => {
 document.querySelectorAll(".lang-btn").forEach(button => {
     button.addEventListener("click", (e) => {
         e.stopPropagation();
-        currentLanguage.textContent = button.textContent;
-        dropdown.classList.remove("active")
-    })
-})
+        currentLanguage.textContent = button.querySelector(".lang-short").textContent;
+        dropdown.classList.remove("active");
+    });
+});
 
 document.addEventListener("click", (e) => {
     if (!languageSelect.contains(e.target)) {
