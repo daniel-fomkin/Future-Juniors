@@ -201,36 +201,33 @@ header .selected-language{
 header .language-dropdown{
     position: absolute;
     top: 45px;
-    left: 0;
+    left: -110px;
     display: none;
     flex-direction: column;
     gap: 8px;
-    background: rgba(255,255,255,0.08);
-    backdrop-filter: blur(10px);
+    background: rgb(255, 255, 255);
     padding: 10px;
+    border: 1px solid rgba(47, 53, 63, 0.50);
     border-radius: 10px;
     z-index: 1;
+    width: 150px;
 }
 
 header .language-dropdown.active{
     display: flex;
 }
 
-header .lang-btn{
-    background: transparent;
-    border: 1px solid white;
-    color: white;
-    padding: 8px 14px;
-    border-radius: 8px;
+header .other-nav .lang-btn{
     font-family: "Neue Machina Regular";
-    font-size: 18px;
+    background: transparent;
+    color: var(--color-blue);
     cursor: pointer;
     transition: 0.2s;
+    width: 150px;
 }
 
-header .lang-btn:hover{
-    background: white;
-    color: var(--color-blue);
+header .other-nav .lang-btn:hover{
+    background-color: rgba(49, 47, 187, 0.2)
 }
 
 /* Ricard end */
