@@ -444,8 +444,8 @@ body::before{
     }
 
     header .logo-icon svg:first-child{
-       
-       height: (70px,15vw,109px);
+       width: 2vw;
+       height: auto;
         
     }
 
