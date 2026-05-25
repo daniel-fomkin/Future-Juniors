@@ -1,6 +1,7 @@
 'use strict';
 // Ricard
 
+
 // Lang button
 
 const languageSelect = document.getElementById("language-select")
@@ -86,6 +87,33 @@ closeButton.addEventListener("click", () => {
 
 });
 
+//Through year scroll
+const yearArray = document.querySelectorAll(".one-year");
+const yearContainers = document.querySelector(".year-lines");
+
+yearContainers.addEventListener("scroll", () => {
+    const yearActive = yearContainers.querySelector(".active");
+    let minPos = yearContainers.scrollLeft;
+    let maxPos = yearContainers.width - yearContainers.scrollLeft;
+    // console.log(yearContainers.scrollLeft);
+    // console.log(yearArray[1].offsetLeft);
+    // console.log(yearActive.offsetLeft)
+    // console.log(yearContainers.scrollLeft);
+    // console.log(yearArray[4].offsetLeft);
+    let nearbyElement = yearArray[0];
+    yearArray.forEach(el => {
+        if(el.offsetLeft >= minPos && el.offsetLeft <= maxPos){
+            console.log(el);
+            
+        }
+    });
+    yearArray.forEach(el => el.borderColor = "white");
+    nearbyElement.style.borderColor = "black";
+    
+    
+})
+
+
 //Choose Section
 const liArray = document.querySelector(".container__section").querySelectorAll("li");
 const chooseText = document.querySelector('.container__section').querySelector("h4");
@@ -113,8 +141,6 @@ if(liArray){
         })
     })
 }
-
-
 
 
 
