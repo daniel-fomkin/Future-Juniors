@@ -1,3 +1,376 @@
+
+.feedback h2{
+    color: var(--main-light, #2F353F);
+    font-family: "Neue Machina Regular";
+    padding: 0px 150px;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 90px; /* 112.5% */
+}
+ 
+ 
+.feedback .user-comments{
+    width: 100%;
+    display: flex;
+    padding: 0 150px;
+    box-sizing: border-box;
+}
+ 
+.feedback .user-info{
+    /* display: flex; */
+    /* align-items: flex-end; */
+    gap: 50px;
+}
+.feedback .user-info p:nth-child(1){
+    color: var(--main-blue, #2E2BD0);
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: "Neue Machina Regular";
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 60px */
+    margin: 0;
+}
+.feedback .user-info p:nth-child(2){
+    color: rgba(47, 53, 63, 0.70);
+    font-family: Gilroy;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 39px */
+    margin: 0;
+}
+ 
+.feedback .user-info img{
+    width: 90px;
+    height: 90px;
+}
+ 
+ 
+ 
+.feedback .comment{
+    justify-content: space-between;
+    flex-shrink: 0;
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 40px;
+    border: 2px solid #909398;
+    padding: 50px;
+    box-sizing: border-box;
+    gap: 50px;     /*wtf */
+    padding-top: 100px;
+}
+ 
+ 
+.feedback .user-text{
+    color: rgba(47, 53, 63, 0.70);
+    font-family: Gilroy;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 60px */
+}
+ 
+.feedback button{
+    display: inline-flex;
+    padding: 17px 40px;
+    color: var(--main-blue, #2E2BD0);
+    font-family: "Neue Machina Regular";
+    font-size: clamp(1px, 1vw, 23px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: transparent;
+    border-radius: 20px;
+    border: 2px solid var(--main-blue, #2E2BD0);
+    box-sizing: border-box;
+    gap: 10px;
+    width: 90%;
+    margin-top: 50px;
+}
+ 
+.feedback .number-one{
+    color: var(--main-light, #2F353F);
+text-align: center;
+font-family: "Neue Machina Regular";
+font-size: 32px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%; /* 48px */
+}
+ 
+ 
+.feedback .another-button {
+display: inline-flex;
+justify-content: center;
+align-items: flex-start;
+width: 100%;
+gap: 50px;
+padding: 0 150px;
+box-sizing: border-box;
+margin-top: 150px;
+}
+
+@media (max-width: 1350px) {
+    .feedback .user-comments {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+
+
+    }
+    .feedback h2{
+    color: var(--main-light, #2F353F);
+    font-family: "Neue Machina Regular";
+
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 90px; /* 112.5% */
+    }
+    .feedback .user-comments{
+    width: 100%;
+    display: flex;
+    overflow-x: scroll;
+    padding: 0 30px;
+    gap: 20px;
+}
+
+.feedback .user-info{
+    display: flex;
+    align-items: flex-end;
+    gap: 50px;
+}
+.feedback .user-info p:nth-child(1){
+    color: var(--main-blue, #2E2BD0);
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: "Neue Machina Regular";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 60px */
+    margin: 0;
+}
+.feedback .user-info p:nth-child(2){
+    color: rgba(47, 53, 63, 0.70);
+    font-family: Gilroy;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 39px */
+    margin: 0;
+}
+
+.feedback .user-info img{
+    width: 160px;
+    height: 160px;
+}
+.feedback .comment{
+    flex-shrink: 0;
+    width: 880px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 40px;
+    border: 2px solid #909398;
+    padding: 50px;
+    box-sizing: border-box;
+    gap: 100px;
+}
+.feedback .user-text{
+    color: rgba(47, 53, 63, 0.70);
+    font-family: Gilroy;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 60px */
+}
+
+.feedback button{
+    display: flex;
+    padding: 24px 40px 17px 40px;
+    color: var(--main-blue, #2E2BD0);
+    font-family: "Neue Machina Regular";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: transparent;
+    border-radius: 20px;
+    border: 2px solid var(--main-blue, #2E2BD0);
+    box-sizing: border-box;
+    gap: 10px;
+}
+.feedback button svg{
+    width: 34px;
+    height: 34px;
+}
+.feedback .number-one{
+    display: none;
+}
+
+.feedback .another-button {
+    display: none;
+}
+}
+
+
+
+:root{
+    --circle-first:#2F353F;
+    --circle-second:#C1C2C5;
+    --circle-third:#2E2BD0;
+    --color-main-blue:#2E2BD0;
+    --radius-info-grid-article: 2.5rem;
+    --font-size-info-grid-article-p:1.875rem;
+    --radius-circle: 11.25rem;
+    --border-circle:2px solid #FFF;
+    --font-size-media:11rem;
+    --radius-article-media:5.6rem;
+}
+
+.info *{
+    padding: 0;
+    margin: 0;
+}
+.info {
+    /* padding: 0;
+    margin: 0; */
+    padding: 0 9.38rem;
+  
+}
+.info h1:nth-child(1){
+    color: var(--main-light, #2F353F);
+    font-family: "Neue Machina Regular";
+    font-size: 3.75rem;
+    padding-bottom: 3rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.info h1:nth-child(2){
+    display: none;
+    color: var(--main-light, #2F353F);
+    font-family: "Neue Machina Regular";
+    font-size: 3.75rem;
+    padding-bottom: 3rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.info-container{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 10rem;
+    margin-bottom: 15rem;
+}
+.info-container .info__text{
+    max-width: 47rem;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+.info-container .info__text p{
+    color: rgba(47, 53, 63, 0.70);
+    font-family: Gilroy;
+    font-size: var(--font-size-info-grid-article-p);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 2.8125rem */
+}
+.info-container .info-grid{
+    display: grid;
+    grid-template-columns: repeat(2,22rem);
+    grid-template-rows: repeat(2,15rem);
+}
+.info-container .info-grid article{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    padding: 2rem;
+    border-radius: var(--radius-info-grid-article);
+    border: 1px solid #909398;
+}
+.info-grid article:nth-child(3){
+    background-image: url(../img/background-img.jpg);
+    background-blend-mode:soft-light;
+    background-size: cover;
+    position: relative;
+    right: 1rem;
+    top: 1rem;
+    background-color: #5E5BE3;
+    transition: 1s;
+}
+.info-grid article:nth-child(3):hover{
+    transform: translate(17px,-17px);
+}
+.info-grid article:nth-child(3) span{
+    color: white;
+}
+.info-grid article:nth-child(3) p{
+    color: rgba(255, 255, 255, 0.70);
+}
+.info-grid article:last-child{
+    row-gap: 0px; 
+}
+.info-grid article span{
+    color: var(--color-main-blue);
+    font-family: "Neue Machina Regular";
+    font-size: 3.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.info-grid article p{
+    color: rgba(47, 53, 63, 0.70);
+    font-family: Gilroy;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 2.25rem */
+    
+}
+.circles-wrraper{
+    display: flex;
+}
+.circles-wrraper .circle{
+    flex-shrink: 0;
+    width:clamp( 9rem,8vw,11.25rem) ;
+    height:clamp(9rem,8vw,11.25rem);
+    border-radius: var(--radius-circle);
+    border: var(--border-circle);
+}
+.circles-wrraper .circle:last-child{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #9695E7;
+    transition: 0.5s;
+    
+}
+.circles-wrraper .circle:last-child:hover{
+        transform: scale(1.08);
+        background-color:#a1a0e9;
+        
+    }
+.circle-moved{
+    margin-left: -3.3rem;
+}
+.circles-wrraper .circle-black{
+    background-color: var(--circle-first);
+}
+.circles-wrraper .circle-white{
+    background-color: var(--circle-second);
+}
+.circles-wrraper .circle-blue{
+    background-color: var(--circle-third);
+}
 /* OUR TEAM */ /* Richard*/ 
 
 .our-team{
@@ -284,7 +657,50 @@
     width: 47%;
     align-self: flex-end;
 }
+header nav li, header, header .select span{
+    color: black;
+}
+header .logo-icon svg path, header .select svg path{
+    stroke: black;
+}
+header .logo-icon svg path{
+    fill: black;
+}
+header nav > svg path{
+    fill: black;
+}
+header{
+    border-bottom: 1px solid black;
+}
+ul li{
+    display: flex;
+    align-items: center;
+}
+ul .active{
+    color: var(--main-blue, #2E2BD0);
+    border-radius: 10px;
+    border: 1px solid var(--main-blue, #2E2BD0);
+    padding: 10px 20px;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 300px;
+    padding-bottom: 150px;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+}
 
+header nav ul li a{
+    color: black;
+}
+header .logo-container b{
+    display: none;
+    color: black;
+}
 
 @media (max-width: 1350px) {
     .years .text{
@@ -330,4 +746,176 @@
         box-sizing: border-box;
         padding-top: 150px;
     }
+    header .logo-container b{
+        display: block;
+        font-size: 46px;
+    }
+    header nav::before{
+        color: white;
+        background: var(--main-blue, #2E2BD0);
+    }
+    header .other-nav button{
+        background: var(--main-blue, #2E2BD0);
+    }
+    header .other-nav button svg path{
+        stroke: white;
+    }
+    .info-container{
+        margin-bottom: 6.25rem;
+    }
+    .info-container .info-grid{
+        margin-top: 6.25rem;
+        
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(4,35rem);
+        width: 100%;
+    }
+    .circle-media{
+        display: none;
+    }
+    .info-grid article:nth-child(3){
+        background-image: none;
+        background-color: white;
+        right: 0;
+        top: 0;
+    }
+    .info-grid article:nth-child(3) span{
+        color: var(--color-main-blue);
+    }
+    .info-grid article:nth-child(3):hover{
+        transform: translate(0px,0px);
+    }
+    .info-grid article span{
+        font-size: var(--font-size-media);
+    }
+    .info-container .info-grid article{
+        padding: 4rem;
+        border-radius: var(--radius-article-media);
+        justify-content: space-between;
+    }
+    .info-grid article:nth-child(3) p{
+        color: rgba(47, 53, 63, 0.70);
+    }
+    .circles-wrraper .circle{
+        width: 10.6rem;
+        height: 10.6rem;
+    }
+    .info-grid article  p{
+        font-size: 2.5rem;
+    }
+    .info{
+        padding: 0 2.5rem;
+    }
+    .info h1:nth-child(1){
+        display: none;
+    }
+    .info h1:nth-child(2){
+        display:block;
+        font-size: 5rem;
+    }
+    
+
+@media (max-width: 1350px) {
+    .feedback .user-comments {
+        display: flex;
+        width: 100%;
+ 
+ 
+    }
+    .feedback h2{
+    color: var(--main-light, #2F353F);
+    font-family: "Neue Machina Regular";
+ 
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 90px; /* 112.5% */
 }
+ 
+.feedback .user-comments{
+    width: 100%;
+    display: flex;
+    overflow-x: scroll;
+    padding: 0 30px;
+}
+ 
+.feedback .user-info{
+    display: flex;
+    align-items: flex-end;
+    gap: 50px;
+}
+.feedback .user-info p:nth-child(1){
+    color: var(--main-blue, #2E2BD0);
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: "Neue Machina Regular";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 60px */
+    margin: 0;
+}
+.feedback .user-info p:nth-child(2){
+    color: rgba(47, 53, 63, 0.70);
+    font-family: Gilroy;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 39px */
+    margin: 0;
+}
+ 
+.feedback .user-info img{
+    width: 160px;
+    height: 160px;
+}
+.feedback .comment{
+    flex-shrink: 0;
+    width: 880px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 40px;
+    border: 2px solid #909398;
+    padding: 50px;
+    box-sizing: border-box;
+    gap: 100px;
+}
+.feedback .user-text{
+    color: rgba(47, 53, 63, 0.70);
+    font-family: Gilroy;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 60px */
+}
+ 
+.feedback button{
+    display: flex;
+    padding: 24px 40px 17px 40px;
+    color: var(--main-blue, #2E2BD0);
+    font-family: "Neue Machina Regular";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: transparent;
+    border-radius: 20px;
+    border: 2px solid var(--main-blue, #2E2BD0);
+    box-sizing: border-box;
+    gap: 10px;
+}
+.feedback button svg{
+    width: 34px;
+    height: 34px;
+}
+.feedback .number-one{
+    display: none;
+}
+ 
+.feedback .another-button {
+    display: none;
+}
+ 
+}}
