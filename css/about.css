@@ -116,6 +116,37 @@ box-sizing: border-box;
 margin-top: 150px;
 }
 
+.feedback .user-comments{
+    position: relative;
+    height: 900px;
+    overflow: hidden;
+}
+
+.feedback .comment{
+    position: absolute;
+}
+
+.feedback .comment.center{
+    left: 35%;
+    z-index: 3;
+    opacity: 1;
+    height: 95%;
+}
+
+.feedback .comment.left{
+    left: 0;
+    opacity: 0.7;
+    z-index: 2;
+    height: 95%;
+}
+
+.feedback .comment.right{
+    left: 70%;
+    opacity: 0.7;
+    z-index: 2;
+    height: 95%;
+}
+
 @media (max-width: 1350px) {
     .feedback .user-comments {
         display: flex;
