@@ -50,7 +50,158 @@ header .selected-language{
     gap: 10px;
     align-items: center;
 }
-
+.burger-menu{
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    z-index: 10;
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+    padding: 28px;
+    justify-content: space-between;
+    display: none;
+    flex-direction: column;
+}
+.burger-menu .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 100px;
+}
+.burger-menu .content button{
+    width: 254px;
+    height: 59px;
+    color: white;
+    font-family: "Neue Machina Regular";
+    background-color: var(--color-blue);
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    border: 0;
+    border-radius: 10px;
+    font-weight: 800;
+    padding: 0;
+    width: 100%;
+    height: 7vh;
+}
+.burger-menu .content button svg path{
+    stroke: white;
+}
+.burger-menu .header{
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 0;
+    border-bottom: 1px solid #C6C5D3;
+}
+.burger-menu ul{
+    list-style: none;
+    padding: 0;
+}
+.burger-menu li{
+    color: #454652;
+    font-family: "Neue Machina Regular";
+    font-size: 5.5vw;
+    padding: 20px 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    padding-left: 30px;
+}
+.burger-menu li.active{
+    border: 0;
+    border-left: 10px solid #2E2BD0;
+    border-radius: 10px;
+}
+.burger-menu .header button{
+    background-color: transparent;
+    border: 0;
+}
+.burger-menu .logo-container{
+    display: flex;
+    align-items: last baseline;
+}
+.burger-menu button svg{
+    width: 40px;
+    height: auto;
+}
+.burger-menu .footer{
+    border-top: 1px solid #C6C5D3;
+    display: flex;
+    flex-direction: column;
+    padding: 32px 0;
+    gap: 16px;
+}
+.burger-menu .social-media svg{
+    width: 100px;
+    height: 100px;
+    border: 4px solid #2E2BD0;
+    border-radius: 30px;
+    padding: 5px;
+}
+.burger-menu .footer b{
+    color: #131C78;
+    font-family: Gilroy;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 19.6px; /* 140% */
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+}
+.burger-menu .footer p{
+    color: rgba(69, 70, 82, 0.60);
+    font-family: Gilroy;
+    font-size: 2.5vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 19.6px; /* 140% */
+    letter-spacing: 0.7px;
+}
+.burger-menu .footer a{
+    color: var(--main-blue, #2E2BD0);
+    font-family: "Gilroy";
+    font-size: clamp(30px, 1.2vw, 40px);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: none;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+}
+.burger-menu button svg path{
+    fill: #2E2BD0;
+    stroke: #2E2BD0;
+}
+.burger-menu .logo-container b{
+    color: #2E2BD0;
+    font-family: Gilroy;
+    font-size: clamp(10px, 7vw, 38px);
+    font-style: normal;
+    font-weight: 700;
+}
+.burger-menu .logo-container .logo-icon{
+    display: flex;
+    flex-direction: column;
+}
+.burger-menu .logo-container svg:first-child{
+    width: 29px;
+    height: auto;
+    position: relative;
+    right: 5px;
+}
+.burger-menu .logo-container svg:last-child{
+    width: 80px;
+    height: auto;
+}
+.burger-menu .logo-container svg path, .burger-menu .logo-container b{
+    stroke: #2E2BD0;
+    fill: #2E2BD0;
+}
 header .language-dropdown{
     position: absolute;
     top: 45px;
@@ -110,6 +261,7 @@ header .logo-container{
     flex: 0 0 auto;
     animation: logo-animation 3s infinite;
     transition: 100ms;
+    position: relative;
 }
 
 header .logo-container b{
@@ -177,7 +329,9 @@ header .select span{
     line-height: normal;
     text-transform: uppercase;
 }
-
+#burger-button{
+    display: none;
+}
 header .other-nav button{
     width: 254px;
     height: 59px;
@@ -192,6 +346,16 @@ header .other-nav button{
     border: 0;
     border-radius: 10px;
     padding: 0;
+}
+#close-button{
+    display: none;
+    border: 0;
+    background-color: transparent;
+    font-size: 40px;
+    color: white;
+    font-weight: 800;
+    text-align: start;
+    font-family: Gilroy;
 }
 
 header nav a{
@@ -311,11 +475,56 @@ body::before{
     .other-nav > button svg path{
         stroke: var(--color-blue);
     }
+    #close-button{
+        display: block;
+    }
+    header ul{
+        width: 0vw;
+        display: none;
+        position: fixed;
+        justify-content: center;
+        top: 0;
+        left: 0;
+        box-sizing: border-box;
+        z-index: 3;
+        height: 100%;
+        background-color: #2e2bd091;
+        backdrop-filter: blur(10px);
+        transition: 1000ms;
+        padding: 0;
+        flex-direction: column;
+        padding: 1vw 0;
+        box-sizing: border-box;
+        justify-content: center;
+    }
+    header ul li{
+        width: 100%;
+        box-sizing: border-box;
+        font-size: 80px;
+        padding: 0;
+        background-color: rgba(255, 255, 255, 0.842);
+        text-align: center;
+        padding-left: 10px;
+        box-sizing: border-box;
+        backdrop-filter: blur(10px);
+        border-radius: 0px;
+        transition: 500ms;
+    }
+    header ul li:active{
+        background-color: #2e2bd091;
+        color: white;
+    }
+    header ul li.active{
+        padding: 0;
+        border: 0;
+        border-radius: 0;
+        padding-left: 10px;
+    }
 
     /* left burger */
 
-    header nav::before{
-        content: "☰";
+    #burger-button{
+        border: 0;
         width: 116px;
         height: 116px;
         border-radius: 1rem;
@@ -327,6 +536,8 @@ body::before{
         font-size: 40px;
         font-weight: bold;
         flex-shrink: 0;
+        position: relative;
+        z-index: 4;
     }
 }
 
