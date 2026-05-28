@@ -468,8 +468,31 @@ main .technologies{
 .technologies .pin{
     width: 15px;
     height: 15px;
-    background-color: #93969B; 
+    background-color: #93969B;
     border-radius: 100%;
+    transition: all 0.3s ease;
+}
+
+.technologies .pin-container p{
+    color: rgba(47, 53, 63, 0.70);
+    font-family: Gilroy;
+    padding-right: 10px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 130%;
+    transition: all 0.3s ease;
+}
+
+.pin-and-text:hover .pin{
+    transform: scale(1.5);
+    background-color: #2E2BD0;
+    box-shadow: 0 0 0 8px #CBCAF3;
+}
+
+.pin-and-text:hover p{
+    color: #2F353F;
+    font-size: 24px;
+    transform: scale(1.05);
 }
 
 .technologies .active-pin .pin{
