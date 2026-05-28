@@ -91,25 +91,40 @@ closeButton.addEventListener("click", () => {
 const yearArray = document.querySelectorAll(".one-year");
 const yearContainers = document.querySelector(".year-lines");
 
+let timeOut;
+let serverScroll = true;
+let nearbiestElement = yearArray[0];
+
+yearContainers.scroll({left: yearArray[2].offsetLeft-yearArray[0].offsetLeft});
+
+
 yearContainers.addEventListener("scroll", () => {
-    const yearActive = yearContainers.querySelector(".active");
-    let minPos = yearContainers.scrollLeft;
-    let maxPos = yearContainers.width - yearContainers.scrollLeft;
-    // console.log(yearContainers.scrollLeft);
-    // console.log(yearArray[1].offsetLeft);
-    // console.log(yearActive.offsetLeft)
-    // console.log(yearContainers.scrollLeft);
-    // console.log(yearArray[4].offsetLeft);
-    let nearbyElement = yearArray[0];
+    clearTimeout(timeOut);
+    if(!serverScroll){
+    const scroll = yearContainers.scrollLeft;
+    const containerCenterPos = containerWidth/2+scroll;
+    const containerWidth = yearContainers.clientWidth;
+    
     yearArray.forEach(el => {
-        if(el.offsetLeft >= minPos && el.offsetLeft <= maxPos){
-            console.log(el);
-            
+        if(Math.abs(containerCenterPos - el.offsetLeft) < Math.abs(containerCenterPos - nearbiestElement.offsetLeft)){
+            nearbiestElement = el;
         }
     });
-    yearArray.forEach(el => el.borderColor = "white");
-    nearbyElement.style.borderColor = "black";
-    
+    yearArray.forEach(el => el.classList.remove("active"));
+    nearbiestElement.classList.add("active");
+
+    timeOut = setTimeout(() => {
+        yearContainers.scroll({left: nearbiestElement.offsetLeft-containerWidth/2});
+        serverScroll = true;
+    }, 500, {passive: true});
+    }
+    else{
+        serverScroll = false
+    }
+});
+
+yearContainers.addEventListener("scroll", () => {
+    console.log("OK");
     
 })
 
