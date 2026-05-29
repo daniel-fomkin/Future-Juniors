@@ -31,6 +31,231 @@ body {
 
 /* Header Stiliai */
 
+/* Ricard */
+
+header .other-nav button div.lang-short{
+    display: none;
+}
+
+header .select{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    cursor: pointer;
+}
+
+header .selected-language{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.burger-menu{
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    z-index: 10;
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+    padding: 28px;
+    justify-content: space-between;
+    display: none;
+    flex-direction: column;
+}
+.burger-menu .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 100px;
+}
+.burger-menu .content button{
+    width: 254px;
+    height: 59px;
+    color: white;
+    font-family: "Neue Machina Regular";
+    background-color: var(--color-blue);
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    border: 0;
+    border-radius: 10px;
+    font-weight: 800;
+    padding: 0;
+    width: 100%;
+    height: 7vh;
+    transition: 0.7s;
+}
+.burger-menu .content button:hover{
+    border: 1px solid #2E2BD0;
+    background-color: white;
+    color: #2E2BD0;
+    border-radius: 50px;
+}
+.burger-menu .header{
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 0;
+    border-bottom: 1px solid #C6C5D3;
+}
+.burger-menu ul{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.burger-menu li{
+    color: #454652;
+    font-family: "Neue Machina Regular";
+    font-size: 5.5vw;
+    padding: 20px 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    padding-left: 30px;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+.burger-menu li.active{
+    border: 0;
+    border-left: 10px solid #2E2BD0;
+}
+.burger-menu li:hover{
+    background-color: #2E2BD0;
+    color: white;
+}
+.burger-menu .header button{
+    background-color: transparent;
+    border: 0;
+}
+.burger-menu .header button:last-child svg path{
+    transition: 0.5s;
+}
+.burger-menu .header button:last-child:hover svg path{
+    stroke: red;
+    transform: rotate(360deg);
+    fill: red;
+}
+.burger-menu .logo-container{
+    display: flex;
+    align-items: last baseline;
+}
+.burger-menu button svg{
+    width: 40px;
+    height: auto;
+}
+.burger-menu .footer{
+    border-top: 1px solid #C6C5D3;
+    display: flex;
+    flex-direction: column;
+    padding: 32px 0;
+    gap: 16px;
+}
+.burger-menu .social-media svg{
+    width: 100px;
+    height: 100px;
+    border: 4px solid #2E2BD0;
+    border-radius: 30px;
+    padding: 5px;
+}
+.burger-menu .footer b{
+    color: #131C78;
+    font-family: Gilroy;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 19.6px; /* 140% */
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+}
+.burger-menu .footer p{
+    color: rgba(69, 70, 82, 0.60);
+    font-family: Gilroy;
+    font-size: 2.5vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 19.6px; /* 140% */
+    letter-spacing: 0.7px;
+}
+.burger-menu .footer a{
+    color: var(--main-blue, #2E2BD0);
+    font-family: "Gilroy";
+    font-size: clamp(30px, 1.2vw, 40px);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: none;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+}
+.burger-menu button svg path{
+    fill: #2E2BD0;
+    stroke: #2E2BD0;
+}
+.burger-menu .logo-container b{
+    color: #2E2BD0;
+    font-family: Gilroy;
+    font-size: clamp(10px, 7vw, 38px);
+    font-style: normal;
+    font-weight: 700;
+}
+.burger-menu .logo-container .logo-icon{
+    display: flex;
+    flex-direction: column;
+}
+.burger-menu .logo-container svg:first-child{
+    width: 29px;
+    height: auto;
+    position: relative;
+    right: 5px;
+}
+.burger-menu .logo-container svg:last-child{
+    width: 80px;
+    height: auto;
+}
+.burger-menu .logo-container svg path, .burger-menu .logo-container b{
+    stroke: #2E2BD0;
+    fill: #2E2BD0;
+}
+header .language-dropdown{
+    position: absolute;
+    top: 45px;
+    left: -110px;
+    display: none;
+    flex-direction: column;
+    gap: 8px;
+    background: rgb(255, 255, 255);
+    padding: 10px;
+    border: 1px solid rgba(47, 53, 63, 0.50);
+    border-radius: 10px;
+    z-index: 1;
+    width: 150px;
+}
+
+header .language-dropdown.active{
+    display: flex;
+}
+
+header .other-nav .lang-btn{
+    font-family: "Neue Machina Regular";
+    background: transparent;
+    color: var(--color-blue);
+    cursor: pointer;
+    transition: 0.2s;
+    width: 150px;
+}
+
+header .other-nav .lang-btn:hover{
+    background-color: rgba(49, 47, 187, 0.2)
+}
+
+/* Ricard end */
+
 header {
     background-color: rgba(255, 255, 255, 0);
     display: flex;
@@ -56,6 +281,7 @@ header .logo-container{
     flex: 0 0 auto;
     animation: logo-animation 3s infinite;
     transition: 100ms;
+    position: relative;
 }
 
 header .logo-container b{
@@ -123,7 +349,9 @@ header .select span{
     line-height: normal;
     text-transform: uppercase;
 }
-
+#burger-button{
+    display: none;
+}
 header .other-nav button{
     width: 254px;
     height: 59px;
@@ -146,6 +374,16 @@ header .other-nav button:hover{opacity: 1;
 background-color: rgb(155, 132, 233);
 color: white;
 
+}
+#close-button{
+    display: none;
+    border: 0;
+    background-color: transparent;
+    font-size: 40px;
+    color: white;
+    font-weight: 800;
+    text-align: start;
+    font-family: Gilroy;
 }
 
 header nav a{
@@ -173,7 +411,9 @@ body::before{
 }
 
 @media (max-width: 1350px){
-
+    .hero{
+        padding: 150px 10px;
+    }
     header{
         min-height: auto;
         padding: 1.5rem;
@@ -187,32 +427,40 @@ body::before{
         position: relative;
         display: flex;
         justify-content: space-between;
+        gap: 10px;
     }
 
-    /* logo */
 
+    /* logo */
+    /* header .logo-icon{
+        width: clamp(20px,3vw,40px);
+        height: clamp(20px,3vw,40px);;
+    } */
     header .logo-container{
-        gap: 0.5rem;
+    
+        gap: 1rem;
         align-items: last baseline;
     }
 
     header .logo-container b{
-        font-size: 46px;
+       
+        font-size: clamp(20px,5vw,60px);
         color: var(--main-white, #FFF);
-        font-size: 46px;
         font-style: normal;
         font-weight: 700;
-        line-height: 50px; /* 108.696% */
+        line-height: 100%; /* 108.696% */
     }
 
     header .logo-icon svg:first-child{
-        width: 28px;
-        height: 29px;
+       width: 2vw;
+       height: auto;
+        
     }
 
     header .logo-icon svg:last-child{
-        width: 109px;
+        width: clamp(50px,11vw,109px);
         height: auto;
+       
     }
 
     /* hide */
@@ -234,8 +482,8 @@ body::before{
     /* right button */
 
     header .other-nav > button{
-        width: 116px;
-        height: 116px;
+        width: clamp(70px,10vw,116px);
+        height: clamp(70px,10vw,116px);
         padding: 0;
         margin: 0;
         border: none;
@@ -258,20 +506,65 @@ body::before{
     }
 
     .other-nav > button svg{
-        width: 60px;
-        height: 60px;
+        width: clamp(35px,5vw,60px);
+        height: clamp(35px,5vw,60px);
     }
 
     .other-nav > button svg path{
         stroke: var(--color-blue);
     }
+    #close-button{
+        display: block;
+    }
+    header ul{
+        width: 0vw;
+        display: none;
+        position: fixed;
+        justify-content: center;
+        top: 0;
+        left: 0;
+        box-sizing: border-box;
+        z-index: 3;
+        height: 100%;
+        background-color: #2e2bd091;
+        backdrop-filter: blur(10px);
+        transition: 1000ms;
+        padding: 0;
+        flex-direction: column;
+        padding: 1vw 0;
+        box-sizing: border-box;
+        justify-content: center;
+    }
+    header ul li{
+        width: 100%;
+        box-sizing: border-box;
+        font-size: 80px;
+        padding: 0;
+        background-color: rgba(255, 255, 255, 0.842);
+        text-align: center;
+        padding-left: 10px;
+        box-sizing: border-box;
+        backdrop-filter: blur(10px);
+        border-radius: 0px;
+        transition: 500ms;
+    }
+    header ul li:active{
+        background-color: #2e2bd091;
+        color: white;
+    }
+    header ul li.active{
+        padding: 0;
+        border: 0;
+        border-radius: 0;
+        padding-left: 10px;
+    }
 
     /* left burger */
 
-    header nav::before{
-        content: "☰";
-        width: 116px;
-        height: 116px;
+    #burger-button{
+        border: 0;
+        width: clamp(70px,10vw,116px);
+        height: clamp(70px,10vw,116px);
         border-radius: 1rem;
         background: #FFF;
         display: flex;
@@ -281,6 +574,8 @@ body::before{
         font-size: 40px;
         font-weight: bold;
         flex-shrink: 0;
+        position: relative;
+        z-index: 4;
     }
 }
 
@@ -624,7 +919,7 @@ footer .copyright{
     }
     footer form input, footer form label, footer form input::placeholder{
         padding: 0;
-        font-size: 42px;
+        font-size: clamp(20px,4vw,42px);
         margin-bottom: 10px;
     }
 
@@ -632,7 +927,7 @@ footer .copyright{
         font-size: 100px;
     }
     footer form button, footer form button span{
-        font-size: 30px;
+        font-size: clamp(14px,2vw,30px);
     }
     footer form > button{
         width: clamp(22rem, 14vw, 12.813rem);
@@ -651,7 +946,7 @@ footer .copyright{
         gap: 2rem;
     }
     footer form svg{
-        transform: scale(1.35);
+        width: clamp(20px,2vw,40px);
     }
     
     footer {
@@ -794,15 +1089,15 @@ footer .copyright{
     }
 
     footer form button[type="button"] {
-       display: flex;
-width: 29.5rem;
-justify-content: center;
-align-items: center;
+    display: flex;
+    width: 40vw;
+    justify-content: center;
+    align-items: center;
 
     }
 
     footer form > button {
-        width: clamp(26.5rem, 4vw, 12.813rem);
+       width: 40vw;
 
     }
 
@@ -817,5 +1112,18 @@ align-items: center;
 
     footer .copyright p{
         font-size: 40px;
+    }
+   
+}
+
+@media (max-width: 870px) {
+
+    footer .information-container div:nth-child(1) a{
+        margin-left: 0;
+        margin-top: -1rem;
+        font-size: 30px;
+    }
+    footer p, footer li{
+        font-size: 30px !important;
     }
 }
