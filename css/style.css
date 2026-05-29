@@ -1055,7 +1055,9 @@ footer .copyright{
         text-align: right;
         align-self: flex-start;
     }
-
+    .information-container__btn #contact{
+       
+    } 
     /* social media */
 
     footer .information-container div:nth-child(1) .social-media{
