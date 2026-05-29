@@ -45,6 +45,16 @@ header .select{
     cursor: pointer;
 }
 
+header nav ul .active{
+    border-radius: 10px;
+    border: 1px solid var(--main-blue, #ffffff);
+    padding: 10px 20px;
+}
+header ul li{
+    display: flex;
+    align-items: center;
+}
+
 header .selected-language{
     display: flex;
     gap: 10px;

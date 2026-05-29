@@ -95,15 +95,15 @@ let timeOut;
 let serverScroll = true;
 let nearbiestElement = yearArray[0];
 
-yearContainers.scroll({left: yearArray[2].offsetLeft-yearArray[0].offsetLeft});
+yearContainers.scroll({left: yearArray[3].offsetLeft - (yearContainers.clientWidth)/2});
 
 
 yearContainers.addEventListener("scroll", () => {
     clearTimeout(timeOut);
     if(!serverScroll){
+    const containerWidth = yearContainers.clientWidth;
     const scroll = yearContainers.scrollLeft;
     const containerCenterPos = containerWidth/2+scroll;
-    const containerWidth = yearContainers.clientWidth;
     
     yearArray.forEach(el => {
         if(Math.abs(containerCenterPos - el.offsetLeft) < Math.abs(containerCenterPos - nearbiestElement.offsetLeft)){
