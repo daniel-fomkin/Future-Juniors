@@ -3,6 +3,9 @@
     25%  {top: 5px;}
     100% {top: 10px;}
 }
+html{
+    scroll-behavior: smooth;
+}
 
 main section .container__section * {
     padding: 0;
