@@ -375,12 +375,10 @@ header .other-nav button{
     line-height: normal;
     text-transform: uppercase;
     border: 0;
-    border-radius: 0.521vw;
+    border-radius: 10px;
     padding: 0;
     transition: 0.4s;
-        cursor: pointer;
-
-    
+    cursor: pointer;
 }
 header .other-nav button:hover{opacity: 1;
 background-color: rgb(155, 132, 233);
@@ -1048,12 +1046,13 @@ footer .copyright{
 
     /* email */
 
-    footer .information-container div:nth-child(1) a{
+    footer .information-container > div:nth-child(1) a{
         font-size: 3.704vw;
         margin-left: auto;
         margin-top: -8rem;
         text-align: right;
         align-self: flex-start;
+        font-family: Gilroy;
     }
 
     /* social media */
