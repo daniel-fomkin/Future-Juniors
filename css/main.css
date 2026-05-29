@@ -3,6 +3,9 @@
     25%  {top: 5px;}
     100% {top: 10px;}
 }
+html{
+    scroll-behavior: smooth;
+}
 
 main section .container__section * {
     padding: 0;
@@ -68,18 +71,15 @@ section .container__section .wrraper {
 section .container__section .wrraper .nav{
     display: flex;
     flex-direction: column;
-    row-gap: 100px;
     max-width: 305px;
     width: 100%;
-    max-height: 502.5px;
-    height: 100%;
+    min-height: 100%;
     border-color:  rgba(47, 53, 63, 0.14); 
     border-bottom: 2px;
-    border-left: solid;
-    border-left-color:  rgba(47, 53, 63, 0.14);
-    border-left-width:3px ;
 }
 .wrraper ul li{
+    border: 0 !important;
+    height: 25%;
     padding-left: 50px;
     list-style-type: none;
     color: rgba(47, 53, 63, 0.30);
@@ -88,14 +88,15 @@ section .container__section .wrraper .nav{
     font-style: normal;
     font-weight: 400;
     line-height: 150%; 
+    border-left-width: 3px !important;
+    display: flex;
+    align-items: center;
+    border-left: solid !important;
+    border-left-color: rgba(47, 53, 63, 0.14);
 }
 .wrraper ul li:first-child{
     color: var(--main-blue, #2E2BD0);
-    border-left: solid;
-    border-left-color: var(--main-blue, #2E2BD0); 
-    border-left-width:5px ;
-    position: relative;
-    left: -2px;
+    border-left: 3px solid #2E2BD0;
 }
 main{
     width: 100%;
@@ -263,8 +264,6 @@ header, .hero-content{
         margin: 0;
     }
 
-
-
     .hero-content{
     position: static;
     gap: 4rem;
@@ -274,7 +273,7 @@ header, .hero-content{
     }
 
     .hero-content h1{
-        font-size: 120px;
+        font-size: clamp(60px,9vw,112px);
         line-height: 120%;
         width: fit-content;
     }
@@ -540,7 +539,6 @@ main .technologies{
 }
 .container__agenda{
     padding: 0 150px
-    
 }
 .container__agenda h1{
     color: var(--main-light, #2F353F);
@@ -834,6 +832,7 @@ button, li, .select{
         padding: 0 1.2rem;
     }
     .goal-card{
+        overflow: hidden;
         border: 1.926px solid #95989D;
         padding: 4rem;
     }
@@ -906,7 +905,7 @@ button, li, .select{
         padding: 0 40px;
     }
     .technologies h2{
-        font-size: 80px;
+        font-size: 12vw;
     }
     .technologies p{
         font-size: 40px;
@@ -915,37 +914,30 @@ button, li, .select{
         padding: 0px 40px;
     }
     section .container__section .wrraper .nav{
-        justify-content: space-between;
         max-width: 1350px;
         width: 100%;
         flex-direction: row;
-        border-left: 0px;
-        border-top: 2px;
-        border-top: solid;
-        border-top-color:  rgba(47, 53, 63, 0.14);
-        border-top-width:3px ;
+        border: 0;
         max-height: max-content;
     }
     section .container__section .wrraper .nav li{
-        padding-left: 0px;
-        padding-top: 50px;
+        padding: 0;
+        padding: 3%;
+        width: 26%;
         display: flex;
-        font-size: 1.9rem;
+        font-size: 4vw;
         justify-content: center;
         /* font-size: 38px; */
-        box-sizing: border-box;
     }
     section .container__section .wrraper{
         flex-direction: column;
-        row-gap: 150px;
         column-gap: 0px;
     }
-    .wrraper ul li:first-child{
-        border-left:0px;
-        left: 0px;
-        top: -3px;
-        border-top: solid;
-        border-top-width:5px ;
+    .wrraper ul li, .wrraper ul li:first-child{
+        border: 0 !important;
+        border-top: solid !important;
+        border-top-width:5px !important;
+        text-align: center;
     } 
     section .container__section article{
         max-width: 100%;

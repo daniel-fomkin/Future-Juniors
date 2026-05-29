@@ -45,6 +45,16 @@ header .select{
     cursor: pointer;
 }
 
+header nav ul .active{
+    border-radius: 10px;
+    border: 1px solid var(--main-blue, #ffffff);
+    padding: 10px 20px;
+}
+header ul li{
+    display: flex;
+    align-items: center;
+}
+
 header .selected-language{
     display: flex;
     gap: 0.521vw;
@@ -91,9 +101,13 @@ header .selected-language{
     padding: 0;
     width: 100%;
     height: 7vh;
+    transition: 0.7s;
 }
-.burger-menu .content button svg path{
-    stroke: white;
+.burger-menu .content button:hover{
+    border: 1px solid #2E2BD0;
+    background-color: white;
+    color: #2E2BD0;
+    border-radius: 50px;
 }
 .burger-menu .header{
     display: flex;
@@ -104,6 +118,9 @@ header .selected-language{
 .burger-menu ul{
     list-style: none;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 .burger-menu li{
     color: #454652;
@@ -114,15 +131,28 @@ header .selected-language{
     font-weight: 400;
     line-height: 160%;
     padding-left: 1.563vw;
+    transition: 0.5s;
+    border-radius: 10px;
 }
 .burger-menu li.active{
     border: 0;
     border-left: 10px solid #2E2BD0;
-    border-radius: 10px;
+}
+.burger-menu li:hover{
+    background-color: #2E2BD0;
+    color: white;
 }
 .burger-menu .header button{
     background-color: transparent;
     border: 0;
+}
+.burger-menu .header button:last-child svg path{
+    transition: 0.5s;
+}
+.burger-menu .header button:last-child:hover svg path{
+    stroke: red;
+    transform: rotate(360deg);
+    fill: red;
 }
 .burger-menu .logo-container{
     display: flex;
@@ -340,6 +370,14 @@ header .other-nav button{
     border: 0;
     border-radius: 1.7rem;
     padding: 0;
+    transition: 0.4s;
+
+    
+}
+header .other-nav button:hover{opacity: 1;
+background-color: rgb(155, 132, 233);
+color: white;
+
 }
 #close-button{
     display: none;
@@ -377,7 +415,9 @@ body::before{
 }
 
 @media (max-width: 1350px){
-
+    .hero{
+        padding: 150px 10px;
+    }
     header{
         min-height: auto;
         padding: 0.208vw;
@@ -391,10 +431,15 @@ body::before{
         position: relative;
         display: flex;
         justify-content: space-between;
+        gap: 10px;
     }
 
-    /* logo */
 
+    /* logo */
+    /* header .logo-icon{
+        width: clamp(20px,3vw,40px);
+        height: clamp(20px,3vw,40px);;
+    } */
     header .logo-container{
         gap: 0.023vw;
         align-items: last baseline;
@@ -416,7 +461,24 @@ body::before{
 
     header .logo-icon svg:last-child{
         width: 10.093vw;
+       
+        font-size: clamp(20px,5vw,60px);
+        color: var(--main-white, #FFF);
+        font-style: normal;
+        font-weight: 700;
+        line-height: 100%; /* 108.696% */
+    }
+
+    header .logo-icon svg:first-child{
+       width: 2vw;
+       height: auto;
+        
+    }
+
+    header .logo-icon svg:last-child{
+        width: clamp(50px,11vw,109px);
         height: auto;
+       
     }
 
     /* hide */
@@ -750,7 +812,7 @@ footer form > button:hover svg path{
 }
 
  
-footer .information-container div:nth-child(1) a{
+.information-container__email{
     color: var(--main-blue, #2E2BD0);
     font-family: "Gilroy";
     font-size: clamp(1rem, 1.2vw, 1.5rem);
@@ -854,6 +916,16 @@ footer .copyright{
     width: 100%;
     margin-top: clamp(-7rem, -10vw, -12.5rem);
 }
+.information-container a {
+    display: flex;
+    column-gap: 1.2rem;
+    align-items: center;
+    text-decoration: none;
+       
+    }
+.information-container a span  {
+    color: white;
+} 
 
 @media (max-width: 1350px) {
 
@@ -902,7 +974,7 @@ footer .copyright{
         gap: 2rem;
     }
     footer form svg{
-        transform: scale(1.35);
+        width: clamp(20px,2vw,40px);
     }
     
     footer {
@@ -1046,14 +1118,14 @@ footer .copyright{
 
     footer form button[type="button"] {
        display: flex;
-width: 80.579vw;
-justify-content: center;
-align-items: center;
+       width: 80.579vw;
+       justify-content: center;
+       align-items: center;
 
     }
 
     footer form > button {
-        width: clamp(26.5rem, 4vw, 12.813rem);
+       width: 40vw;
 
     }
 
@@ -1071,12 +1143,14 @@ align-items: center;
     }
    
 }
-
 @media (max-width: 870px) {
 
-    footer .information-container div:nth-child(1) a{
+    footer .information-container div:nth-child(1) > a{
         margin-left: 0;
         margin-top: -1rem;
-
+        font-size: 30px;
+    } 
+    footer p, footer li{
+        font-size: 30px !important;
     }
 }

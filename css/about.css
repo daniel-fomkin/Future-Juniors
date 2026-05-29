@@ -92,6 +92,15 @@
     gap: 10px;
     width: 90%;
     margin-top: 50px;
+    transition: 0.4s;
+}
+
+.feedback button:hover{opacity: 1;
+color: white;
+background-color: #2E2BD0;
+}
+.feedback button:hover svg path{
+    stroke: white;
 }
  
 .feedback .number-one{
@@ -152,7 +161,6 @@ margin-top: 150px;
     .feedback .user-comments {
     width: 100%;
     display: flex;
-    justify-content: center;
     gap: 30px;
     padding: 0 150px;
     box-sizing: border-box;
@@ -162,6 +170,8 @@ margin-top: 150px;
     .feedback .comment {
         position: static;
         display: flex;
+        width: 100%;
+
         flex-direction: column;
         border-radius: 40px;
         border: 2px solid #909398;
@@ -177,6 +187,7 @@ margin-top: 150px;
     font-weight: 400;
     line-height: 90px; /* 112.5% */
     }
+
     .feedback .user-comments{
     width: 100%;
     display: flex;
@@ -311,7 +322,7 @@ margin-top: 150px;
 }
 .info-container{
     display: flex;
-    flex-wrap: wrap;
+
     column-gap: 10rem;
     margin-bottom: 15rem;
 }
@@ -330,13 +341,14 @@ margin-top: 150px;
 }
 .info-container .info-grid{
     display: grid;
-    grid-template-columns: repeat(2,22rem);
-    grid-template-rows: repeat(2,15rem);
+    grid-template-columns: repeat(2,18vw);
+    grid-template-rows: repeat(2,12.5vw);
 }
 .info-container .info-grid article{
     display: flex;
     flex-direction: column;
-    row-gap: 2rem;
+    row-gap: 1.6vw;
+    box-sizing: border-box;
     padding: 2rem;
     border-radius: var(--radius-info-grid-article);
     border: 1px solid #909398;
@@ -374,7 +386,7 @@ margin-top: 150px;
 .info-grid article p{
     color: rgba(47, 53, 63, 0.70);
     font-family: Gilroy;
-    font-size: 1.5rem;
+    font-size: 1.25vw;
     font-style: normal;
     font-weight: 400;
     line-height: 150%; /* 2.25rem */
@@ -692,7 +704,7 @@ margin-top: 150px;
 }
 
 .year-container ul{
-    color: var(--main-white, #FFF);
+    color: white;
     font-family: Gilroy;
     font-size: clamp(1rem, 1.5vw, 1.5rem);
     font-style: normal;
@@ -700,6 +712,7 @@ margin-top: 150px;
     line-height: 150%; /* 36px */
     width: 47%;
     align-self: flex-end;
+    list-style-type: disc;
 }
 header nav li, header, header .select span{
     color: black;
@@ -716,7 +729,7 @@ header nav > svg path{
 header{
     border-bottom: 1px solid black;
 }
-ul li{
+header ul li{
     display: flex;
     align-items: center;
 }
@@ -806,6 +819,7 @@ header .logo-container b{
     }
     .info-container{
         margin-bottom: 6.25rem;
+        flex-wrap: wrap;
     }
     .info-container .info-grid{
         margin-top: 6.25rem;
@@ -850,6 +864,10 @@ header .logo-container b{
     .info{
         padding: 0 2.5rem;
     }
+    .circles-wrraper .circle{
+        width: 20vw;
+        height: 20vw;
+    }
     .info h1:nth-child(1){
         display: none;
     }
@@ -863,13 +881,12 @@ header .logo-container b{
     .feedback .user-comments {
         display: flex;
         width: 100%;
-        
- 
     }
     .feedback h2{
     color: var(--main-light, #2F353F);
     font-family: "Neue Machina Regular";
- 
+        padding: 0px 40px;
+
     font-size: 80px;
     font-style: normal;
     font-weight: 400;
@@ -880,7 +897,7 @@ header .logo-container b{
     width: 100%;
     display: flex;
     overflow-x: scroll;
-    padding: 0 30px;
+    padding: 0 40px;
 }
  
 .feedback .user-info{
@@ -892,7 +909,7 @@ header .logo-container b{
     color: var(--main-blue, #2E2BD0);
     font-feature-settings: 'liga' off, 'clig' off;
     font-family: "Neue Machina Regular";
-    font-size: 40px;
+    font-size: 3.7vw;
     font-style: normal;
     font-weight: 400;
     line-height: 150%; /* 60px */
@@ -901,7 +918,7 @@ header .logo-container b{
 .feedback .user-info p:nth-child(2){
     color: rgba(47, 53, 63, 0.70);
     font-family: Gilroy;
-    font-size: 30px;
+    font-size: 2.7vw;
     font-style: normal;
     font-weight: 400;
     line-height: 130%; /* 39px */
@@ -909,24 +926,24 @@ header .logo-container b{
 }
  
 .feedback .user-info img{
-    width: 160px;
-    height: 160px;
+    width: 14vw;
+    height: 14vw;
 }
 .feedback .comment{
     flex-shrink: 0;
-    width: 880px;
+    width: 80vw;
     display: flex;
     flex-direction: column;
     border-radius: 40px;
     border: 2px solid #909398;
     padding: 50px;
     box-sizing: border-box;
-    gap: 100px;
+    gap: 0px;
 }
 .feedback .user-text{
     color: rgba(47, 53, 63, 0.70);
     font-family: Gilroy;
-    font-size: 40px;
+    font-size: 3.7vw;
     font-style: normal;
     font-weight: 400;
     line-height: 150%; /* 60px */
@@ -937,22 +954,23 @@ header .logo-container b{
     padding: 24px 40px 17px 40px;
     color: var(--main-blue, #2E2BD0);
     font-family: "Neue Machina Regular";
-    font-size: 30px;
+    font-size: 2.7vw;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     text-transform: uppercase;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     background-color: transparent;
     border-radius: 20px;
     border: 2px solid var(--main-blue, #2E2BD0);
     box-sizing: border-box;
     gap: 10px;
+    width: 42vw;
 }
 .feedback button svg{
-    width: 34px;
-    height: 34px;
+    width: 3vw;
+    height: 3vw;
 }
 .feedback .number-one{
     display: none;
@@ -961,5 +979,10 @@ header .logo-container b{
 .feedback .another-button {
     display: none;
 }
- 
+.feedback .user-comments{
+    height:80vw;
+}
+.comment{
+    opacity: 1 !important;
+}
 }}
