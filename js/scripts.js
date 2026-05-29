@@ -67,6 +67,28 @@ prevBtn.addEventListener('click', () => {
 
 // Feadback
 
+//Tech
+
+const techItems = document.querySelectorAll(".pin-and-text");
+
+techItems.forEach(item => {
+    item.addEventListener("click", (e) => {
+        e.stopPropagation();
+        techItems.forEach(el=>{
+            el.classList.remove("active")
+        });
+        item.classList.add("active")
+    })
+})
+
+document.addEventListener("click", () => {
+    techItems.forEach(item=>{
+        item.classList.remove("active")
+    })
+})
+
+//Tech
+
 // Ricard end
 
 //Burger Menu
