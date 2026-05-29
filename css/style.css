@@ -786,7 +786,7 @@ footer form > button:hover svg path{
 }
 
  
-footer .information-container div:nth-child(1) a{
+.information-container__email{
     color: var(--main-blue, #2E2BD0);
     font-family: "Gilroy";
     font-size: clamp(1rem, 1.2vw, 1.5rem);
@@ -890,6 +890,16 @@ footer .copyright{
     width: 100%;
     margin-top: clamp(-7rem, -10vw, -12.5rem);
 }
+.information-container a {
+    display: flex;
+    column-gap: 1.2rem;
+    align-items: center;
+    text-decoration: none;
+       
+    }
+.information-container a span  {
+    color: white;
+} 
 
 @media (max-width: 1350px) {
 
@@ -989,7 +999,7 @@ footer .copyright{
 
     /* email */
 
-    footer .information-container div:nth-child(1) a{
+    footer .information-container div:nth-child(1) > a{
         font-size: 40px;
         margin-left: auto;
         margin-top: -8rem;
@@ -1101,20 +1111,15 @@ footer .copyright{
         gap: 1rem;
         margin-top: 0;
     }
-
-    footer .copyright p{
-        font-size: 40px;
-    }
-   
+    
 }
-
 @media (max-width: 870px) {
 
-    footer .information-container div:nth-child(1) a{
+    footer .information-container div:nth-child(1) > a{
         margin-left: 0;
         margin-top: -1rem;
         font-size: 30px;
-    }
+    } 
     footer p, footer li{
         font-size: 30px !important;
     }
