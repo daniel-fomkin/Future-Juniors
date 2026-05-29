@@ -161,7 +161,6 @@ margin-top: 150px;
     .feedback .user-comments {
     width: 100%;
     display: flex;
-    justify-content: center;
     gap: 30px;
     padding: 0 150px;
     box-sizing: border-box;
@@ -885,6 +884,7 @@ header .logo-container b{
     .feedback h2{
     color: var(--main-light, #2F353F);
     font-family: "Neue Machina Regular";
+        padding: 0px 40px;
 
     font-size: 80px;
     font-style: normal;
@@ -896,7 +896,7 @@ header .logo-container b{
     width: 100%;
     display: flex;
     overflow-x: scroll;
-    padding: 0 30px;
+    padding: 0 40px;
 }
  
 .feedback .user-info{
@@ -930,14 +930,14 @@ header .logo-container b{
 }
 .feedback .comment{
     flex-shrink: 0;
-    width: 45vw;
+    width: 80vw;
     display: flex;
     flex-direction: column;
     border-radius: 40px;
     border: 2px solid #909398;
     padding: 50px;
     box-sizing: border-box;
-    gap: 100px;
+    gap: 0px;
 }
 .feedback .user-text{
     color: rgba(47, 53, 63, 0.70);
@@ -959,16 +959,17 @@ header .logo-container b{
     line-height: normal;
     text-transform: uppercase;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     background-color: transparent;
     border-radius: 20px;
     border: 2px solid var(--main-blue, #2E2BD0);
     box-sizing: border-box;
     gap: 10px;
+    width: 42vw;
 }
 .feedback button svg{
-    width: 7vw;
-    height: 7vw;
+    width: 3vw;
+    height: 3vw;
 }
 .feedback .number-one{
     display: none;
@@ -977,5 +978,10 @@ header .logo-container b{
 .feedback .another-button {
     display: none;
 }
- 
+.feedback .user-comments{
+    height:80vw;
+}
+.comment{
+    opacity: 1 !important;
+}
 }}
