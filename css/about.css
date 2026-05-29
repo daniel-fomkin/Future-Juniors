@@ -1,55 +1,54 @@
-
-.feedback h2{
+.feedback h2 {
     color: var(--main-light, #2F353F);
     font-family: "Neue Machina Regular";
-    padding: 0px 150px;
-    font-size: 60px;
+    padding: 0px 7.8vw;
+    font-size: 3.1vw;
     font-style: normal;
     font-weight: 400;
-    line-height: 90px; /* 112.5% */
+    line-height: 112.5%
 }
- 
- 
-.feedback .user-comments{
+
+
+.feedback .user-comments {
     width: 100%;
     display: flex;
-    padding: 0 150px;
+    padding: 0px 7.8vw;
     box-sizing: border-box;
 }
- 
-.feedback .user-info{
-    /* display: flex; */
-    /* align-items: flex-end; */
-    gap: 50px;
+
+.feedback .user-info {
+    gap: 2.6vw;
 }
-.feedback .user-info p:nth-child(1){
+
+.feedback .user-info p:nth-child(1) {
     color: var(--main-blue, #2E2BD0);
     font-feature-settings: 'liga' off, 'clig' off;
     font-family: "Neue Machina Regular";
-    font-size: 26px;
+    font-size: 1.3vw;
     font-style: normal;
     font-weight: 400;
-    line-height: 150%; /* 60px */
+    line-height: 150%;
     margin: 0;
 }
-.feedback .user-info p:nth-child(2){
+
+.feedback .user-info p:nth-child(2) {
     color: rgba(47, 53, 63, 0.70);
     font-family: Gilroy;
-    font-size: 20px;
+    font-size: 1vw;
     font-style: normal;
     font-weight: 400;
-    line-height: 130%; /* 39px */
+    line-height: 130%;
     margin: 0;
 }
- 
-.feedback .user-info img{
-    width: 90px;
-    height: 90px;
+
+.feedback .user-info img {
+    width: 4.6vw;
+    height: 4.6vw;
 }
- 
- 
- 
-.feedback .comment{
+
+
+
+.feedback .comment {
     justify-content: space-between;
     flex-shrink: 0;
     width: 33%;
@@ -57,25 +56,25 @@
     flex-direction: column;
     border-radius: 40px;
     border: 2px solid #909398;
-    padding: 50px;
+    padding: 2.6vw;
     box-sizing: border-box;
-    gap: 50px;  
-    padding-top: 100px;
+    gap: 2.6vw;
+    padding-top: 5.2vw;
 }
- 
- 
-.feedback .user-text{
+
+
+.feedback .user-text {
     color: rgba(47, 53, 63, 0.70);
     font-family: Gilroy;
-    font-size: 30px;
+    font-size: 1.5vw;
     font-style: normal;
     font-weight: 400;
-    line-height: 150%; /* 60px */
+    line-height: 150%;
 }
- 
-.feedback button{
+
+.feedback button {
     display: inline-flex;
-    padding: 17px 40px;
+    padding: 0.8vw 2vw;
     color: var(--main-blue, #2E2BD0);
     font-family: "Neue Machina Regular";
     font-size: clamp(1px, 1vw, 23px);
@@ -91,40 +90,42 @@
     box-sizing: border-box;
     gap: 10px;
     width: 90%;
-    margin-top: 50px;
+    margin-top: 2.6vw;
     transition: 0.4s;
     cursor: pointer;
 }
 
-.feedback button:hover{opacity: 1;
+.feedback button:hover{
+ opacity: 1;
 color: white;
 background-color: #2E2BD0;
 transform: scale(1.05);
 }
-.feedback button:hover svg path{
+
+.feedback button:hover svg path {
     stroke: white;
 }
- 
-.feedback .number-one{
+
+.feedback .number-one {
     color: var(--main-light, #2F353F);
-text-align: center;
-font-family: "Neue Machina Regular";
-font-size: 32px;
-font-style: normal;
-font-weight: 400;
-line-height: 150%; /* 48px */
+    text-align: center;
+    font-family: "Neue Machina Regular";
+    font-size: 1.6vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
 }
- 
- 
+
+
 .feedback .another-button {
-display: inline-flex;
-justify-content: center;
-align-items: flex-start;
-width: 100%;
-gap: 50px;
-padding: 0 150px;
-box-sizing: border-box;
-margin-top: 150px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    gap: 2.6vw;
+    padding: 0px 7.8vw;
+    box-sizing: border-box;
+    margin-top: 7.8vw;
 }
 
 .feedback .animation-button {
@@ -149,29 +150,29 @@ stroke: #317cff;
 
 .feedback .user-comments{
     position: relative;
-    height: 900px;
+    height: 46vw;
     overflow: hidden;
 }
 
-.feedback .comment{
+.feedback .comment {
     position: absolute;
 }
 
-.feedback .comment.center{
+.feedback .comment.center {
     left: 35%;
     z-index: 3;
     opacity: 1;
     height: 100%;
 }
 
-.feedback .comment.left{
+.feedback .comment.left {
     left: 0;
     opacity: 0.7;
     z-index: 2;
     height: 100%;
 }
 
-.feedback .comment.right{
+.feedback .comment.right {
     left: 70%;
     opacity: 0.7;
     z-index: 2;
@@ -179,205 +180,204 @@ stroke: #317cff;
 }
 
 @media (max-width: 1350px) {
-
-    .feedback .user-comments {
-    width: 100%;
-    display: flex;
-    gap: 30px;
-    padding: 0 150px;
-    box-sizing: border-box;
-    overflow: hidden;
-    }
-
     .feedback .comment {
         position: static;
         display: flex;
         width: 100%;
-
         flex-direction: column;
         border-radius: 40px;
         border: 2px solid #909398;
-        padding: 50px;
+        padding: 4.6vw;
         box-sizing: border-box;
     }
-    .feedback h2{
-    color: var(--main-light, #2F353F);
-    font-family: "Neue Machina Regular";
 
-    font-size: 80px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 90px; /* 112.5% */
+    .feedback h2 {
+        color: var(--main-light, #2F353F);
+        font-family: "Neue Machina Regular";
+        font-size: 7.4vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 112.5%;
     }
 
-    .feedback .user-comments{
-    width: 100%;
-    display: flex;
-    overflow-x: scroll;
-    padding: 0 30px;
-    gap: 20px;
+    .feedback .user-comments {
+        width: 100%;
+        display: flex;
+        overflow-x: scroll;
+        padding: 0 2.7vw;
+        gap: 1.8vw;
+    }
+
+    .feedback .user-info {
+        display: flex;
+        align-items: flex-end;
+        gap: 4.6vw;
+    }
+
+    .feedback .user-info p:nth-child(1) {
+        color: var(--main-blue, #2E2BD0);
+        font-feature-settings: 'liga' off, 'clig' off;
+        font-family: "Neue Machina Regular";
+        font-size: 3.7vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+        margin: 0;
+    }
+
+    .feedback .user-info p:nth-child(2) {
+        color: rgba(47, 53, 63, 0.70);
+        font-family: Gilroy;
+        font-size: 2.7vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 130%;
+        margin: 0;
+    }
+
+    .feedback .user-info img {
+        width: 14.8vw;
+        height: 14.8vw;
+    }
+
+    .feedback .comment {
+        flex-shrink: 0;
+        width: 81vw;
+        display: flex;
+        flex-direction: column;
+        border-radius: 40px;
+        border: 2px solid #909398;
+        padding: 4.6vw;
+        box-sizing: border-box;
+        gap: 9.2vw;
+    }
+
+    .feedback .user-text {
+        color: rgba(47, 53, 63, 0.70);
+        font-family: Gilroy;
+        font-size: 3.7vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+    }
+
+    .feedback button {
+        display: flex;
+        padding: 2.2vw 3.7vw 1.5vw 3.7vw;
+        color: var(--main-blue, #2E2BD0);
+        font-family: "Neue Machina Regular";
+        font-size: 2.7vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: uppercase;
+        justify-content: center;
+        align-items: flex-start;
+        background-color: transparent;
+        border-radius: 20px;
+        border: 2px solid var(--main-blue, #2E2BD0);
+        box-sizing: border-box;
+        gap: 10px;
+    }
+
+    .feedback button svg {
+        width: 3.1vw;
+        height: 3.1vw;
+    }
+
+    .feedback .number-one {
+        display: none;
+    }
+
+    .feedback .another-button {
+        display: none;
+    }
 }
 
-.feedback .user-info{
-    display: flex;
-    align-items: flex-end;
-    gap: 50px;
-}
-.feedback .user-info p:nth-child(1){
-    color: var(--main-blue, #2E2BD0);
-    font-feature-settings: 'liga' off, 'clig' off;
-    font-family: "Neue Machina Regular";
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 150%; /* 60px */
-    margin: 0;
-}
-.feedback .user-info p:nth-child(2){
-    color: rgba(47, 53, 63, 0.70);
-    font-family: Gilroy;
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 130%; /* 39px */
-    margin: 0;
+:root {
+    --circle-first: #2F353F;
+    --circle-second: #C1C2C5;
+    --circle-third: #2E2BD0;
+    --color-main-blue: #2E2BD0;
+    --radius-info-grid-article: 2vw;
+    --font-size-info-grid-article-p: 1.5vw;
+    --radius-circle: 16.6vw;
+    --border-circle: 2px solid #FFF;
+    --font-size-media: 16.2vw;
+    --radius-article-media: 8.2vw;
 }
 
-.feedback .user-info img{
-    width: 160px;
-    height: 160px;
-}
-.feedback .comment{
-    flex-shrink: 0;
-    width: 880px;
-    display: flex;
-    flex-direction: column;
-    border-radius: 40px;
-    border: 2px solid #909398;
-    padding: 50px;
-    box-sizing: border-box;
-    gap: 100px;
-}
-.feedback .user-text{
-    color: rgba(47, 53, 63, 0.70);
-    font-family: Gilroy;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 150%; /* 60px */
-}
-
-.feedback button{
-    display: flex;
-    padding: 24px 40px 17px 40px;
-    color: var(--main-blue, #2E2BD0);
-    font-family: "Neue Machina Regular";
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-transform: uppercase;
-    justify-content: center;
-    align-items: flex-start;
-    background-color: transparent;
-    border-radius: 20px;
-    border: 2px solid var(--main-blue, #2E2BD0);
-    box-sizing: border-box;
-    gap: 10px;
-}
-.feedback button svg{
-    width: 34px;
-    height: 34px;
-}
-.feedback .number-one{
-    display: none;
-}
-
-.feedback .another-button {
-    display: none;
-}
-}
-
-
-
-:root{
-    --circle-first:#2F353F;
-    --circle-second:#C1C2C5;
-    --circle-third:#2E2BD0;
-    --color-main-blue:#2E2BD0;
-    --radius-info-grid-article: 2.5rem;
-    --font-size-info-grid-article-p:1.875rem;
-    --radius-circle: 11.25rem;
-    --border-circle:2px solid #FFF;
-    --font-size-media:11rem;
-    --radius-article-media:5.6rem;
-}
-
-.info *{
+.info * {
     padding: 0;
     margin: 0;
 }
+
 .info {
-    /* padding: 0;
-    margin: 0; */
-    padding: 0 9.38rem;
-  
+    padding: 0 7.8vw;
+
 }
-.info h1:nth-child(1){
+
+.info h1:nth-child(1) {
     color: var(--main-light, #2F353F);
     font-family: "Neue Machina Regular";
-    font-size: 3.75rem;
-    padding-bottom: 3rem;
+    font-size: 3.1vw;
+    padding-bottom: 2.5vw;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
 }
-.info h1:nth-child(2){
+
+.info h1:nth-child(2) {
     display: none;
     color: var(--main-light, #2F353F);
     font-family: "Neue Machina Regular";
-    font-size: 3.75rem;
-    padding-bottom: 3rem;
+    font-size: 3.1vw;
+    padding-bottom: 2.5vw;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
 }
-.info-container{
-    display: flex;
 
-    column-gap: 10rem;
-    margin-bottom: 15rem;
+.info-container {
+    display: flex;
+    column-gap: 8.3vw;
+    margin-bottom: 12.5vw;
 }
-.info-container .info__text{
+
+.info-container .info__text {
     max-width: 47rem;
     width: 100%;
-    margin-bottom: 2rem;
+    margin-bottom: 1.6vw;
 }
-.info-container .info__text p{
+
+.info-container .info__text p {
     color: rgba(47, 53, 63, 0.70);
     font-family: Gilroy;
     font-size: var(--font-size-info-grid-article-p);
     font-style: normal;
     font-weight: 400;
-    line-height: 150%; /* 2.8125rem */
+    line-height: 150%;
 }
-.info-container .info-grid{
+
+.info-container .info-grid {
     display: grid;
-    grid-template-columns: repeat(2,18vw);
-    grid-template-rows: repeat(2,12.5vw);
+    grid-template-columns: repeat(2, 18vw);
+    grid-template-rows: repeat(2, 12.5vw);
 }
-.info-container .info-grid article{
+
+.info-container .info-grid article {
     display: flex;
     flex-direction: column;
     row-gap: 1.6vw;
     box-sizing: border-box;
-    padding: 2rem;
+    padding: 1.6vw;
     border-radius: var(--radius-info-grid-article);
     border: 1px solid #909398;
 }
-.info-grid article:nth-child(3){
+
+.info-grid article:nth-child(3) {
     background-image: url(../img/background-img.jpg);
-    background-blend-mode:soft-light;
+    background-blend-mode: soft-light;
     background-size: cover;
     position: relative;
     right: 1rem;
@@ -385,46 +385,55 @@ stroke: #317cff;
     background-color: #5E5BE3;
     transition: 1s;
 }
-.info-grid article:nth-child(3):hover{
-    transform: translate(17px,-17px);
+
+.info-grid article:nth-child(3):hover {
+    transform: translate(17px, -17px);
 }
-.info-grid article:nth-child(3) span{
+
+.info-grid article:nth-child(3) span {
     color: white;
 }
-.info-grid article:nth-child(3) p{
+
+.info-grid article:nth-child(3) p {
     color: rgba(255, 255, 255, 0.70);
 }
-.info-grid article:last-child{
-    row-gap: 0px; 
+
+.info-grid article:last-child {
+    row-gap: 0px;
 }
-.info-grid article span{
+
+.info-grid article span {
     color: var(--color-main-blue);
     font-family: "Neue Machina Regular";
-    font-size: 3.75rem;
+    font-size: 2.5vw;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
 }
-.info-grid article p{
+
+.info-grid article p {
     color: rgba(47, 53, 63, 0.70);
     font-family: Gilroy;
     font-size: 1.25vw;
     font-style: normal;
     font-weight: 400;
-    line-height: 150%; /* 2.25rem */
-    
+    line-height: 150%;
+
 }
-.circles-wrraper{
+
+.circles-wrraper {
     display: flex;
 }
-.circles-wrraper .circle{
+
+.circles-wrraper .circle {
     flex-shrink: 0;
-    width:clamp( 9rem,8vw,11.25rem) ;
-    height:clamp(9rem,8vw,11.25rem);
+    width: clamp(9rem, 8vw, 11.25rem);
+    height: clamp(9rem, 8vw, 11.25rem);
     border-radius: var(--radius-circle);
     border: var(--border-circle);
 }
-.circles-wrraper .circle:last-child{
+
+.circles-wrraper .circle:last-child {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -433,238 +442,242 @@ stroke: #317cff;
     cursor: pointer;
     
 }
-.circles-wrraper .circle:last-child:hover{
-        transform: scale(1.08);
-        background-color:#a1a0e9;
-        
-    }
-.circle-moved{
-    margin-left: -3.3rem;
+
+.circles-wrraper .circle:last-child:hover {
+    transform: scale(1.08);
+    background-color: #a1a0e9;
+
 }
-.circles-wrraper .circle-black{
+
+.circle-moved {
+    margin-left: -2.75vw;
+}
+
+.circles-wrraper .circle-black {
     background-color: var(--circle-first);
 }
-.circles-wrraper .circle-white{
+
+.circles-wrraper .circle-white {
     background-color: var(--circle-second);
 }
-.circles-wrraper .circle-blue{
+
+.circles-wrraper .circle-blue {
     background-color: var(--circle-third);
 }
-/* OUR TEAM */ /* Richard*/ 
 
-.our-team{
-    padding: 30px;
+.our-team {
+    padding: 1.5vw;
     width: 100%;
     box-sizing: border-box;
 }
 
-.our-team-container{
+.our-team-container {
     width: 100%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    gap: 70px;
+    gap: 3.6vw
 }
 
-.our-team-top{
+.our-team-top {
     justify-content: space-between;
     align-items: flex-start;
-    gap: 80px;
+    gap: 4.1vw;
 }
 
-.our-team-top h2{
+.our-team-top h2 {
     color: var(--color-light);
-    padding-left: 150px;
+    padding-left: 7.8vw;
     font-family: "Neue Machina Regular";
-    font-size: 60px;
+    font-size: 3.1vw;
     font-weight: 400;
     margin: 0;
 }
 
-.our-team-top p{
+.our-team-top p {
     position: relative;
     left: 50%;
     max-width: 520px;
     color: rgba(47, 53, 63, 0.70);
     font-family: Gilroy;
-    font-size: 20px;
+    font-size: 1vw;
     font-weight: 400;
     line-height: 150%;
     margin: 0;
 }
 
-.our-team-image{
+.our-team-image {
     border: 2px solid var(--main-blue, #2E2BD0);
     width: 100%;
-    height: 57.063rem;
+    height: 47vw;
     border-radius: 40px;
     overflow: hidden;
 }
 
-.our-team-image img{
+.our-team-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
 }
 
-.our-team-values{
+.our-team-values {
     margin-left: 10%;
     margin-right: 10%;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
+    margin-top: 4.1vw;
+    margin-bottom: 4.1vw;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
 
-.our-team-values article{
-    padding: 60px 60px 60px;
+.our-team-values article {
+    padding: 3.1vw 3.1vw 3.1vw;
     display: flex;
     flex-direction: column;
-    gap: 5rem;
+    gap: 4.1vw;
     border-right: 1px solid var(--color-blue);
 }
 
-.our-team-values article:first-child{
+.our-team-values article:first-child {
     padding-left: 0;
 }
 
-.our-team-values article:last-child{
+.our-team-values article:last-child {
     border-right: none;
     padding-right: 0;
 }
 
-.our-team-values span{
+.our-team-values span {
     color: var(--color-blue);
     font-family: "Neue Machina Regular";
-    font-size: 60px;
+    font-size: 3.1vw;
     font-weight: normal;
 }
 
-.our-team-values h3{
+.our-team-values h3 {
     margin: 0;
     color: var(--color-light);
     font-family: "Neue Machina Regular";
-    font-size: 60px;
+    font-size: 3.1vw;
     font-weight: 400;
 }
 
-.our-team-values p{
+.our-team-values p {
     margin: 0;
     color: rgba(47, 53, 63, 0.70);
     font-family: Gilroy;
-    font-size: 30px;
+    font-size: 1.5vw;
     font-weight: 400;
     line-height: 150%;
 }
 
-@media (max-width: 1350px){
-
-    .our-team{
-        padding: 40px;
+@media (max-width: 1350px) {
+    .our-team {
+        padding: 3.7vw;
     }
 
-    .our-team-container{
-        gap: 150px;
+    .our-team-container {
+        gap: 13.8vw;
     }
 
-    .our-team-top{
+    .our-team-top {
         display: flex;
         flex-direction: column;
-        gap: 100px;
+        gap: 9.2vw;
     }
 
-    .our-team-top h2{
+    .our-team-top h2 {
         padding-left: 0;
-        font-size: 80px;
+        font-size: 7.4vw;
         line-height: 110%;
     }
 
-    .our-team-top p{
+    .our-team-top p {
         position: static;
         max-width: 100%;
-        font-size: 40px;
+        font-size: 3.7vw;
         line-height: 150%;
     }
 
-    .our-team-image{
-        height: 715px;
+    .our-team-image {
+        height: 66vw;
         border-radius: 40px;
     }
 
-    .our-team-image img{
+    .our-team-image img {
         object-fit: cover;
     }
 
-    .our-team-values{
+    .our-team-values {
         margin: 0;
-        margin-top: 80px;
-        margin-bottom: 80px;
+        margin-top: 7.4vw;
+        margin-bottom: 7.4vw;
         display: flex;
         flex-direction: column;
-        gap: 120px;
+        gap: 11.1vw;
     }
 
-    .our-team-values article{
-        padding: 0 0 100px 0;
-        gap: 100px;
+    .our-team-values article {
+        padding: 0 0 9.2vw 0;
+        gap: 9.2vw;
         border-right: none;
         border-bottom: 4px solid var(--color-blue);
     }
 
-    .our-team-values article:last-child{
+    .our-team-values article:last-child {
         padding-bottom: 0;
         border-bottom: none;
     }
 
-    .our-team-values span{
-        font-size: 80px;
+    .our-team-values span {
+        font-size: 7.4vw;
         line-height: 100%;
     }
 
-    .our-team-values h3{
-        font-size: 60px;
+    .our-team-values h3 {
+        font-size: 5.5vw;
         line-height: 120%;
     }
 
-    .our-team-values p{
-        font-size: 50px;
+    .our-team-values p {
+        font-size: 4.6vw;
         line-height: 150%;
     }
 }
 
-/* YEARS */ /* Richard*/ /*ENDS HERE*/
-
-.vertical-line, .one-year{
+.vertical-line,
+.one-year {
     width: 1px;
     height: 5.7vw;
-    border-right: 1px solid rgba(255, 255, 255, 0.30);;
+    border-right: 1px solid rgba(255, 255, 255, 0.30);
 }
 
-.one-year{
+.one-year {
     width: 4px;
     height: 7.8vw;
 }
 
-.year-container{
+.year-container {
     border-radius: 70px;
     background: linear-gradient(66deg, #2E2BD0 -67.89%, #7876F2 125.28%);
-    padding: 150px;
-    padding-bottom: 100px;
+    padding: 7.8vw;
+    padding-bottom: 5.2vw;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 2.6vw;
 }
-.years{
+
+.years {
     width: 100%;
     box-sizing: border-box;
-    padding: 0 30px;
-    gap: 100px;
+    padding: 0 1.5vw;
+    gap: 1.5vw;
     display: flex;
     flex-direction: column;
 }
-.year-lines{
+
+.year-lines {
     padding-top: 5.2vw;
     display: flex;
     align-items: center;
@@ -673,36 +686,36 @@ stroke: #317cff;
     box-sizing: border-box;
 }
 
-.years h2{
+.years h2 {
     color: var(--main-light, #2F353F);
     font-family: "Neue Machina Regular";
     font-size: clamp(2rem, 4vw, 3.75rem);
     font-style: normal;
     font-weight: 400;
-    line-height: 150%; /* 90px */
+    line-height: 150%;
 }
 
-.years .text{
-    padding: 0 120px;
+.years .text {
+    padding: 0 6.2vw;
     box-sizing: border-box;
     display: grid;
-    grid-template-columns: 33.5% 44.1%;;
+    grid-template-columns: 33.5% 44.1%;
     grid-template-rows: auto auto;
-    column-gap: 210px;
+    column-gap: 10.9vw;
 }
 
-.years p{
+.years p {
     color: rgba(47, 53, 63, 0.70);
     font-family: "Gilroy";
     font-size: clamp(1rem, 1.5vw, 1.5rem);
     font-style: normal;
     font-weight: 400;
-    line-height: 150%; /* 36px */
+    line-height: 150%;
     grid-row: 2/3;
     grid-column: 2/3;
 }
 
-.years b{
+.years b {
     color: rgba(255, 255, 255, 0.50);
     text-align: center;
     font-family: "Neue Machina Regular";
@@ -714,299 +727,350 @@ stroke: #317cff;
     right: clamp(70px, 3.9vw, 80px);
     bottom: clamp(80px, 3.9vw, 320px);
 }
-.year-container .active b{
+
+.year-container .active b {
     color: var(--main-white, #FFF);
     font-size: clamp(3rem, 8vw, 5rem);
     right: clamp(100px, 5vw, 150px);
     bottom: clamp(100px, 4.9vw, 300px);
 }
 
-.year-container .active{
+.year-container .active {
     border-width: 4px;
     border-color: white;
 }
 
-.year-container ul{
+.year-container ul {
     color: white;
     font-family: Gilroy;
     font-size: clamp(1rem, 1.5vw, 1.5rem);
     font-style: normal;
     font-weight: 400;
-    line-height: 150%; /* 36px */
+    line-height: 150%;
     width: 47%;
     align-self: flex-end;
     list-style-type: disc;
 }
-header nav li, header, header .select span{
+
+header nav li,
+header,
+header .select span {
     color: black;
 }
-header .logo-icon svg path, header .select svg path{
+
+header .logo-icon svg path,
+header .select svg path {
     stroke: black;
 }
-header .logo-icon svg path{
+
+header .logo-icon svg path {
     fill: black;
 }
-header nav > svg path{
+
+header nav>svg path {
     fill: black;
 }
-header{
+
+header {
     border-bottom: 1px solid black;
 }
-header ul li{
+
+header ul li {
     display: flex;
     align-items: center;
         cursor: pointer;
 }
-header nav ul .active{
+
+header nav ul .active {
     color: var(--main-blue, #2E2BD0);
     border-radius: 10px;
     border: 1px solid var(--main-blue, #2E2BD0);
-    padding: 10px 20px;
-}
-main{
-    display: flex;
-    flex-direction: column;
-    gap: 300px;
-    padding-bottom: 150px;
-}
-body{
-    display: flex;
-    flex-direction: column;
-    gap: 150px;
+    padding: 0.5vw 1vw;
 }
 
-header nav ul li a{
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 15.6vw;
+    padding-bottom: 15.6vw;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 7.8vw;
+}
+
+header nav ul li a {
     color: black;
 }
-header .logo-container b{
+
+header .logo-container b {
     display: none;
     color: black;
 }
 
 @media (max-width: 1350px) {
-    .years .text{
+    .years .text {
         display: flex;
         flex-direction: column;
         padding: 0;
     }
-    .years .text h2{
-        font-size: 80px;
+
+    .years .text h2 {
+        font-size: 7.4vw;
     }
-    .years .text p{
-        font-size: 40px;
+
+    .years .text p {
+        font-size: 3.7vw;
     }
-    .years{
-        padding: 40px;
+
+    .years {
+        padding: 3.7vw;
     }
-    .year-container{
-        padding: 80px 20px;
+
+    .year-container {
+        padding: 7.4vw 1.8vw;
     }
-    .year-container ul{
+
+    .year-container ul {
         width: 100%;
-        font-size: 40px;
+        font-size: 3.7vw;
         box-sizing: border-box;
     }
-    .year-container .one-year{
-        height: 513px;
+
+    .year-container .one-year {
+        height: 47.7vw;
     }
-    .year-container .vertical-line{
-        height: 376.2px;
+
+    .year-container .vertical-line {
+        height: 34.8vw;
     }
-    .year-container .one-year b{
-        font-size: 80px;
-        bottom: 130px;
+
+    .year-container .one-year b {
+        font-size: 7.4vw;
+        bottom: 12vw;
     }
-    .year-container .active b{
-        font-size: 100px;
-        bottom: 150px;
+
+    .year-container .active b {
+        font-size: 9.2vw;
+        bottom: 13.8vw;
     }
-    .year-lines{
-        gap: 30px;
+
+    .year-lines {
+        gap: 2.7vw;
         justify-content: flex-start;
         overflow: scroll;
         box-sizing: border-box;
-        padding-top: 150px;
+        padding-top: 13.8vw;
     }
-    header .logo-container b{
+
+    header .logo-container b {
         display: block;
-        font-size: 46px;
+        font-size: 4.2vw;
     }
-    #burger-button{
+
+    #burger-button {
         color: white;
         background: var(--main-blue, #2E2BD0);
     }
-    header .other-nav button{
+
+    header .other-nav button {
         background: var(--main-blue, #2E2BD0);
     }
-    header .other-nav button svg path{
+
+    header .other-nav button svg path {
         stroke: white;
     }
-    .info-container{
-        margin-bottom: 6.25rem;
+
+    .info-container {
+        margin-bottom: 9.2vw;
         flex-wrap: wrap;
     }
-    .info-container .info-grid{
-        margin-top: 6.25rem;
-        
-        grid-template-columns: repeat(1,1fr);
-        grid-template-rows: repeat(4,35rem);
+
+    .info-container .info-grid {
+        margin-top: 9.2vw;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 51.8vw);
         width: 100%;
     }
-    .circle-media{
+
+    .circle-media {
         display: none;
     }
-    .info-grid article:nth-child(3){
+
+    .info-grid article:nth-child(3) {
         background-image: none;
         background-color: white;
         right: 0;
         top: 0;
     }
-    .info-grid article:nth-child(3) span{
+
+    .info-grid article:nth-child(3) span {
         color: var(--color-main-blue);
     }
-    .info-grid article:nth-child(3):hover{
-        transform: translate(0px,0px);
+
+    .info-grid article:nth-child(3):hover {
+        transform: translate(0px, 0px);
     }
-    .info-grid article span{
+
+    .info-grid article span {
         font-size: var(--font-size-media);
     }
-    .info-container .info-grid article{
-        padding: 4rem;
+
+    .info-container .info-grid article {
+        padding: 5.9vw;
         border-radius: var(--radius-article-media);
         justify-content: space-between;
     }
-    .info-grid article:nth-child(3) p{
+
+    .info-grid article:nth-child(3) p {
         color: rgba(47, 53, 63, 0.70);
     }
-    .circles-wrraper .circle{
-        width: 10.6rem;
-        height: 10.6rem;
+
+    .circles-wrraper .circle {
+        width: 15.7vw;
+        height: 15.7vw;
     }
-    .info-grid article  p{
-        font-size: 2.5rem;
+
+    .info-grid article p {
+        font-size: 3.7vw;
     }
-    .info{
-        padding: 0 2.5rem;
+
+    .info {
+        padding: 0 3.7vw;
     }
-    .circles-wrraper .circle{
+
+    .circles-wrraper .circle {
         width: 20vw;
         height: 20vw;
     }
-    .info h1:nth-child(1){
+
+    .info h1:nth-child(1) {
         display: none;
     }
-    .info h1:nth-child(2){
-        display:block;
-        font-size: 5rem;
-    }
-    
 
-@media (max-width: 1350px) {
-    .feedback .user-comments {
-        display: flex;
-        width: 100%;
+    .info h1:nth-child(2) {
+        display: block;
+        font-size: 7.4vw;
     }
-    .feedback h2{
-    color: var(--main-light, #2F353F);
-    font-family: "Neue Machina Regular";
-        padding: 0px 40px;
 
-    font-size: 80px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 90px; /* 112.5% */
+
+    @media (max-width: 1350px) {
+        .feedback .user-comments {
+            display: flex;
+            width: 100%;
+        }
+
+        .feedback h2 {
+            color: var(--main-light, #2F353F);
+            font-family: "Neue Machina Regular";
+            padding: 0px 3.7vw;
+            font-size: 7.4vw;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 112.5%;
+        }
+
+        .feedback .user-comments {
+            width: 100%;
+            display: flex;
+            overflow-x: scroll;
+            padding: 0 3.7vw;
+        }
+
+        .feedback .user-info {
+            display: flex;
+            align-items: flex-end;
+            gap: 4.6vw;
+        }
+
+        .feedback .user-info p:nth-child(1) {
+            color: var(--main-blue, #2E2BD0);
+            font-feature-settings: 'liga' off, 'clig' off;
+            font-family: "Neue Machina Regular";
+            font-size: 3.7vw;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%;
+            margin: 0;
+        }
+
+        .feedback .user-info p:nth-child(2) {
+            color: rgba(47, 53, 63, 0.70);
+            font-family: Gilroy;
+            font-size: 2.7vw;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 130%;
+            margin: 0;
+        }
+
+        .feedback .user-info img {
+            width: 14vw;
+            height: 14vw;
+        }
+
+        .feedback .comment {
+            flex-shrink: 0;
+            width: 80vw;
+            display: flex;
+            flex-direction: column;
+            border-radius: 40px;
+            border: 2px solid #909398;
+            padding: 4.6vw;
+            box-sizing: border-box;
+            gap: 0px;
+        }
+
+        .feedback .user-text {
+            color: rgba(47, 53, 63, 0.70);
+            font-family: Gilroy;
+            font-size: 3.7vw;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%;
+        }
+
+        .feedback button {
+            display: flex;
+            padding: 2.2vw 3.7vw 1.5vw 3.7vw;
+            color: var(--main-blue, #2E2BD0);
+            font-family: "Neue Machina Regular";
+            font-size: 2.7vw;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            text-transform: uppercase;
+            justify-content: center;
+            align-items: center;
+            background-color: transparent;
+            border-radius: 20px;
+            border: 2px solid var(--main-blue, #2E2BD0);
+            box-sizing: border-box;
+            gap: 10px;
+            width: 42vw;
+        }
+
+        .feedback button svg {
+            width: 3vw;
+            height: 3vw;
+        }
+
+        .feedback .number-one {
+            display: none;
+        }
+
+        .feedback .another-button {
+            display: none;
+        }
+
+        .feedback .user-comments {
+            height: 80vw;
+        }
+
+        .comment {
+            opacity: 1 !important;
+        }
+    }
 }
- 
-.feedback .user-comments{
-    width: 100%;
-    display: flex;
-    overflow-x: scroll;
-    padding: 0 40px;
-}
- 
-.feedback .user-info{
-    display: flex;
-    align-items: flex-end;
-    gap: 50px;
-}
-.feedback .user-info p:nth-child(1){
-    color: var(--main-blue, #2E2BD0);
-    font-feature-settings: 'liga' off, 'clig' off;
-    font-family: "Neue Machina Regular";
-    font-size: 3.7vw;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 150%; /* 60px */
-    margin: 0;
-}
-.feedback .user-info p:nth-child(2){
-    color: rgba(47, 53, 63, 0.70);
-    font-family: Gilroy;
-    font-size: 2.7vw;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 130%; /* 39px */
-    margin: 0;
-}
- 
-.feedback .user-info img{
-    width: 14vw;
-    height: 14vw;
-}
-.feedback .comment{
-    flex-shrink: 0;
-    width: 80vw;
-    display: flex;
-    flex-direction: column;
-    border-radius: 40px;
-    border: 2px solid #909398;
-    padding: 50px;
-    box-sizing: border-box;
-    gap: 0px;
-}
-.feedback .user-text{
-    color: rgba(47, 53, 63, 0.70);
-    font-family: Gilroy;
-    font-size: 3.7vw;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 150%; /* 60px */
-}
- 
-.feedback button{
-    display: flex;
-    padding: 24px 40px 17px 40px;
-    color: var(--main-blue, #2E2BD0);
-    font-family: "Neue Machina Regular";
-    font-size: 2.7vw;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-transform: uppercase;
-    justify-content: center;
-    align-items: center;
-    background-color: transparent;
-    border-radius: 20px;
-    border: 2px solid var(--main-blue, #2E2BD0);
-    box-sizing: border-box;
-    gap: 10px;
-    width: 42vw;
-}
-.feedback button svg{
-    width: 3vw;
-    height: 3vw;
-}
-.feedback .number-one{
-    display: none;
-}
- 
-.feedback .another-button {
-    display: none;
-}
-.feedback .user-comments{
-    height:80vw;
-}
-.comment{
-    opacity: 1 !important;
-}
-}}
