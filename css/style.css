@@ -61,6 +61,8 @@ header .selected-language{
     justify-content: space-between;
     display: none;
     flex-direction: column;
+    top: 0;
+    right: 0;
 }
 .burger-menu .content{
     display: flex;
@@ -68,7 +70,11 @@ header .selected-language{
     justify-content: space-between;
     gap: 100px;
 }
-.burger-menu .content button{
+.burger-menu a{
+    text-decoration: none;
+    color: #454652;
+}
+.burger-menu > button{
     width: 13.229vw;
     height: 3.073vw;
     color: white;
@@ -159,20 +165,7 @@ header .selected-language{
     line-height: 1.021vw; /* 140% */
     letter-spacing: 0.7px;
 }
-.burger-menu .footer a{
-    color: var(--main-blue, #2E2BD0);
-    font-family: "Gilroy";
-    font-size: clamp(30px, 1.2vw, 40px);
-    font-style: normal;
-    font-weight: 500;
-    line-height: 1.5;
-    text-decoration-line: underline;
-    text-decoration-style: solid;
-    text-decoration-skip-ink: none;
-    text-decoration-thickness: auto;
-    text-underline-offset: auto;
-    text-underline-position: from-font;
-}
+
 .burger-menu button svg path{
     fill: #2E2BD0;
     stroke: #2E2BD0;
@@ -241,7 +234,7 @@ header {
     background-color: rgba(255, 255, 255, 0);
     display: flex;
     align-items: center;
-    min-height: 6.198vw;
+    min-height: 120;
     padding: 0 1.563vw;
 }
 
@@ -345,7 +338,7 @@ header .other-nav button{
     line-height: normal;
     text-transform: uppercase;
     border: 0;
-    border-radius: 0.521vw;
+    border-radius: 1.7rem;
     padding: 0;
 }
 #close-button{
@@ -450,7 +443,7 @@ body::before{
         padding: 0;
         margin: 0;
         border: none;
-        border-radius: 0.093vw;
+        border-radius: 1rem;
         background: #FFF;
         display: flex;
         justify-content: center;
