@@ -92,12 +92,14 @@
     width: 90%;
     margin-top: 2.6vw;
     transition: 0.4s;
+    cursor: pointer;
 }
 
-.feedback button:hover {
-    opacity: 1;
-    color: white;
-    background-color: #2E2BD0;
+.feedback button:hover{
+ opacity: 1;
+color: white;
+background-color: #2E2BD0;
+transform: scale(1.05);
 }
 
 .feedback button:hover svg path {
@@ -126,7 +128,27 @@
     margin-top: 7.8vw;
 }
 
-.feedback .user-comments {
+.feedback .animation-button {
+        cursor: pointer;
+        transition: 0.4s ease;
+
+}
+.feedback .animation-button path{
+    stroke: #2E2BD0;
+    transition: 0.4s ease;
+    opacity: 1;
+    stroke-width: 2;
+
+}
+.feedback .animation-button:hover path{
+
+stroke: #317cff;
+}
+.feedback .animation-button:hover{
+    transform: scale(1.2);
+}
+
+.feedback .user-comments{
     position: relative;
     height: 46vw;
     overflow: hidden;
@@ -417,7 +439,8 @@
     justify-content: center;
     background-color: #9695E7;
     transition: 0.5s;
-
+    cursor: pointer;
+    
 }
 
 .circles-wrraper .circle:last-child:hover {
@@ -755,6 +778,7 @@ header {
 header ul li {
     display: flex;
     align-items: center;
+        cursor: pointer;
 }
 
 header nav ul .active {

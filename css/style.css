@@ -57,7 +57,7 @@ header ul li{
 
 header .selected-language{
     display: flex;
-    gap: 10px;
+    gap: 0.521vw;
     align-items: center;
 }
 .burger-menu{
@@ -67,7 +67,7 @@ header .selected-language{
     height: 100vh;
     width: 100vw;
     box-sizing: border-box;
-    padding: 28px;
+    padding: 1.458vw;
     justify-content: space-between;
     display: none;
     flex-direction: column;
@@ -79,12 +79,12 @@ header .selected-language{
     gap: 100px;
 }
 .burger-menu .content button{
-    width: 254px;
-    height: 59px;
+    width: 13.229vw;
+    height: 3.073vw;
     color: white;
     font-family: "Neue Machina Regular";
     background-color: var(--color-blue);
-    font-size: 50px;
+    font-size: 2.604vw;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -106,7 +106,7 @@ header .selected-language{
 .burger-menu .header{
     display: flex;
     justify-content: space-between;
-    padding: 16px 0;
+    padding: 0.833vw 0;
     border-bottom: 1px solid #C6C5D3;
 }
 .burger-menu ul{
@@ -120,11 +120,11 @@ header .selected-language{
     color: #454652;
     font-family: "Neue Machina Regular";
     font-size: 5.5vw;
-    padding: 20px 16px;
+    padding: 1.042vw 10.833vw;
     font-style: normal;
     font-weight: 400;
     line-height: 160%;
-    padding-left: 30px;
+    padding-left: 1.563vw;
     transition: 0.5s;
     border-radius: 10px;
 }
@@ -153,19 +153,19 @@ header .selected-language{
     align-items: last baseline;
 }
 .burger-menu button svg{
-    width: 40px;
+    width: 2.083vw;
     height: auto;
 }
 .burger-menu .footer{
     border-top: 1px solid #C6C5D3;
     display: flex;
     flex-direction: column;
-    padding: 32px 0;
-    gap: 16px;
+    padding: 1.667vw 0;
+    gap: 0.833vw;
 }
 .burger-menu .social-media svg{
-    width: 100px;
-    height: 100px;
+    width: 5.208vw;
+    height: 5.208vw;
     border: 4px solid #2E2BD0;
     border-radius: 30px;
     padding: 5px;
@@ -173,10 +173,10 @@ header .selected-language{
 .burger-menu .footer b{
     color: #131C78;
     font-family: Gilroy;
-    font-size: 44px;
+    font-size: 2.292vw;
     font-style: normal;
     font-weight: 700;
-    line-height: 19.6px; /* 140% */
+    line-height: 1.021vw; /* 140% */
     letter-spacing: 1.4px;
     text-transform: uppercase;
 }
@@ -186,7 +186,7 @@ header .selected-language{
     font-size: 2.5vw;
     font-style: normal;
     font-weight: 600;
-    line-height: 19.6px; /* 140% */
+    line-height: 1.021vw; /* 140% */
     letter-spacing: 0.7px;
 }
 .burger-menu .footer a{
@@ -219,13 +219,13 @@ header .selected-language{
     flex-direction: column;
 }
 .burger-menu .logo-container svg:first-child{
-    width: 29px;
+    width: 1.51vw;
     height: auto;
     position: relative;
     right: 5px;
 }
 .burger-menu .logo-container svg:last-child{
-    width: 80px;
+    width: 4.167vw;
     height: auto;
 }
 .burger-menu .logo-container svg path, .burger-menu .logo-container b{
@@ -234,17 +234,17 @@ header .selected-language{
 }
 header .language-dropdown{
     position: absolute;
-    top: 45px;
-    left: -110px;
+    top: 2.344vw;
+    left: -5.729vw;
     display: none;
     flex-direction: column;
-    gap: 8px;
+    gap: 0.417vw;
     background: rgb(255, 255, 255);
-    padding: 10px;
+    padding: 0.521vw;
     border: 1px solid rgba(47, 53, 63, 0.50);
     border-radius: 10px;
     z-index: 1;
-    width: 150px;
+    width: 7.8vw;
 }
 
 header .language-dropdown.active{
@@ -257,7 +257,8 @@ header .other-nav .lang-btn{
     color: var(--color-blue);
     cursor: pointer;
     transition: 0.2s;
-    width: 150px;
+    width: 7.8vw;
+    font-size: 1.042vw;
 }
 
 header .other-nav .lang-btn:hover{
@@ -270,15 +271,15 @@ header {
     background-color: rgba(255, 255, 255, 0);
     display: flex;
     align-items: center;
-    min-height: 119px;
-    padding: 0 30px;
+    min-height: 6.198vw;
+    padding: 0 1.563vw;
 }
 
 header nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 77px;
+    gap: 4.01vw;
     width: 100%;
     padding: 0;
     box-sizing: border-box;
@@ -287,7 +288,7 @@ header nav{
 header .logo-container{
     display: flex;
     align-items: last baseline;
-    gap: 10px;
+    gap: 0.521vw;
     flex: 0 0 auto;
     animation: logo-animation 3s infinite;
     transition: 100ms;
@@ -297,10 +298,10 @@ header .logo-container{
 header .logo-container b{
     color: white;
     font-family: "TT Norms";
-    font-size: 24px;
+    font-size: 1.25vw;
     font-style: normal;
     font-weight: 700;
-    line-height: 24px;
+    line-height: 1.25vw;
 }
 
 header .logo-icon{
@@ -309,8 +310,8 @@ header .logo-icon{
 }
 
 header nav > svg{
-    width: 1px;
-    height: 120px;
+    width: 0.052vw;
+    height: 6.25vw;
     align-self: center;
     flex: 0 0 auto;
 }
@@ -320,7 +321,7 @@ header ul{
     list-style: none;
     margin: 0;
     padding: 0;
-    gap: 120px;
+    gap: 6.25vw;
     flex: 1;
     justify-content: right;
     min-width: 0;
@@ -329,7 +330,7 @@ header ul{
 header ul li {
     color: white;
     font-family: "Neue Machina Regular";
-    font-size: 24px;
+    font-size: 1.25vw;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -353,7 +354,7 @@ header .select{
 header .select span{
     color: white;
     font-family: "Neue Machina Regular";
-    font-size: 24px;
+    font-size: 1.25vw;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -363,20 +364,21 @@ header .select span{
     display: none;
 }
 header .other-nav button{
-    width: 254px;
-    height: 59px;
+    width: 13.229vw;
+    height: 3.073vw;
     color: white;
     font-family: "Neue Machina Regular";
     background-color: var(--color-blue);
-    font-size: 20px;
+    font-size: 1.042vw;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     text-transform: uppercase;
     border: 0;
-    border-radius: 10px;
+    border-radius: 0.521vw;
     padding: 0;
     transition: 0.4s;
+        cursor: pointer;
 
     
 }
@@ -426,7 +428,7 @@ body::before{
     }
     header{
         min-height: auto;
-        padding: 1.5rem;
+        padding: 0.208vw;
     }
 
     header::after{
@@ -447,12 +449,26 @@ body::before{
         height: clamp(20px,3vw,40px);;
     } */
     header .logo-container{
-    
-        gap: 1rem;
+        gap: 0.023vw;
         align-items: last baseline;
     }
 
     header .logo-container b{
+        font-size: 4.259vw;
+        color: var(--main-white, #FFF);
+        font-size: 4.259vw;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 4.63vw; /* 108.696% */
+    }
+
+    header .logo-icon svg:first-child{
+        width: 2.593vw;
+        height: 2.685vw;
+    }
+
+    header .logo-icon svg:last-child{
+        width: 10.093vw;
        
         font-size: clamp(20px,5vw,60px);
         color: var(--main-white, #FFF);
@@ -492,12 +508,12 @@ body::before{
     /* right button */
 
     header .other-nav > button{
-        width: clamp(70px,10vw,116px);
-        height: clamp(70px,10vw,116px);
+        width: 10.741vw;
+        height: 10.741vw;
         padding: 0;
         margin: 0;
         border: none;
-        border-radius: 1rem;
+        border-radius: 0.093vw;
         background: #FFF;
         display: flex;
         justify-content: center;
@@ -516,8 +532,8 @@ body::before{
     }
 
     .other-nav > button svg{
-        width: clamp(35px,5vw,60px);
-        height: clamp(35px,5vw,60px);
+        width: 5.556vw;
+        height: 5.556vw;
     }
 
     .other-nav > button svg path{
@@ -548,11 +564,11 @@ body::before{
     header ul li{
         width: 100%;
         box-sizing: border-box;
-        font-size: 80px;
+        font-size: 7.407vw;
         padding: 0;
         background-color: rgba(255, 255, 255, 0.842);
         text-align: center;
-        padding-left: 10px;
+        padding-left: 0.926vw;
         box-sizing: border-box;
         backdrop-filter: blur(10px);
         border-radius: 0px;
@@ -566,22 +582,22 @@ body::before{
         padding: 0;
         border: 0;
         border-radius: 0;
-        padding-left: 10px;
+        padding-left: 0.926vw;
     }
 
     /* left burger */
 
     #burger-button{
         border: 0;
-        width: clamp(70px,10vw,116px);
-        height: clamp(70px,10vw,116px);
+        width: 10.741vw;
+        height: 10.741vw;
         border-radius: 1rem;
         background: #FFF;
         display: flex;
         justify-content: center;
         align-items: center;
         color: var(--color-blue);
-        font-size: 40px;
+        font-size: 3.704vw;
         font-weight: bold;
         flex-shrink: 0;
         position: relative;
@@ -677,6 +693,8 @@ footer form button[type = "button"]{
     line-height: normal;
     text-transform: uppercase;
     box-sizing: border-box;
+    cursor: pointer;
+    transition: background-color 0.4s ease;
 }
 
 footer form input, footer form label, footer form input::placeholder{
@@ -725,6 +743,8 @@ footer form > button{
     font-weight: 400;
     line-height: normal;
     text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.4s ease;
 }
 
 footer .information-container{
@@ -771,6 +791,13 @@ footer .information-container div:nth-child(1) button{
     align-items: center;
     justify-content: center;
     gap: 1rem;
+    transition: 0.4s;
+        cursor: pointer;
+}
+
+footer .information-container div:nth-child(1) button:hover{opacity: 1;
+background-color: rgb(155, 132, 233);
+color: white;
 }
 
 footer .information-container div:nth-child(1) .social-media{
@@ -782,8 +809,12 @@ footer .information-container div:nth-child(1) .social-media > *{
     border-radius: 0.938rem;
     padding: 0.234rem;
     border: 0.07rem solid var(--color-blue);
+    cursor: pointer;
+    transition: 0.4s ease;
 }
-
+footer .information-container div:nth-child(1) .social-media > *:hover{
+    transform: scale(1.1);
+}
 form button{
     transition: 200ms;
 }
@@ -939,24 +970,24 @@ footer .copyright{
     }
     footer form input, footer form label, footer form input::placeholder{
         padding: 0;
-        font-size: clamp(20px,4vw,42px);
-        margin-bottom: 10px;
+        font-size: 3.889vw;
+        margin-bottom: 0.926vw;
     }
 
     footer form > b{
-        font-size: 100px;
+        font-size: 9.259vw;
     }
     footer form button, footer form button span{
-        font-size: clamp(14px,2vw,30px);
+        font-size: 2.778vw;
     }
     footer form > button{
         width: clamp(22rem, 14vw, 12.813rem);
     }
     footer form div p{
-        font-size: 34px;
+        font-size: 3.148vw;
     }
     .file-input {
-        margin-bottom: 40px;
+        margin-bottom: 3.704vw;
        
         
     }
@@ -1005,7 +1036,7 @@ footer .copyright{
 
     footer .information-container div:nth-child(1) .logo-container p{
         font-family: "TT Norms";
-        font-size: 40px;
+        font-size: 3.704vw;
         font-weight: 400;
         line-height: 1.2;
         display: block;
@@ -1017,8 +1048,8 @@ footer .copyright{
 
     /* email */
 
-    footer .information-container div:nth-child(1) > a{
-        font-size: 40px;
+    footer .information-container div:nth-child(1) a{
+        font-size: 3.704vw;
         margin-left: auto;
         margin-top: -8rem;
         text-align: right;
@@ -1046,7 +1077,7 @@ footer .copyright{
         margin-top: 2rem;
         scale: 1.5;
         width: 100%;
-        max-width: 15.875rem;
+        max-width: 23.335vw;
     }
 
     /* offices */
@@ -1068,7 +1099,7 @@ footer .copyright{
     }
 
     footer .information-container .office-box p{
-        font-size: 40px;
+        font-size: 3.704vw;
         font-weight: 400;
         margin: 0;
     }
@@ -1076,7 +1107,7 @@ footer .copyright{
     /* services */
 
     footer .information-container .services > p{
-        font-size: 40px;
+        font-size: 3.704vw;
     }
 
     footer .information-container .services > div{
@@ -1086,7 +1117,7 @@ footer .copyright{
     }
 
     footer .information-container .services li{
-        font-size: 40px;
+        font-size: 3.704vw;
         margin-bottom: 1rem;
     }
 
@@ -1109,10 +1140,10 @@ footer .copyright{
     }
 
     footer form button[type="button"] {
-    display: flex;
-    width: 40vw;
-    justify-content: center;
-    align-items: center;
+       display: flex;
+       width: 80.579vw;
+       justify-content: center;
+       align-items: center;
 
     }
 
@@ -1129,7 +1160,11 @@ footer .copyright{
         gap: 1rem;
         margin-top: 0;
     }
-    
+
+    footer .copyright p{
+        font-size: 3.704vw;
+    }
+   
 }
 @media (max-width: 870px) {
 

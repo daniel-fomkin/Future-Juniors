@@ -68,6 +68,22 @@ prevBtn.addEventListener('click', () => {
 
 // Feadback
 
+//Tech
+
+const techItems = document.querySelectorAll(".pin-and-text")
+
+techItems.forEach(item => {
+    item.addEventListener("click", (e) => {
+        techItems.forEach(el=>{
+            el.classList.remove("active")
+        })
+        item.classList.add("active")
+    })
+})
+
+
+//Tech
+
 // Ricard end
 
 //Burger Menu

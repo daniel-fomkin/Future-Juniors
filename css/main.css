@@ -423,6 +423,32 @@ main .technologies{
     gap: 100px;
 }
 
+/*Tech*/
+
+/*Richard*/
+
+.text-and-icon .icon{
+    opacity: 0;
+    max-height: 0;
+    transform: translateY(-10px);
+    transition: 0.35s ease;
+}
+
+.pin-and-text.active p{
+    color:#2F353F;
+    font-size:24px;
+    transform:scale(1.05);
+}
+
+.pin-and-text.active .icon{
+    opacity:1;
+    max-height:120px;
+    transform:translateY(0);
+    margin-top:10px;
+}
+
+/*Richard*/
+
 .technologies h2{
     color: var(--main-light, #2F353F);
     font-family: "Neue Machina Regular";
@@ -467,11 +493,11 @@ main .technologies{
 .technologies .pin{
     width: 15px;
     height: 15px;
-    background-color: #93969B; 
+    background-color: #93969B;
     border-radius: 100%;
 }
 
-.technologies .active-pin .pin{
+.technologies .active .pin{
     width: 20px;
     height: 20px;
     background-color: var(--main-blue, #2E2BD0);
@@ -479,7 +505,7 @@ main .technologies{
     border: 10px solid #CBCAF3;
 }
 
-.pin-container .active-pin p{
+.pin-container .active p{
     color: var(--main-light, #2F353F);
     font-feature-settings: 'liga' off, 'clig' off;
     font-family: "Neue Machina Regular";
@@ -488,7 +514,7 @@ main .technologies{
     font-weight: 400;
     line-height: 130%; /* 33.8px */
 }
-.pin-container .active-pin{
+.pin-container .active{
     position: relative;
     bottom: 10px;
     right: 10px; 
@@ -503,6 +529,8 @@ main .technologies{
 .map-line{
     border-top: 1px solid rgba(147, 150, 155, 0.50);;
 }
+
+/*TEch*/
 
 /*  AGENDA  */
 .container__agenda *{
