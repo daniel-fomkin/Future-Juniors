@@ -377,6 +377,7 @@ header .other-nav button{
     border-radius: 10px;
     padding: 0;
     transition: 0.4s;
+        cursor: pointer;
 
     
 }
@@ -677,6 +678,8 @@ footer form button[type = "button"]{
     line-height: normal;
     text-transform: uppercase;
     box-sizing: border-box;
+    cursor: pointer;
+    transition: background-color 0.4s ease;
 }
 
 footer form input, footer form label, footer form input::placeholder{
@@ -725,6 +728,8 @@ footer form > button{
     font-weight: 400;
     line-height: normal;
     text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.4s ease;
 }
 
 footer .information-container{
@@ -771,6 +776,13 @@ footer .information-container div:nth-child(1) button{
     align-items: center;
     justify-content: center;
     gap: 1rem;
+    transition: 0.4s;
+        cursor: pointer;
+}
+
+footer .information-container div:nth-child(1) button:hover{opacity: 1;
+background-color: rgb(155, 132, 233);
+color: white;
 }
 
 footer .information-container div:nth-child(1) .social-media{
@@ -782,8 +794,12 @@ footer .information-container div:nth-child(1) .social-media > *{
     border-radius: 0.938rem;
     padding: 0.234rem;
     border: 0.07rem solid var(--color-blue);
+    cursor: pointer;
+    transition: 0.4s ease;
 }
-
+footer .information-container div:nth-child(1) .social-media > *:hover{
+    transform: scale(1.1);
+}
 form button{
     transition: 200ms;
 }
