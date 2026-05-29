@@ -455,14 +455,37 @@ stroke: #317cff;
 
 .circles-wrraper .circle-black {
     background-color: var(--circle-first);
+    transition: 0.5s;
+
 }
+.circles-wrraper .circle-black:hover{opacity: 1;
+background-color: rgb(26, 24, 24);
+border-color: rgb(82, 82, 82);
+box-shadow: 1px 1px 10px 5px rgb(26, 24, 24);
+
+}
+
 
 .circles-wrraper .circle-white {
     background-color: var(--circle-second);
+    transition: 0.5s;
 }
+.circles-wrraper .circle-white:hover{opacity: 1;
+background-color: rgb(204, 204, 204);
+box-shadow: 1px 1px 10px 5px rgb(153, 153, 153);
+
+}
+
 
 .circles-wrraper .circle-blue {
     background-color: var(--circle-third);
+    transition: 0.5s;
+}
+.circles-wrraper .circle-blue:hover{opacity: 1;
+    background-color: rgb(13, 73, 253);
+    border-color: rgb(117, 152, 255);
+    box-shadow: 1px 1px 10px 3px rgb(54, 71, 249);
+
 }
 
 .our-team {
