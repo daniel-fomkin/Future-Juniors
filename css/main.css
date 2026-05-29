@@ -511,7 +511,6 @@ main .technologies{
 }
 .container__agenda{
     padding: 0 150px
-    
 }
 .container__agenda h1{
     color: var(--main-light, #2F353F);

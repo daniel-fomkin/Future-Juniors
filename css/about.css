@@ -693,7 +693,7 @@ margin-top: 150px;
 }
 
 .year-container ul{
-    color: var(--main-white, #FFF);
+    color: white;
     font-family: Gilroy;
     font-size: clamp(1rem, 1.5vw, 1.5rem);
     font-style: normal;
@@ -701,6 +701,7 @@ margin-top: 150px;
     line-height: 150%; /* 36px */
     width: 47%;
     align-self: flex-end;
+    list-style-type: disc;
 }
 header nav li, header, header .select span{
     color: black;
@@ -717,7 +718,7 @@ header nav > svg path{
 header{
     border-bottom: 1px solid black;
 }
-ul li{
+header ul li{
     display: flex;
     align-items: center;
 }

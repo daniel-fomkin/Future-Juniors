@@ -1,6 +1,7 @@
 'use strict';
 // Ricard
 
+
 // Lang button
 
 const languageSelect = document.getElementById("language-select")
@@ -86,6 +87,48 @@ closeButton.addEventListener("click", () => {
 
 });
 
+//Through year scroll
+const yearArray = document.querySelectorAll(".one-year");
+const yearContainers = document.querySelector(".year-lines");
+
+let timeOut;
+let serverScroll = true;
+let nearbiestElement = yearArray[0];
+
+yearContainers.scroll({left: yearArray[3].offsetLeft - (yearContainers.clientWidth)/2});
+
+
+yearContainers.addEventListener("scroll", () => {
+    clearTimeout(timeOut);
+    if(!serverScroll){
+    const containerWidth = yearContainers.clientWidth;
+    const scroll = yearContainers.scrollLeft;
+    const containerCenterPos = containerWidth/2+scroll;
+    
+    yearArray.forEach(el => {
+        if(Math.abs(containerCenterPos - el.offsetLeft) < Math.abs(containerCenterPos - nearbiestElement.offsetLeft)){
+            nearbiestElement = el;
+        }
+    });
+    yearArray.forEach(el => el.classList.remove("active"));
+    nearbiestElement.classList.add("active");
+
+    timeOut = setTimeout(() => {
+        yearContainers.scroll({left: nearbiestElement.offsetLeft-containerWidth/2});
+        serverScroll = true;
+    }, 500, {passive: true});
+    }
+    else{
+        serverScroll = false
+    }
+});
+
+yearContainers.addEventListener("scroll", () => {
+    console.log("OK");
+    
+})
+
+
 //Choose Section
 const liArray = document.querySelector(".container__section").querySelectorAll("li");
 const chooseText = document.querySelector('.container__section').querySelector("h4");
@@ -113,8 +156,6 @@ if(liArray){
         })
     })
 }
-
-
 
 
 
