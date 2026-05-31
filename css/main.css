@@ -13,28 +13,28 @@ main section .container__section * {
 }
 
 section .container__section{
-    padding: 0 150px;
+    padding: 0 7.8vw;
 }
 
 section .container__section h1{
     color: var(--main-light, #2F353F);
     font-family: "Neue Machina Regular";
-    font-size: 60px;
+    font-size: 5.5vw;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    padding-bottom: 100px;
+    padding-bottom: 5.2vw;
 }
 section .container__section > p{
     max-width: 45.375rem;
     width: 100%;
     color: rgba(47, 53, 63, 0.70);
     font-family: Gilroy;
-    font-size: 1.5rem;
+    font-size: 1.25vw;
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
-    padding-bottom: 9.375rem;
+    padding-bottom: 7.7vw;
 }
 section .container__section article{
     max-width: 1160px;
@@ -42,23 +42,23 @@ section .container__section article{
     width: 100%;
     border-radius: 70px;
     border: 1px solid rgba(47, 53, 63, 0.50);   
-    padding: 50px;
+    padding: 2.6vw;
 }
 section .container__section article h4{
     color: var(--main-blue, #2E2BD0);
     font-family: "Neue Machina Regular";
-    font-size: 2.5rem;
-    padding-bottom: 3.125rem;
+    font-size: 2vw;
+    padding-bottom: 2.5vw;
     font-weight: 400;
     line-height: normal;
-    margin-bottom: 3.125rem;
+    margin-bottom: 2.5vw;
 }
 section .container__section article p{
     max-width: 1016px;
     width: 100%;
     color: rgba(47, 53, 63, 0.70);
     font-family: "Gilroy";
-    font-size: 1.875rem;
+    font-size: 1.5vw;
     font-style: normal;
     font-weight: 400;
     line-height: 150%; 
@@ -66,7 +66,7 @@ section .container__section article p{
 section .container__section .wrraper {
     display: flex;
     justify-content: space-between;
-    column-gap: 200px;
+    column-gap: 10vw;
 }
 section .container__section .wrraper .nav{
     display: flex;
@@ -80,11 +80,11 @@ section .container__section .wrraper .nav{
 .wrraper ul li{
     border: 0 !important;
     height: 25%;
-    padding-left: 50px;
+    padding-left: 2.6vw;
     list-style-type: none;
     color: rgba(47, 53, 63, 0.30);
     font-family: "Neue Machina Regular";
-    font-size: 2rem;
+    font-size: 1.6vw;
     font-style: normal;
     font-weight: 400;
     line-height: 150%; 
@@ -102,7 +102,7 @@ main{
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 250px;
+    gap: 13vw;
 }
 
 /*var*/ /* richard */
@@ -153,7 +153,7 @@ main{
     padding-bottom: 50px;
     display: flex;
     flex-direction: column; 
-    gap: 256px;
+    gap: 13.3vw;
     background:
         linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
         url("../img/main/header_background.jpg") center/cover no-repeat;
@@ -161,10 +161,10 @@ main{
     position: relative;
 }
 header{
-    margin-left: -150px;
+    margin-left: -7,8vw;
 }
 .hero{
-    padding-left: 150px;
+    padding-left: 7,8vw;
     box-sizing: border-box;
 }
 
@@ -176,7 +176,7 @@ header::after{
     position: absolute;
     left: var(--header-line-offset);
     right: var(--header-line-offset);
-    top: 7.375rem; /* 118px */
+    top: 5.8vw; /* 118px */
     height: 1px;
     background: var(--main-white, #FFF);
 }
@@ -258,7 +258,7 @@ header, .hero-content{
     .hero{
         min-height: 100vh;
         background-position: center;
-        padding: 150px 40px;
+        padding: 7,8vw 2vw;
     }
     header{
         margin: 0;
@@ -266,7 +266,7 @@ header, .hero-content{
 
     .hero-content{
     position: static;
-    gap: 4rem;
+    gap: 3vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -280,24 +280,24 @@ header, .hero-content{
 
     .hero-content h1::after{
         height: 80%;
-        bottom: 3rem;
+        bottom: 2.5vw;
     }
 
     .estimate-btn{
         border-color: #2E2BD0;
         background: #2E2BD0;
-        width: 8rem;
-        height: 8rem;
+        width: 6.6vw;
+        height: 6.6vw;
         font-size: 1rem;
         position: static;
-        font-size: 40px;
-        width: 320px;
-        height: 320px;
+        font-size: 2vw;
+        width: 16.6vw;
+        height: 16.6vw;
         align-self: center;
     }
 
     .hero{
-        gap: 415px;
+        gap: 21vw;
     }
 
     .estimate-btn:hover{
@@ -310,7 +310,7 @@ header, .hero-content{
 .goals{
     width: 100%;
     display: flex;
-    padding: 0 150px;
+    padding: 0 7vw;
     background: #FFF;
     box-sizing: border-box;
 }
@@ -361,7 +361,7 @@ header, .hero-content{
 /* card */
 
 .goal-card{
-    height: var(--goal-card-height);
+    /* height: var(--goal-card-height); */
     border: 1px solid #D9D9D9;
     border-radius: var(--goal-card-radius);
     padding: var(--goal-card-padding);
@@ -417,10 +417,10 @@ header, .hero-content{
 }
 
 main .technologies{
-    padding: 0 150px;
+    padding: 0 7.8vw;
     display: flex;
     flex-direction: column;
-    gap: 100px;
+    gap: 10vw;
 }
 
 /*Tech*/
@@ -452,7 +452,7 @@ main .technologies{
 .technologies h2{
     color: var(--main-light, #2F353F);
     font-family: "Neue Machina Regular";
-    font-size: 60px;
+    font-size: 3.1vw;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -460,14 +460,14 @@ main .technologies{
 
 .technologies > p{
     align-self: flex-end;
-    width: 634px;
+    width: 33vw;
     color: rgba(47, 53, 63, 0.70);
     font-family: Gilroy;
-    font-size: 24px;
+    font-size: 1.2vw;
     font-style: normal;
     font-weight: 400;
     line-height: 150%; /* 36px */
-    margin-right: 236px;
+    margin-right: 12.2vw;
 }
 
 .technologies .pin-container{
@@ -495,6 +495,7 @@ main .technologies{
     height: 15px;
     background-color: #93969B;
     border-radius: 100%;
+    cursor: pointer;
 }
 
 .technologies .active .pin{
@@ -503,13 +504,14 @@ main .technologies{
     background-color: var(--main-blue, #2E2BD0);
     /* box-shadow: 0px 0px 0px 10px #CBCAF3; */
     border: 10px solid #CBCAF3;
+    cursor: pointer;
 }
 
 .pin-container .active p{
     color: var(--main-light, #2F353F);
     font-feature-settings: 'liga' off, 'clig' off;
     font-family: "Neue Machina Regular";
-    font-size: 26px;
+    font-size: 1.3vw;
     font-style: normal;
     font-weight: 400;
     line-height: 130%; /* 33.8px */
@@ -543,13 +545,13 @@ main .technologies{
 .container__agenda h1{
     color: var(--main-light, #2F353F);
     font-family: "Neue Machina Regular";
-    font-size: 60px;
+    font-size: 7.8vw;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
 }
 .container__agenda .agenda{
-    margin-top: 5.8rem;
+    margin-top: 4.8vw;
     max-width: 101rem;
     width: 100%;
     display: grid;
@@ -561,10 +563,10 @@ main .technologies{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    row-gap: 1.5rem;
+    row-gap: 1vw;
     border-radius: 40px;
     border: 1px solid rgba(47, 53, 63, 0.50);
-    padding: 3rem;
+    padding: 5.2vw;
 }
 .agenda article:first-child{
     border: 0px;
@@ -574,7 +576,7 @@ main .technologies{
     color: var(--main-light, #2F353F);
     font-feature-settings: 'liga' off, 'clig' off;
     font-family: "Neue Machina Regular";
-    font-size: 26px;
+    font-size: 1.3vw;
     font-style: normal;
     font-weight: 400;
     line-height: 150%; /* 39px */
@@ -596,7 +598,7 @@ main .technologies{
     color: var(--main-white, #FFF);
     font-feature-settings: 'liga' off, 'clig' off;
     font-family: "Neue Machina Regular";
-    font-size: 26px;
+    font-size: 1.3vw;
     font-style: normal;
     font-weight: 400;
     line-height: 150%; /* 39px */
@@ -604,7 +606,7 @@ main .technologies{
 .agenda article:last-child p{
     color: rgba(255, 255, 255, 0.70);
     font-family: Gilroy;
-    font-size: 23px;
+    font-size: 1.3vw;
     font-style: normal;
     font-weight: 400;
     line-height: 150%; /* 36px */
@@ -614,7 +616,7 @@ main .technologies{
     color: var(--main-light, #2F353F);
     font-feature-settings: 'liga' off, 'clig' off;
     font-family: "Neue Machina Regular";
-    font-size: 26px;
+    font-size: 1.3vw;
     font-style: normal;
     font-weight: 400;
     line-height: 150%; /* 39px */
@@ -622,7 +624,7 @@ main .technologies{
 .agenda article p{
     color: rgba(47, 53, 63, 0.70);
     font-family: Gilroy;
-    font-size: 24px;
+    font-size: 1.4vw;
     font-style: normal;
     font-weight: 400;
     line-height: 150%; /* 36px */
@@ -641,7 +643,7 @@ main .technologies{
     color: var(--main-light, #2F353F);
     text-align: center;
     font-family: "Neue Machina Regular";
-    font-size: 30px;
+    font-size: 2.7vw;
     font-style: normal;
     font-weight: 400;
     line-height: 130%; /* 39px */
@@ -661,14 +663,14 @@ main .technologies{
     color: var(--main-light, #2F353F);
     text-align: center;
     font-family: "Neue Machina Regular";
-    font-size: 30px;
+    font-size: 1.5vw;
     font-style: normal;
     font-weight: 400;
     line-height: 130%; /* 39px */
     text-transform: uppercase;
 }
 article.diff-article{
-    padding: 2.8rem 3.4rem;
+    padding: 2.3vw 2.8vw;
 }
 
 /* Industries Section */
@@ -681,26 +683,26 @@ article.diff-article{
     justify-content: space-between;
     flex-direction: column;
     row-gap: 100px;
-    padding: 0 150px;
+    padding: 0 7.8vw;
 }
 .industries h1{
     color: var(--main-light, #2F353F);
     font-family: "Neue Machina Regular";
-    font-size: 60px;
+    font-size: 3.1vw;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
 }
 .industries-container{
     display: flex;
-    column-gap: 51px;
-    margin-bottom: 250px;
+    column-gap: 2.6vw;
+    margin-bottom: 13vw;
 }
 .industries-container article{
     display: flex;
     flex-direction: column;
-    row-gap: 40px;
-    flex-basis: 506px;
+    row-gap: 2vw;
+    flex-basis: 26vw;
 }
 .industries-container article h1{
     color: var(--main-light, #2F353F);
@@ -713,7 +715,7 @@ article.diff-article{
 .industries-container article p{
     color: rgba(47, 53, 63, 0.70);
     font-family: Gilroy;
-    font-size: 24px;
+    font-size: 2vw;
     font-style: normal;
     font-weight: 400;
     line-height: 150%; /* 36px */
@@ -732,11 +734,11 @@ article.diff-article{
 .feedback h2{
     color: var(--main-light, #2F353F);
     font-family: "Neue Machina Regular";
-    padding: 0px 40px;
-    font-size: 80px;
+    padding: 0px 2vw;
+    font-size: 4vw;
     font-style: normal;
     font-weight: 400;
-    line-height: 90px; /* 112.5% */
+    line-height: 4.6vw; /* 112.5% */
 }
 
 .feedback .user-comments{
@@ -744,19 +746,19 @@ article.diff-article{
     display: flex;
     overflow-x: scroll;
     box-sizing: border-box;
-    padding: 0 30px;
+    padding: 0 1vw;
 }
 
 .feedback .user-info{
     display: flex;
     align-items: flex-end;
-    gap: 50px;
+    gap: 2.6vw;
 }
 .feedback .user-info p:nth-child(1){
     color: var(--main-blue, #2E2BD0);
     font-feature-settings: 'liga' off, 'clig' off;
     font-family: "Neue Machina Regular";
-    font-size: 40px;
+    font-size: 2vw;
     font-style: normal;
     font-weight: 400;
     line-height: 150%; /* 60px */
@@ -765,7 +767,7 @@ article.diff-article{
 .feedback .user-info p:nth-child(2){
     color: rgba(47, 53, 63, 0.70);
     font-family: Gilroy;
-    font-size: 30px;
+    font-size: 1vw;
     font-style: normal;
     font-weight: 400;
     line-height: 130%; /* 39px */
@@ -773,24 +775,25 @@ article.diff-article{
 }
 
 .feedback .user-info img{
-    width: 160px;
-    height: 160px;
+    width: 8vw;
+    height: 8vw;
 }
 .feedback .comment{
     flex-shrink: 0;
-    width: 880px;
+    width: 80vw;
+    height: 44.6vw;
     display: flex;
     flex-direction: column;
     border-radius: 40px;
     border: 2px solid #909398;
-    padding: 50px;
+    padding: 2.6vw;
     box-sizing: border-box;
-    gap: 100px;
+    gap: 5.2vw;
 }
 .feedback .user-text{
     color: rgba(47, 53, 63, 0.70);
     font-family: Gilroy;
-    font-size: 40px;
+    font-size: 2vw;
     font-style: normal;
     font-weight: 400;
     line-height: 150%; /* 60px */
@@ -798,16 +801,16 @@ article.diff-article{
 
 .feedback button{
     display: flex;
-    padding: 24px 40px 17px 40px;
+    padding: 1vw;
     color: var(--main-blue, #2E2BD0);
     font-family: "Neue Machina Regular";
-    font-size: 30px;
+    font-size: 2.7vw;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     text-transform: uppercase;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     background-color: transparent;
     border-radius: 20px;
     border: 2px solid var(--main-blue, #2E2BD0);
@@ -832,19 +835,23 @@ button, li, .select{
         padding: 0 1.2rem;
     }
     .goal-card{
+       
         overflow: hidden;
         border: 1.926px solid #95989D;
         padding: 4rem;
     }
     .goal-card span{
-        font-size: 3rem;
+        font-size: 5vw;
         padding-bottom: 2rem;
+    }
+    .goal-text h3 {
+        font-size: 3vw;
     }
     .goal-text{
         row-gap: 0px;
     }
     .goal-text p{
-        font-size: 1.4rem;
+        font-size: 2vw;
     }
     .goals-container h2{
         padding-top: 7rem;
@@ -894,6 +901,7 @@ button, li, .select{
     
     .technologies .text-and-icon p{
         margin-top: 0;
+        font-size: 3.7vw;
     }
     .technologies > p{
         margin: 0;
@@ -932,6 +940,7 @@ button, li, .select{
     section .container__section .wrraper{
         flex-direction: column;
         column-gap: 0px;
+        row-gap: 13vw;
     }
     .wrraper ul li, .wrraper ul li:first-child{
         border: 0 !important;
@@ -964,4 +973,41 @@ button, li, .select{
     .container__agenda .agenda {
         margin-top: 0px;
     }
+    .agenda article{
+        padding: 3vw;
+    }
+    .container__agenda button h1{
+        font-size: 3.7vw;
+    }
+    section .container__section > p{
+        font-size: 3.7vw;
+    }
+    section .container__section h1{
+        font-size: 7vw;
+    }
+    section .container__section article p{
+        font-size: 3.7vw;
+    }
+    section .container__section article h4{
+        font-size: 5.5vw;
+    }
+    .agenda article:first-child p{
+        font-size: 3.7vw
+    }
+    .agenda article h1{
+        font-size: 3vw;
+    }
+   .agenda article p{
+        font-size: 2.5vw;
+   }
+   .agenda article:last-child h1{
+    font-size: 3vw;
+   }
+   .agenda article:last-child p{
+    font-size: 2.5vw;
+   }
+   section .container__section article{
+    padding: 6vw;
+   }
+
 }
