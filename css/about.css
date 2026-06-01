@@ -943,7 +943,7 @@ header .logo-container b {
 
 @media (max-width: 1350px) {
     :root{
-        --font-size-info-article-p: 3.7vw;
+        --font-size-info-grid-article-p: 3.7vw;
     }
     .years .text {
         display: flex;
