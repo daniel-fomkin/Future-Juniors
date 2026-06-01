@@ -1,21 +1,24 @@
 /* Kintamieji */
-:root{
+:root {
     --color-blue: #2e2bd0;
     --color-light: #2F353F;
     --gradient-blue: linear-gradient(66deg, #2E2BD0 -67.89%, #7876F2 125.28%);
 }
 
 @keyframes logo-animation {
-    0%{
+    0% {
         transform: rotate(0deg);
     }
-    25%{
+
+    25% {
         transform: rotate(2deg)
     }
-    50%{
+
+    50% {
         transform: rotate(-2deg);
     }
-    75%{
+
+    75% {
         transform: rotate(0deg);
     }
 }
@@ -33,11 +36,11 @@ body {
 
 /* Ricard */
 
-header .other-nav button div.lang-short{
+header .other-nav button div.lang-short {
     display: none;
 }
 
-header .select{
+header .select {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -45,22 +48,24 @@ header .select{
     cursor: pointer;
 }
 
-header nav ul .active{
+header nav ul .active {
     border-radius: 10px;
     border: 1px solid var(--main-blue, #ffffff);
     padding: 10px 20px;
 }
-header ul li{
+
+header ul li {
     display: flex;
     align-items: center;
 }
 
-header .selected-language{
+header .selected-language {
     display: flex;
     gap: 0.521vw;
     align-items: center;
 }
-.burger-menu{
+
+.burger-menu {
     background-color: rgb(255, 255, 255);
     position: fixed;
     z-index: 10;
@@ -74,17 +79,20 @@ header .selected-language{
     top: 0;
     right: 0;
 }
-.burger-menu .content{
+
+.burger-menu .content {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 100px;
+    gap: 9.259vw;
 }
-.burger-menu a{
+
+.burger-menu a {
     text-decoration: none;
     color: #454652;
 }
-.burger-menu > button{
+
+.burger-menu>button {
     width: 13.229vw;
     height: 3.073vw;
     color: white;
@@ -103,26 +111,30 @@ header .selected-language{
     height: 7vh;
     transition: 0.7s;
 }
-.burger-menu .content button:hover{
+
+.burger-menu .content button:hover {
     border: 1px solid #2E2BD0;
     background-color: white;
     color: #2E2BD0;
     border-radius: 50px;
 }
-.burger-menu .header{
+
+.burger-menu .header {
     display: flex;
     justify-content: space-between;
     padding: 0.833vw 0;
     border-bottom: 1px solid #C6C5D3;
 }
-.burger-menu ul{
+
+.burger-menu ul {
     list-style: none;
     padding: 0;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 0.926vw;
 }
-.burger-menu li{
+
+.burger-menu li {
     color: #454652;
     font-family: "Neue Machina Regular";
     font-size: 5.5vw;
@@ -134,98 +146,118 @@ header .selected-language{
     transition: 0.5s;
     border-radius: 10px;
 }
-.burger-menu li.active{
+
+.burger-menu li.active {
     border: 0;
     border-left: 10px solid #2E2BD0;
 }
-.burger-menu li:hover{
+
+.burger-menu li:hover {
     background-color: #2E2BD0;
     color: white;
 }
-.burger-menu .header button{
+
+.burger-menu .header button {
     background-color: transparent;
     border: 0;
 }
-.burger-menu .header button:last-child svg path{
+
+.burger-menu .header button:last-child svg path {
     transition: 0.5s;
 }
-.burger-menu .header button:last-child:hover svg path{
+
+.burger-menu .header button:last-child:hover svg path {
     stroke: red;
     transform: rotate(360deg);
     fill: red;
 }
-.burger-menu .logo-container{
+
+.burger-menu .logo-container {
     display: flex;
     align-items: last baseline;
 }
-.burger-menu button svg{
+
+.burger-menu button svg {
     width: 2.083vw;
     height: auto;
 }
-.burger-menu .footer{
+
+.burger-menu .footer {
     border-top: 1px solid #C6C5D3;
     display: flex;
     flex-direction: column;
     padding: 1.667vw 0;
     gap: 0.833vw;
 }
-.burger-menu .social-media svg{
+
+.burger-menu .social-media svg {
     width: 5.208vw;
     height: 5.208vw;
     border: 4px solid #2E2BD0;
     border-radius: 30px;
     padding: 5px;
 }
-.burger-menu .footer b{
+
+.burger-menu .footer b {
     color: #131C78;
     font-family: Gilroy;
     font-size: 2.292vw;
     font-style: normal;
     font-weight: 700;
-    line-height: 1.021vw; /* 140% */
+    line-height: 1.021vw;
+    /* 140% */
     letter-spacing: 1.4px;
     text-transform: uppercase;
 }
-.burger-menu .footer p{
+
+.burger-menu .footer p {
     color: rgba(69, 70, 82, 0.60);
     font-family: Gilroy;
     font-size: 2.5vw;
     font-style: normal;
     font-weight: 600;
-    line-height: 1.021vw; /* 140% */
+    line-height: 1.021vw;
+    /* 140% */
     letter-spacing: 0.7px;
 }
 
-.burger-menu button svg path{
+.burger-menu button svg path {
     fill: #2E2BD0;
     stroke: #2E2BD0;
 }
-.burger-menu .logo-container b{
+
+.burger-menu .logo-container b {
     color: #2E2BD0;
     font-family: Gilroy;
     font-size: 1.979vw;
     font-style: normal;
     font-weight: 700;
 }
-.burger-menu .logo-container .logo-icon{
+
+.burger-menu .logo-container .logo-icon {
     display: flex;
     flex-direction: column;
 }
-.burger-menu .logo-container svg:first-child{
+
+.burger-menu .logo-container svg:first-child {
     width: 1.51vw;
     height: auto;
     position: relative;
     right: 5px;
 }
-.burger-menu .logo-container svg:last-child{
+
+.burger-menu .logo-container svg:last-child {
     width: 4.167vw;
     height: auto;
 }
-.burger-menu .logo-container svg path, .burger-menu .logo-container b{
+
+.burger-menu .logo-container svg path,
+.burger-menu .logo-container b {
     stroke: #2E2BD0;
     fill: #2E2BD0;
 }
-header .language-dropdown{
+
+header .language-dropdown {
     position: absolute;
     top: 2.344vw;
     left: -5.729vw;
@@ -240,11 +272,11 @@ header .language-dropdown{
     width: 7.8vw;
 }
 
-header .language-dropdown.active{
+header .language-dropdown.active {
     display: flex;
 }
 
-header .other-nav .lang-btn{
+header .other-nav .lang-btn {
     font-family: "Neue Machina Regular";
     background: transparent;
     color: var(--color-blue);
@@ -254,7 +286,7 @@ header .other-nav .lang-btn{
     font-size: 1.042vw;
 }
 
-header .other-nav .lang-btn:hover{
+header .other-nav .lang-btn:hover {
     background-color: rgba(49, 47, 187, 0.2)
 }
 
@@ -268,7 +300,7 @@ header {
     padding: 0 1.563vw;
 }
 
-header nav{
+header nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -278,7 +310,7 @@ header nav{
     box-sizing: border-box;
 }
 
-header .logo-container{
+header .logo-container {
     display: flex;
     align-items: last baseline;
     gap: 0.521vw;
@@ -288,7 +320,7 @@ header .logo-container{
     position: relative;
 }
 
-header .logo-container b{
+header .logo-container b {
     color: white;
     font-family: "TT Norms";
     font-size: 1.25vw;
@@ -297,19 +329,17 @@ header .logo-container b{
     line-height: 1.25vw;
 }
 
-header .logo-icon{
+header .logo-icon {
     display: flex;
     flex-direction: column;
 }
 
-header nav > svg{
+header nav>svg {
     width: 0.052vw;
-    height: 6.25vw;
-    align-self: center;
-    flex: 0 0 auto;
+    height: 5.9vw;
 }
 
-header ul{
+header ul {
     display: flex;
     list-style: none;
     margin: 0;
@@ -331,20 +361,20 @@ header ul li {
     white-space: nowrap;
 }
 
-header .other-nav{
+header .other-nav {
     display: flex;
-    gap: 10%;
+    gap: 10.000vw;
     align-items: center;
     flex: 0 0 auto;
 }
 
-header .select{
+header .select {
     display: flex;
-    gap: 10px;
+    gap: 0.926vw;
     align-items: center;
 }
 
-header .select span{
+header .select span {
     color: white;
     font-family: "Neue Machina Regular";
     font-size: 1.25vw;
@@ -353,16 +383,20 @@ header .select span{
     line-height: normal;
     text-transform: uppercase;
 }
-#burger-button{
+
+#burger-button {
     display: none;
 }
-.other-nav .select svg{
+
+.other-nav .select svg {
     transition: 0.3s;
 }
-.other-nav .select:hover svg{
+
+.other-nav .select:hover svg {
     transform: rotate(90deg);
 }
-header .other-nav button{
+
+header .other-nav button {
     width: 13.229vw;
     height: 3.073vw;
     color: white;
@@ -379,12 +413,15 @@ header .other-nav button{
     transition: 0.4s;
     cursor: pointer;
 }
-header .other-nav button:hover{opacity: 1;
-background-color: rgb(155, 132, 233);
-color: white;
+
+header .other-nav button:hover {
+    opacity: 1;
+    background-color: rgb(155, 132, 233);
+    color: white;
 
 }
-#close-button{
+
+#close-button {
     display: none;
     border: 0;
     background-color: transparent;
@@ -395,18 +432,18 @@ color: white;
     font-family: Gilroy;
 }
 
-header nav a{
+header nav a {
     text-decoration: none;
     color: white;
 }
 
-header .other-nav button div{
+header .other-nav button div {
     display: flex;
     justify-content: center;
-    gap: 0.75rem;
+    gap: 1.111vw;
 }
 
-body::before{
+body::before {
     background-image: url(../img/bg-noise.png);
     background-size: cover;
     width: 100%;
@@ -419,24 +456,21 @@ body::before{
     z-index: -10;
 }
 
-@media (max-width: 1350px){
-    .hero{
-        padding: 150px 10px;
-    }
-    header{
+@media (max-width: 1350px) {
+    header {
         min-height: auto;
         padding: 0.208vw;
     }
 
-    header::after{
+    header::after {
         display: none;
     }
 
-    header nav{
+    header nav {
         position: relative;
         display: flex;
         justify-content: space-between;
-        gap: 10px;
+        gap: 0.926vw;
     }
 
 
@@ -445,58 +479,60 @@ body::before{
         width: clamp(20px,3vw,40px);
         height: clamp(20px,3vw,40px);;
     } */
-    header .logo-container{
+    header .logo-container {
         gap: 0.023vw;
         align-items: last baseline;
     }
 
-    header .logo-container b{
+    header .logo-container b {
         font-size: 4.259vw;
         color: var(--main-white, #FFF);
         font-size: 4.259vw;
         font-style: normal;
         font-weight: 700;
-        line-height: 4.63vw; /* 108.696% */
+        line-height: 4.63vw;
+        /* 108.696% */
     }
 
-    header .logo-icon svg:first-child{
+    header .logo-icon svg:first-child {
         width: 2.593vw;
         height: 2.685vw;
     }
 
-    header .logo-icon svg:last-child{
+    header .logo-icon svg:last-child {
         width: 10.093vw;
-       
+
         font-size: 5.556vw;
         color: var(--main-white, #FFF);
         font-style: normal;
         font-weight: 700;
-        line-height: 100%; /* 108.696% */
+        line-height: 100%;
+        /* 108.696% */
     }
 
-    header .logo-icon svg:first-child{
-       width: 2vw;
-       height: auto;
-        
-    }
-
-    header .logo-icon svg:last-child{
-        width: clamp(50px,11vw,109px);
+    header .logo-icon svg:first-child {
+        width: 2vw;
         height: auto;
-       
+
+    }
+
+    header .logo-icon svg:last-child {
+        width: 10vw;
+        height: 7.4vw;
+
     }
 
     /* hide */
 
     header ul,
-    header nav > svg,
-    header .select{
+    header nav>svg,
+    header .select {
         display: none;
     }
 
     /* top buttons */
 
-    .other-nav{
+    .other-nav {
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
@@ -504,13 +540,13 @@ body::before{
 
     /* right button */
 
-    header .other-nav > button{
+    header .other-nav>button {
         width: 10.741vw;
         height: 10.741vw;
         padding: 0;
         margin: 0;
         border: none;
-        border-radius: 1rem;
+        border-radius: 1.8vw;
         background: #FFF;
         display: flex;
         justify-content: center;
@@ -518,28 +554,30 @@ body::before{
         flex-shrink: 0;
     }
 
-    .other-nav > button div{
+    .other-nav>button div {
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
-    .other-nav > button span{
+    .other-nav>button span {
         display: none;
     }
 
-    .other-nav > button svg{
+    .other-nav>button svg {
         width: 5.556vw;
         height: 5.556vw;
     }
 
-    .other-nav > button svg path{
+    .other-nav>button svg path {
         stroke: var(--color-blue);
     }
-    #close-button{
+
+    #close-button {
         display: block;
     }
-    header ul{
+
+    header ul {
         width: 0vw;
         display: none;
         position: fixed;
@@ -558,7 +596,8 @@ body::before{
         box-sizing: border-box;
         justify-content: center;
     }
-    header ul li{
+
+    header ul li {
         width: 100%;
         box-sizing: border-box;
         font-size: 7.407vw;
@@ -571,11 +610,13 @@ body::before{
         border-radius: 0px;
         transition: 500ms;
     }
-    header ul li:active{
+
+    header ul li:active {
         background-color: #2e2bd091;
         color: white;
     }
-    header ul li.active{
+
+    header ul li.active {
         padding: 0;
         border: 0;
         border-radius: 0;
@@ -584,11 +625,11 @@ body::before{
 
     /* left burger */
 
-    #burger-button{
+    #burger-button {
         border: 0;
         width: 10.741vw;
         height: 10.741vw;
-        border-radius: 1rem;
+        border-radius: 1.8vw;
         background: #FFF;
         display: flex;
         justify-content: center;
@@ -603,7 +644,7 @@ body::before{
 }
 
 /* Footer stiliai */
-footer{
+footer {
     padding: 1.875rem 0;
     box-sizing: border-box;
     width: 100%;
@@ -611,57 +652,57 @@ footer{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    row-gap: clamp(6rem, 10vw, 14rem);
+    row-gap: clamp(8.889vw, 10vw, 20.741vw);
 }
 
 /* Formos stiliai */
-footer form{
-    width: min(97%, 120rem);
+footer form {
+    width: 97%;
     background: var(--gradient-blue);
     border-radius: 4rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: clamp(3rem, 6vw, 5.5rem) clamp(2rem, 5vw, 7.5rem);
     box-sizing: border-box;
-    column-gap: clamp(2rem, 5vw, 12%);
-    row-gap: 2.5rem;
+    column-gap: clamp(2.963vw, 5vw, 12.000vw);
+    row-gap: 3.704vw;
 }
 
 
 
-footer form > div:nth-child(2) {
+footer form>div:nth-child(2) {
     padding-top: 2.5rem;
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 4.444vw;
 }
 
-footer form > *{
+footer form>* {
     display: flex;
     flex-direction: column;
 }
 
-footer form > b{
+footer form>b {
     color: white;
     font-family: "Neue Machina Regular";
-    font-size: 1.667vw;
+    font-size: 5.2vw;
     font-style: normal;
     font-weight: 400;
     line-height: 1.3;
 }
 
-footer form div p{
+footer form div p {
     color: rgba(255, 255, 255, 0.70);
     word-spacing: 1px;
     font-family: "Gilroy";
-    font-size: 1.667vw;
+    font-size: 1.25vw;
     font-style: normal;
     font-weight: 400;
     line-height: 1.5;
     margin: 0;
 }
 
-footer form div p b{
+footer form div p b {
     color: var(--main-white, #FFF);
     font-weight: 600;
     text-decoration-line: underline;
@@ -672,19 +713,19 @@ footer form div p b{
     text-underline-position: from-font;
 }
 
-footer form button[type = "button"]{
+footer form button[type="button"] {
     width: clamp(14rem, 22vw, 21.875rem);
     height: clamp(3rem, 5vh, 3.625rem);
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 0.75rem;
+    gap: 1.111vw;
     border-radius: 0.625rem;
     border: 1px solid white;
     color: var(--main-white, #FFF);
     font-family: "Neue Machina Regular";
     background-color: transparent;
-    font-size: 1.1rem;
+    font-size: 1vw;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -694,7 +735,17 @@ footer form button[type = "button"]{
     transition: background-color 0.4s ease;
 }
 
-footer form input, footer form label, footer form input::placeholder{
+footer form input::placeholder {
+    color: rgba(255, 255, 255, 0.40);
+    font-family: "Neue Machina Regular";
+    font-size: 1.667vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+footer form input,
+footer form label {
     display: block;
     width: 100%;
     height: clamp(3rem, 5vh, 3.875rem);
@@ -708,29 +759,30 @@ footer form input, footer form label, footer form input::placeholder{
     padding-bottom: 1rem;
     background-color: transparent;
     border: 0;
+    padding-bottom: 0.7vw;
     border-bottom: 1px solid white;
 }
 
 
-footer .input-container{
+footer .input-container {
     display: flex;
     flex-direction: column;
-    gap: 3.125rem;
+    gap: 4.630vw;
     padding-top: 2.5rem;
 }
 
-footer .file-input input{
+footer .file-input input {
     display: none;
 }
 
-footer form > button{
+footer form>button {
     width: clamp(10rem, 14vw, 12.813rem);
     height: clamp(3.2rem, 5vh, 3.813rem);
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 0.625rem;
+    gap: 0.926vw;
     border: 0;
     border-radius: 0.625rem;
     color: var(--color-blue);
@@ -744,33 +796,33 @@ footer form > button{
     transition: background-color 0.4s ease;
 }
 
-footer .information-container{
+footer .information-container {
     padding: clamp(2rem, 4vw, 3.125rem) clamp(2.5rem, 5vw, 7.5rem);
     border-top: 1px solid rgba(47, 53, 63, 0.50);
     border-bottom: 1px solid rgba(47, 53, 63, 0.50);
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr auto;
-    gap: clamp(1.5rem, 3vw, 3rem);
+    gap: clamp(2.222vw, 3vw, 4.444vw);
     box-sizing: border-box;
 }
 
-footer .information-container .logo-container p{
+footer .information-container .logo-container p {
     display: none;
 }
 
-footer .information-container div:nth-child(1){
+footer .information-container div:nth-child(1) {
     display: flex;
     flex-direction: column;
     width: min(18.625rem, 100%);
-    row-gap: 3rem;
+    justify-content: space-evenly;
 }
 
-footer .information-container div:nth-child(1) svg:nth-child(1){
-    margin-bottom: 3rem;
+footer .information-container div:nth-child(1) svg:nth-child(1) {
+    margin-bottom: 4.444vw;
 }
 
-footer .information-container div:nth-child(1) button{
+footer .information-container div:nth-child(1) button {
     width: clamp(12rem, 18vw, 15.875rem);
     height: clamp(3rem, 4vh, 3.688rem);
     color: white;
@@ -787,52 +839,60 @@ footer .information-container div:nth-child(1) button{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1rem;
+    gap: 1.481vw;
     transition: 0.4s;
-        cursor: pointer;
+    cursor: pointer;
 }
 
-footer .information-container div:nth-child(1) button:hover{opacity: 1;
-background-color: rgb(155, 132, 233);
-color: white;
+footer .information-container div:nth-child(1) button:hover {
+    opacity: 1;
+    background-color: rgb(155, 132, 233);
+    color: white;
 }
 
-footer .information-container div:nth-child(1) .social-media{
+footer .information-container div:nth-child(1) .social-media {
     display: flex;
-    gap: 0.625rem;
+    gap: 0.926vw;
+    margin-top: 7vw;
 }
 
-footer .information-container div:nth-child(1) .social-media > *{
+footer .information-container div:nth-child(1) .social-media>* {
     border-radius: 0.938rem;
     padding: 0.234rem;
     border: 0.07rem solid var(--color-blue);
     cursor: pointer;
     transition: 0.4s ease;
 }
-footer .information-container div:nth-child(1) .social-media > *:hover{
+
+footer .information-container div:nth-child(1) .social-media>*:hover {
     transform: scale(1.1);
 }
-form button{
+
+form button {
     transition: 200ms;
 }
-footer form > button:hover{
+
+footer form>button:hover {
     background-color: transparent;
     border: 1px solid white;
     color: white;
 }
-form button[type="button"]:hover{
+
+form button[type="button"]:hover {
     background-color: white;
     color: #2E2BD0;
 }
-form button[type="button"]:hover svg path{
+
+form button[type="button"]:hover svg path {
     stroke: #2E2BD0;
 }
-footer form > button:hover svg path{
+
+footer form>button:hover svg path {
     stroke: white;
 }
 
- 
-.information-container__email{
+
+.information-container__email {
     color: var(--main-blue, #2E2BD0);
     font-family: "Gilroy";
     font-size: clamp(1rem, 1.2vw, 1.5rem);
@@ -847,7 +907,7 @@ footer form > button:hover svg path{
     text-underline-position: from-font;
 }
 
-footer .information-container .offices > p{
+footer .information-container .offices>p {
     color: var(--color-light);
     font-family: "Neue Machina Regular";
     font-size: clamp(1rem, 1.1vw, 1.25rem);
@@ -856,22 +916,21 @@ footer .information-container .offices > p{
     line-height: normal;
     text-transform: lowercase;
     margin: 0;
-    margin-bottom: 1.25rem;
+    margin-bottom: 1.852vw;
 }
 
-footer .information-container .offices{
+footer .information-container .offices {
     display: flex;
     flex-direction: column;
-    gap: clamp(1rem, 2vw, 1.875rem);
 }
 
-footer .information-container .office-box{
+footer .information-container .office-box {
     display: flex;
     flex-direction: column;
-    gap: 0.625rem;
+    gap: 0.926vw;
 }
 
-footer .information-container .office-box p{
+footer .information-container .office-box p {
     margin: 0;
     color: rgba(47, 53, 63, 0.50);
     font-family: "Gilroy";
@@ -881,17 +940,16 @@ footer .information-container .office-box p{
     line-height: normal;
 }
 
-footer .information-container .office-box p:nth-child(1){
+footer .information-container .office-box p:nth-child(1) {
     color: var(--color-blue);
 }
 
-footer .information-container .services{
+footer .information-container .services {
     display: flex;
     flex-direction: column;
-    gap: clamp(1rem, 2vw, 1.875rem);
 }
 
-footer .information-container .services > p{
+footer .information-container .services>p {
     color: var(--color-light);
     font-family: "Neue Machina Regular";
     font-size: clamp(1rem, 1.1vw, 1.25rem);
@@ -900,19 +958,19 @@ footer .information-container .services > p{
     line-height: normal;
     text-transform: lowercase;
     margin: 0;
-    margin-bottom: 1.25rem;
+    margin-bottom: 1.852vw;
 }
 
 
-footer .information-container .services ul{
+footer .information-container .services ul {
     padding: 0;
     list-style: none;
     display: flex;
     flex-direction: column;
-    gap: clamp(1rem, 2vw, 1.875rem);
+    gap: clamp(1.481vw, 2vw, 2.778vw);
 }
 
-footer .information-container .services li{
+footer .information-container .services li {
     color: var(--color-blue);
     font-family: "Gilroy";
     font-size: clamp(1rem, 1.1vw, 1.25rem);
@@ -921,7 +979,7 @@ footer .information-container .services li{
     line-height: normal;
 }
 
-footer .copyright p{
+footer .copyright p {
     color: rgba(47, 53, 63, 0.50);
     font-family: "Gilroy";
     font-size: clamp(0.9rem, 1vw, 1rem);
@@ -930,175 +988,187 @@ footer .copyright p{
     line-height: normal;
 }
 
-footer .copyright{
+footer .copyright {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    margin-top: clamp(-7rem, -10vw, -12.5rem);
+    box-sizing: border-box;
+    padding: 0 1.5vw;
+    margin-top: clamp(-10.370vw, -10vw, -18.519vw);
 }
+
 .information-container a {
     display: flex;
-    column-gap: 1.2rem;
+    column-gap: 1.7vw;
     align-items: center;
-    text-decoration: none;
-       
-    }
-.information-container a span  {
+
+}
+
+.information-container a span {
     color: white;
-} 
+}
 
 @media (max-width: 1350px) {
 
-    footer form button[type = "button"]{
-
-        width: clamp(30rem, 22vw, 21.875rem);
-        height: clamp(4rem, 5vh, 3.625rem);
-        margin-bottom: 2rem;
-    }
-
-    footer form{
+    footer form {
         grid-template-columns: auto;
-        gap: 2rem;
-        
+        gap: 2.963vw;
+
     }
 
-    footer .input-container{
+    footer .input-container {
         padding-top: auto;
     }
-    footer form input, footer form label, footer form input::placeholder{
-        padding: 0;
+
+    footer form input,
+    footer form label,
+    footer form input::placeholder {
         font-size: 3.889vw;
-        margin-bottom: 0.926vw;
+        height: fit-content;
     }
 
-    footer form > b{
+    footer form>b {
         font-size: 9.259vw;
     }
-    footer form button, footer form button span{
+
+    footer form button,
+    footer form button span {
         font-size: 2.778vw;
+        height: fit-content;
     }
-    footer form > button{
+
+    footer form>button {
         width: clamp(22rem, 14vw, 12.813rem);
     }
-    footer form div p{
+
+    footer form div p {
         font-size: 3.148vw;
     }
+
     .file-input {
         margin-bottom: 3.704vw;
-       
-        
+
+
     }
-    footer .input-container{
-    
+
+    footer .input-container {
+
         padding-top: 0;
-        gap: 2rem;
+        gap: 2.963vw;
     }
-    footer form svg{
-        width: clamp(20px,2vw,40px);
+
+    footer form svg {
+        width: 3.1vw;
     }
-    
+
     footer {
-        row-gap: 3rem;
+        row-gap: 4.444vw;
     }
 
     /* information container */
 
     footer .information-container {
+        padding: 3.7vw;
         grid-template-columns: 1fr;
-        gap: 3rem;
+        gap: 4.444vw;
     }
 
     footer .information-container div:nth-child(1) {
         width: 100%;
         display: flex;
         flex-direction: column;
-        row-gap: 2rem;
+        row-gap: 2.963vw;
     }
 
     /* logo */
 
-    footer .information-container div:nth-child(1) .logo-container{
+    footer .information-container div:nth-child(1) .logo-container {
         display: flex;
-        gap: 1.5rem;
+        gap: 2.222vw;
     }
 
-    footer .information-container div:nth-child(1) .logo-container svg{
-        width: 3rem;
-        height: 3rem;
+    footer .information-container div:nth-child(1) .logo-container svg {
+        width: 4.4vw;
+        height: 4.4vw;
         flex-shrink: 0;
         scale: 2;
-        margin-left: 1.5rem;
-        margin-top: 1.5rem;
+        margin-left: 2.2vw;
+        margin-top: 2.2vw;
     }
 
-    footer .information-container div:nth-child(1) .logo-container p{
+    footer .information-container div:nth-child(1) .logo-container p {
         font-family: "TT Norms";
         font-size: 3.704vw;
         font-weight: 400;
         line-height: 1.2;
         display: block;
-        margin-left: 6.5rem;
-        margin-top: -8.5rem;
-        max-width: 8rem;
+        margin-left: 9.630vw;
+        margin-top: -12.593vw;
+        max-width: 11.8vw;
         white-space: normal;
     }
 
     /* email */
 
-    footer .information-container > div:nth-child(1) a{
+    footer .information-container>div:nth-child(1)>a {
         font-size: 3.704vw;
         margin-left: auto;
-        margin-top: -8rem;
+        margin-top: -11.852vw;
         text-align: right;
         align-self: flex-start;
         font-family: Gilroy;
     }
-    .information-container__btn #contact{
-       
-    } 
-    /* social media */
 
-    footer .information-container div:nth-child(1) .social-media{
+    /* social media */
+    footer .information-container div:nth-child(1) .social-media {
         display: flex;
-        gap: 1rem;
-        margin-top: 5rem;
-        margin-bottom: -2.5rem;
+        gap: 1.481vw;
+        margin-top: 7.407vw;
+        margin-bottom: -3.704vw;
     }
 
-    footer .information-container div:nth-child(1) .social-media svg{
-        width: 5rem;
-        height: 5rem;
+    footer .information-container div:nth-child(1) .social-media svg {
+        width: 8.7vw;
+        height: 8.7vw;
+        border-radius: 2.7vw;
     }
 
     /* contact button */
 
     footer .information-container div:nth-child(1) button {
-        margin-left: 4.1rem;
-        margin-top: 2rem;
-        scale: 1.5;
         width: 100%;
-        max-width: 23.335vw;
+        max-width: 30.2vw;
+        font-size: 2.7vw;
+        padding: 1.5vw 3.7vw 1.5vw 3.7vw;
+        border-radius: 1.8vw;
+        box-sizing: border-box;
+        height: fit-content;
+    }
+
+    footer .information-container div:nth-child(1) button svg {
+        width: 3.1vw;
+        height: 3.1vw;
     }
 
     /* offices */
 
-    footer .information-container .offices > p{
-        font-size: 40px;
+    footer .information-container .offices>p {
+        font-size: 3.7vw;
     }
 
-    footer .information-container .offices > div{
+    footer .information-container .offices>div {
         display: flex;
         justify-content: space-between;
-        gap: 2rem;
+        gap: 2.963vw;
     }
 
-    footer .information-container .office-box{
+    footer .information-container .office-box {
         display: flex;
         flex-direction: column;
-        gap: 1rem;
+        gap: 1.481vw;
     }
 
-    footer .information-container .office-box p{
+    footer .information-container .office-box p {
         font-size: 3.704vw;
         font-weight: 400;
         margin: 0;
@@ -1106,19 +1176,19 @@ footer .copyright{
 
     /* services */
 
-    footer .information-container .services > p{
+    footer .information-container .services>p {
         font-size: 3.704vw;
     }
 
-    footer .information-container .services > div{
+    footer .information-container .services>div {
         display: flex;
         justify-content: space-between;
-        gap: 2rem;
+        gap: 2.963vw;
     }
 
-    footer .information-container .services li{
+    footer .information-container .services li {
         font-size: 3.704vw;
-        margin-bottom: 1rem;
+        margin-bottom: 1.481vw;
     }
 
     /* form */
@@ -1126,54 +1196,54 @@ footer .copyright{
     footer form {
         grid-template-columns: 1fr;
         border-radius: 2rem;
-        row-gap: 2rem;
+        row-gap: 2.963vw;
     }
 
-    footer form > div:nth-child(2) {
+    footer form>div:nth-child(2) {
         padding-top: 0;
-        gap: 1.5rem;
+        gap: 2.222vw;
     }
 
     footer .input-container {
         padding-top: 0;
-        gap: 2rem;
+        gap: 2.963vw;
     }
 
     footer form button[type="button"] {
-       display: flex;
-       width: 80.579vw;
-       justify-content: center;
-       align-items: center;
-
+        display: flex;
+        width: 43.7vw;
+        height: fit-content;
+        padding: 2.2vw 3.7vw 1.5vw 3.7vw;
+        justify-content: center;
+        align-items: center;
     }
 
-    footer form > button {
-       width: 40vw;
+    footer form>button {
+        width: 40vw;
 
     }
 
     /* copyright */
 
     footer .copyright {
+        padding: 0 3.7vw;
+        box-sizing: border-box;
         display: flex;
         flex-wrap: wrap;
-        gap: 1rem;
+        gap: 1.481vw;
         margin-top: 0;
     }
 
-    footer .copyright p{
+    footer .copyright p {
         font-size: 3.704vw;
     }
-   
+
 }
+
 @media (max-width: 870px) {
 
-    footer .information-container div:nth-child(1) > a{
+    footer .information-container div:nth-child(1)>a {
         margin-left: 0;
-        margin-top: -1rem;
-        font-size: 30px;
-    } 
-    footer p, footer li{
-        font-size: 30px !important;
+        margin-top: -1.481vw;
     }
 }

@@ -89,17 +89,17 @@
     border: 2px solid var(--main-blue, #2E2BD0);
     box-sizing: border-box;
     gap: 10px;
-    width: 90%;
+    width: 70%;
     margin-top: 2.6vw;
     transition: 0.4s;
     cursor: pointer;
 }
 
-.feedback button:hover{
- opacity: 1;
-color: white;
-background-color: #2E2BD0;
-transform: scale(1.05);
+.feedback button:hover {
+    opacity: 1;
+    color: white;
+    background-color: #2E2BD0;
+    transform: scale(1.05);
 }
 
 .feedback button:hover svg path {
@@ -129,26 +129,29 @@ transform: scale(1.05);
 }
 
 .feedback .animation-button {
-        cursor: pointer;
-        transition: 0.4s ease;
+    cursor: pointer;
+    transition: 0.4s ease;
 
 }
-.feedback .animation-button path{
+
+.feedback .animation-button path {
     stroke: #2E2BD0;
     transition: 0.4s ease;
     opacity: 1;
     stroke-width: 2;
 
 }
-.feedback .animation-button:hover path{
 
-stroke: #317cff;
+.feedback .animation-button:hover path {
+
+    stroke: #317cff;
 }
-.feedback .animation-button:hover{
+
+.feedback .animation-button:hover {
     transform: scale(1.2);
 }
 
-.feedback .user-comments{
+.feedback .user-comments {
     position: relative;
     height: 46vw;
     overflow: hidden;
@@ -291,6 +294,105 @@ stroke: #317cff;
 
     .feedback .another-button {
         display: none;
+    }
+
+
+    .feedback h2 {
+        color: var(--main-light, #2F353F);
+        font-family: "Neue Machina Regular";
+        padding: 0 2vw;
+        font-size: 7.4vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 112.5%;
+    }
+
+    .feedback .user-comments {
+        width: 100%;
+        display: flex;
+        overflow-x: scroll;
+        box-sizing: border-box;
+        padding: 0 1vw;
+        gap: 1.8vw;
+    }
+
+    .feedback .user-info {
+        display: flex;
+        align-items: flex-end;
+        gap: 2.6vw;
+    }
+
+    .feedback button svg {
+        width: 3.1vw;
+        height: 3.1vw;
+    }
+
+    .feedback .user-info p:nth-child(1) {
+        color: var(--main-blue, #2E2BD0);
+        font-feature-settings: 'liga' off, 'clig' off;
+        font-family: "Neue Machina Regular";
+        font-size: 3.7vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+        margin: 0;
+    }
+
+    .feedback .user-info p:nth-child(2) {
+        color: rgba(47, 53, 63, 0.70);
+        font-family: Gilroy;
+        font-size: 2.7vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 130%;
+        margin: 0;
+    }
+
+    .feedback .user-info img {
+        width: 14vw;
+        height: 14vw;
+    }
+
+    .feedback .comment {
+        flex-shrink: 0;
+        width: 55vw;
+        display: flex;
+        flex-direction: column;
+        border-radius: 3.7vw;
+        border: 2px solid #909398;
+        padding: 2.6vw;
+        box-sizing: border-box;
+        gap: 5.2vw;
+    }
+
+    .feedback .user-text {
+        color: rgba(47, 53, 63, 0.70);
+        font-family: Gilroy;
+        font-size: 3.7vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+    }
+
+    .feedback button {
+        display: flex;
+        padding: 1vw;
+        color: var(--main-blue, #2E2BD0);
+        font-family: "Neue Machina Regular";
+        font-size: 2.7vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: uppercase;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+        border-radius: 20px;
+        border: 2px solid var(--main-blue, #2E2BD0);
+        box-sizing: border-box;
+        gap: 0.52vw;
+        /* 10px / 19.2 */
+        width: 70%;
     }
 }
 
@@ -440,7 +542,7 @@ stroke: #317cff;
     background-color: #9695E7;
     transition: 0.5s;
     cursor: pointer;
-    
+
 }
 
 .circles-wrraper .circle:last-child:hover {
@@ -458,10 +560,12 @@ stroke: #317cff;
     transition: 0.5s;
 
 }
-.circles-wrraper .circle-black:hover{opacity: 1;
-background-color: rgb(26, 24, 24);
-border-color: rgb(82, 82, 82);
-box-shadow: 1px 1px 10px 5px rgb(26, 24, 24);
+
+.circles-wrraper .circle-black:hover {
+    opacity: 1;
+    background-color: rgb(26, 24, 24);
+    border-color: rgb(82, 82, 82);
+    box-shadow: 1px 1px 10px 5px rgb(26, 24, 24);
 
 }
 
@@ -470,9 +574,11 @@ box-shadow: 1px 1px 10px 5px rgb(26, 24, 24);
     background-color: var(--circle-second);
     transition: 0.5s;
 }
-.circles-wrraper .circle-white:hover{opacity: 1;
-background-color: rgb(204, 204, 204);
-box-shadow: 1px 1px 10px 5px rgb(153, 153, 153);
+
+.circles-wrraper .circle-white:hover {
+    opacity: 1;
+    background-color: rgb(204, 204, 204);
+    box-shadow: 1px 1px 10px 5px rgb(153, 153, 153);
 
 }
 
@@ -481,7 +587,9 @@ box-shadow: 1px 1px 10px 5px rgb(153, 153, 153);
     background-color: var(--circle-third);
     transition: 0.5s;
 }
-.circles-wrraper .circle-blue:hover{opacity: 1;
+
+.circles-wrraper .circle-blue:hover {
+    opacity: 1;
     background-color: rgb(13, 73, 253);
     border-color: rgb(117, 152, 255);
     box-shadow: 1px 1px 10px 3px rgb(54, 71, 249);
@@ -801,7 +909,7 @@ header {
 header ul li {
     display: flex;
     align-items: center;
-        cursor: pointer;
+    cursor: pointer;
 }
 
 header nav ul .active {
@@ -886,6 +994,11 @@ header .logo-container b {
         overflow: scroll;
         box-sizing: border-box;
         padding-top: 13.8vw;
+    }
+
+    header {
+        padding: 7.8vw 2vw;
+        border-bottom: 0;
     }
 
     header .logo-container b {
